@@ -1,2 +1,2 @@
-# tcc2-iam-policy-analyser
+# tcc-iam-policy-analyser
 A permissions policy analyser for AWS IAM.
