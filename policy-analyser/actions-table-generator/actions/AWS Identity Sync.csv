@@ -1,0 +1,16 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CreateSyncFilter,Grants permission to create a sync filter on the sync profile,Write,SyncProfileResource*,,
+1,CreateSyncProfile,Grants permission to create a sync profile for the identity source,Write,,,ds:AuthorizeApplication
+2,CreateSyncTarget,Grants permission to create a sync target for the identity source,Write,SyncProfileResource*,,
+3,DeleteSyncFilter,Grants permission to delete a sync filter from the sync profile,Write,SyncProfileResource*,,
+4,DeleteSyncProfile,Grants permission to delete a sync profile from the source,Write,SyncProfileResource*,,ds:UnauthorizeApplication
+5,DeleteSyncTarget,Grants permission to delete a sync target from the source,Write,SyncProfileResource*,,
+6,DeleteSyncTarget,Grants permission to delete a sync target from the source,Write,SyncTargetResource*,,
+7,GetSyncProfile,Grants permission to retrieve a sync profile by using a sync profile name,Read,SyncProfileResource*,,
+8,GetSyncTarget,Grants permission to retrieve a sync target from the sync profile,Read,SyncProfileResource*,,
+9,GetSyncTarget,Grants permission to retrieve a sync target from the sync profile,Read,SyncTargetResource*,,
+10,ListSyncFilters,Grants permission to list the sync filters from the sync profile,List,SyncProfileResource*,,
+11,StartSync,Grants permission to start a sync process or to resume a sync process that was previously paused,Write,SyncProfileResource*,,
+12,StopSync,Grants permission to stop any planned sync process in the sync schedule from starting,Write,SyncProfileResource*,,
+13,UpdateSyncTarget,Grants permission to update a sync target on the sync profile,Write,SyncProfileResource*,,
+14,UpdateSyncTarget,Grants permission to update a sync target on the sync profile,Write,SyncTargetResource*,,

@@ -1,0 +1,13 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CreateRule,Grants permission to create a Recycle Bin retention rule,Write,rule*,,
+1,CreateRule,Grants permission to create a Recycle Bin retention rule,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
+2,DeleteRule,Grants permission to delete a Recycle Bin retention rule,Write,rule*,,
+3,GetRule,Grants permission to get detailed information about a Recycle Bin retention rule,Read,rule*,,
+4,GetRule,Grants permission to get detailed information about a Recycle Bin retention rule,Read,,aws:ResourceTag/${TagKey},
+5,ListRules,Grants permission to list the Recycle Bin retention rules in the Region,Read,,,
+6,ListTagsForResource,Grants permission to list the tags associated with a resource,Read,rule*,,
+7,TagResource,Grants permission to add or update tags of a resource,Tagging,rule*,,
+8,TagResource,Grants permission to add or update tags of a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+9,UntagResource,Grants permission to remove tags associated with a resource,Tagging,rule*,,
+10,UntagResource,Grants permission to remove tags associated with a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+11,UpdateRule,Grants permission to update an existing Recycle Bin retention rule,Write,rule*,,

@@ -1,0 +1,7 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetRoutingControlState,Grants permission to get a routing control state,Read,routingcontrol*,,
+1,ListRoutingControls,Grants permission to list routing controls,Read,,,
+2,UpdateRoutingControlState,Grants permission to update a routing control state,Write,routingcontrol*,,
+3,UpdateRoutingControlState,Grants permission to update a routing control state,Write,,route53-recovery-cluster:AllowSafetyRulesOverrides,
+4,UpdateRoutingControlStates,Grants permission to update a batch of routing control states,Write,routingcontrol*,,
+5,UpdateRoutingControlStates,Grants permission to update a batch of routing control states,Write,,route53-recovery-cluster:AllowSafetyRulesOverrides,

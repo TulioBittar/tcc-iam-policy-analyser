@@ -1,0 +1,4 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetConnectorHealth [permission only],Retrieves all health metrics that were published from the Server Migration Connector.,Read,,,
+1,RegisterConnector [permission only],Registers AWS Connector with AWS Connector Service.,Write,,,
+2,ValidateConnectorId [permission only],Validates Server Migration Connector Id that was registered with AWS Connector Service.,Read,,,

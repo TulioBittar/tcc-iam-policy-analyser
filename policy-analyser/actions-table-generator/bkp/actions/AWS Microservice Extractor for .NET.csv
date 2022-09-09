@@ -1,0 +1,2 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetConfig [permission only],Grants permission to get required configuration for the AWS Microservice Extractor for .NET desktop client,Read,,,

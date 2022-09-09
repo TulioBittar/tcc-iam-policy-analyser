@@ -1,0 +1,43 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,AssociateServiceRoleToAccount,Grants permission to associate a role with your account. AWS IoT Greengrass uses this role to access your Lambda functions and AWS IoT resources,Permissions management,,,iam:PassRole
+1,BatchAssociateClientDeviceWithCoreDevice,Grants permission to associate a list of client devices with a core device,Write,coreDevice*,,
+2,BatchDisassociateClientDeviceFromCoreDevice,Grants permission to disassociate a list of client devices from a core device,Write,coreDevice*,,
+3,CancelDeployment,Grants permission to cancel a deployment,Write,deployment*,,iot:CancelJob  iot:DeleteThingShadow  iot:DescribeJob  iot:DescribeThing  iot:DescribeThingGroup  iot:GetThingShadow  iot:UpdateJob  iot:UpdateThingShadow
+4,CreateComponentVersion,Grants permission to create a component,Write,component*,,
+5,CreateComponentVersion,Grants permission to create a component,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
+6,CreateDeployment,Grants permission to create a deployment,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,iot:CancelJob  iot:CreateJob  iot:DeleteThingShadow  iot:DescribeJob  iot:DescribeThing  iot:DescribeThingGroup  iot:GetThingShadow  iot:UpdateJob  iot:UpdateThingShadow
+7,DeleteComponent,Grants permission to delete a component,Write,componentVersion*,,
+8,DeleteCoreDevice,"Grants permission to delete a AWS IoT Greengrass core device, which is an AWS IoT thing. This operation removes the core device from the list of core devices. This operation doesn't delete the AWS IoT thing",Write,coreDevice*,,iot:DescribeJobExecution
+9,DeleteDeployment,"Grants permission to delete a deployment. To delete an active deployment, it needs to be cancelled first",Write,deployment*,,iot:DeleteJob
+10,DescribeComponent,Grants permission to retrieve metadata for a version of a component,Read,componentVersion*,,
+11,DisassociateServiceRoleFromAccount,"Grants permission to disassociate the service role from an account. Without a service role, deployments will not work",Write,,,
+12,GetComponent,Grants permission to get the recipe for a version of a component,Read,componentVersion*,,
+13,GetComponentVersionArtifact,Grants permission to get the pre-signed URL to download a public component artifact,Read,componentVersion*,,
+14,GetConnectivityInfo,Grants permission to retrieve the connectivity information for a Greengrass core device,Read,connectivityInfo*,,iot:GetThingShadow
+15,GetCoreDevice,Grants permission to retrieves metadata for a AWS IoT Greengrass core device,Read,coreDevice*,,
+16,GetDeployment,Grants permission to get a deployment,Read,deployment*,,iot:DescribeJob  iot:DescribeThing  iot:DescribeThingGroup  iot:GetThingShadow
+17,GetServiceRoleForAccount,Grants permission to retrieve the service role that is attached to an account,Read,,,
+18,ListClientDevicesAssociatedWithCoreDevice,Grants permission to retrieve a paginated list of client devices associated to a AWS IoT Greengrass core device,List,coreDevice*,,
+19,ListComponentVersions,Grants permission to retrieve a paginated list of all versions for a component,List,component*,,
+20,ListComponents,Grants permission to retrieve a paginated list of component summaries,List,,,
+21,ListCoreDevices,Grants permission to retrieve a paginated list of AWS IoT Greengrass core devices,List,,,
+22,ListDeployments,Grants permission to retrieves a paginated list of deployments,List,,,iot:DescribeJob  iot:DescribeThing  iot:DescribeThingGroup  iot:GetThingShadow
+23,ListEffectiveDeployments,Grants permission to retrieves a paginated list of deployment jobs that AWS IoT Greengrass sends to AWS IoT Greengrass core devices,List,coreDevice*,,iot:DescribeJob  iot:DescribeJobExecution  iot:DescribeThing  iot:DescribeThingGroup  iot:GetThingShadow
+24,ListInstalledComponents,Grants permission to retrieve a paginated list of the components that a AWS IoT Greengrass core device runs,List,coreDevice*,,
+25,ListTagsForResource,Grants permission to list the tags for a resource,Read,component,,
+26,ListTagsForResource,Grants permission to list the tags for a resource,Read,componentVersion,,
+27,ListTagsForResource,Grants permission to list the tags for a resource,Read,coreDevice,,
+28,ListTagsForResource,Grants permission to list the tags for a resource,Read,deployment,,
+29,ListTagsForResource,Grants permission to list the tags for a resource,Read,,aws:RequestTag/${TagKey}  aws:TagKeys,
+30,ResolveComponentCandidates,"Grants permission to list components that meet the component, version, and platform requirements of a deployment",List,componentVersion*,,
+31,TagResource,Grants permission to add tags to a resource,Tagging,component,,
+32,TagResource,Grants permission to add tags to a resource,Tagging,componentVersion,,
+33,TagResource,Grants permission to add tags to a resource,Tagging,coreDevice,,
+34,TagResource,Grants permission to add tags to a resource,Tagging,deployment,,
+35,TagResource,Grants permission to add tags to a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+36,UntagResource,Grants permission to remove tags from a resource,Tagging,component,,
+37,UntagResource,Grants permission to remove tags from a resource,Tagging,componentVersion,,
+38,UntagResource,Grants permission to remove tags from a resource,Tagging,coreDevice,,
+39,UntagResource,Grants permission to remove tags from a resource,Tagging,deployment,,
+40,UntagResource,Grants permission to remove tags from a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+41,UpdateConnectivityInfo,Grants permission to update the connectivity information for a Greengrass core. Any devices that belong to the group that has this core will receive this information in order to find the location of the core and connect to it,Write,connectivityInfo*,,iot:GetThingShadow  iot:UpdateThingShadow

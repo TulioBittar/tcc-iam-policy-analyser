@@ -1,0 +1,6 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,AcceptAgreement,Grants permission to accept an AWS agreement that has not yet been accepted by the customer account.,Write,agreement*,,
+1,DownloadAgreement,Grants permission to download an AWS agreement that has not yet been accepted or a customer agreement that has been accepted by the customer account.,Read,agreement,,
+2,DownloadAgreement,Grants permission to download an AWS agreement that has not yet been accepted or a customer agreement that has been accepted by the customer account.,Read,customer-agreement,,
+3,Get,Grants permission to download an AWS compliance report package.,Read,report-package*,,
+4,TerminateAgreement,Grants permission to terminate a customer agreement that was previously accepted by the customer account.,Write,customer-agreement*,,

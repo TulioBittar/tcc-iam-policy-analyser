@@ -1,0 +1,11 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,AnalyzeDocument,Grants permission to detect instances of real-world document entities within an image provided as input,Read,,,s3:GetObject
+1,AnalyzeExpense,Grants permission to detect instances of real-world document entities within an image provided as input,Read,,,s3:GetObject
+2,AnalyzeID,Grants permission to detect relevant information from identity documents provided as input,Read,,,s3:GetObject
+3,DetectDocumentText,Grants permission to detect text in document images,Read,,,s3:GetObject
+4,GetDocumentAnalysis,Grants permission to return information about a document analysis job,Read,,,
+5,GetDocumentTextDetection,Grants permission to return information about a document text detection job,Read,,,
+6,GetExpenseAnalysis,Grants permission to return information about an expense analysis job,Read,,,
+7,StartDocumentAnalysis,Grants permission to start an asynchronous job to detect instances of real-world document entities within an image or pdf provided as input,Write,,,s3:GetObject
+8,StartDocumentTextDetection,Grants permission to start an asynchronous job to detect text in document images or pdfs,Write,,,s3:GetObject
+9,StartExpenseAnalysis,Grants permission to start an asynchronous job to detect instances of invoices or receipts within an image or pdf provided as input,Write,,,s3:GetObject

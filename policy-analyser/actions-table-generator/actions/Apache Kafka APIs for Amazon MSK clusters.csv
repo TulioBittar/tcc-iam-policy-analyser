@@ -1,0 +1,20 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,AlterCluster,"Grants permission to alter various aspects of the cluster, equivalent to Apache Kafka's ALTER CLUSTER ACL",Write,cluster*,,kafka-cluster:Connect  kafka-cluster:DescribeCluster
+1,AlterClusterDynamicConfiguration,"Grants permission to alter the dynamic configuration of a cluster, equivalent to Apache Kafka's ALTER_CONFIGS CLUSTER ACL",Write,cluster*,,kafka-cluster:Connect  kafka-cluster:DescribeClusterDynamicConfiguration
+2,AlterGroup,"Grants permission to join groups on a cluster, equivalent to Apache Kafka's READ GROUP ACL",Write,group*,,kafka-cluster:Connect  kafka-cluster:DescribeGroup
+3,AlterTopic,"Grants permission to alter topics on a cluster, equivalent to Apache Kafka's ALTER TOPIC ACL",Write,topic*,,kafka-cluster:Connect  kafka-cluster:DescribeTopic
+4,AlterTopicDynamicConfiguration,"Grants permission to alter the dynamic configuration of topics on a cluster, equivalent to Apache Kafka's ALTER_CONFIGS TOPIC ACL",Write,topic*,,kafka-cluster:Connect  kafka-cluster:DescribeTopicDynamicConfiguration
+5,AlterTransactionalId,"Grants permission to alter transactional IDs on a cluster, equivalent to Apache Kafka's WRITE TRANSACTIONAL_ID ACL",Write,transactional-id*,,kafka-cluster:Connect  kafka-cluster:DescribeTransactionalId  kafka-cluster:WriteData
+6,Connect,Grants permission to connect and authenticate to the cluster,Write,cluster*,,
+7,CreateTopic,"Grants permission to create topics on a cluster, equivalent to Apache Kafka's CREATE CLUSTER/TOPIC ACL",Write,topic*,,kafka-cluster:Connect
+8,DeleteGroup,"Grants permission to delete groups on a cluster, equivalent to Apache Kafka's DELETE GROUP ACL",Write,group*,,kafka-cluster:Connect  kafka-cluster:DescribeGroup
+9,DeleteTopic,"Grants permission to delete topics on a cluster, equivalent to Apache Kafka's DELETE TOPIC ACL",Write,topic*,,kafka-cluster:Connect  kafka-cluster:DescribeTopic
+10,DescribeCluster,"Grants permission to describe various aspects of the cluster, equivalent to Apache Kafka's DESCRIBE CLUSTER ACL",List,cluster*,,kafka-cluster:Connect
+11,DescribeClusterDynamicConfiguration,"Grants permission to describe the dynamic configuration of a cluster, equivalent to Apache Kafka's DESCRIBE_CONFIGS CLUSTER ACL",List,cluster*,,kafka-cluster:Connect
+12,DescribeGroup,"Grants permission to describe groups on a cluster, equivalent to Apache Kafka's DESCRIBE GROUP ACL",List,group*,,kafka-cluster:Connect
+13,DescribeTopic,"Grants permission to describe topics on a cluster, equivalent to Apache Kafka's DESCRIBE TOPIC ACL",List,topic*,,kafka-cluster:Connect
+14,DescribeTopicDynamicConfiguration,"Grants permission to describe the dynamic configuration of topics on a cluster, equivalent to Apache Kafka's DESCRIBE_CONFIGS TOPIC ACL",List,topic*,,kafka-cluster:Connect
+15,DescribeTransactionalId,"Grants permission to describe transactional IDs on a cluster, equivalent to Apache Kafka's DESCRIBE TRANSACTIONAL_ID ACL",List,transactional-id*,,kafka-cluster:Connect
+16,ReadData,"Grants permission to read data from topics on a cluster, equivalent to Apache Kafka's READ TOPIC ACL",Read,topic*,,kafka-cluster:AlterGroup  kafka-cluster:Connect  kafka-cluster:DescribeTopic
+17,WriteData,"Grants permission to write data to topics on a cluster, equivalent to Apache Kafka's WRITE TOPIC ACL",Write,topic*,,kafka-cluster:Connect  kafka-cluster:DescribeTopic
+18,WriteDataIdempotently,"Grants permission to write data idempotently on a cluster, equivalent to Apache Kafka's IDEMPOTENT_WRITE CLUSTER ACL",Write,cluster*,,kafka-cluster:Connect  kafka-cluster:WriteData

@@ -1,0 +1,3 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,ModifyPurchaseOrders [permission only],Modify purchase orders and details,Write,,,
+1,ViewPurchaseOrders [permission only],View purchase orders and details,Read,,,

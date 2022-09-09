@@ -1,0 +1,8 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,ModifyAccount,Allow or deny IAM users permission to modify Account Settings,Write,,,
+1,ModifyBilling,Allow or deny IAM users permission to modify billing settings,Write,,,
+2,ModifyPaymentMethods,Allow or deny IAM users permission to modify payment methods,Write,,,
+3,ViewAccount,Allow or deny IAM users permission to view account settings,Read,,,
+4,ViewBilling,Allow or deny IAM users permission to view billing pages in the console,Read,,,
+5,ViewPaymentMethods,Allow or deny IAM users permission to view payment methods,Read,,,
+6,ViewUsage,Allow or deny IAM users permission to view AWS usage reports,Read,,,

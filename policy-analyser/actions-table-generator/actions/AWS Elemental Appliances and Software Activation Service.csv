@@ -1,0 +1,13 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CompleteAccountRegistration [permission only],Grants permission to complete the process of registering customer account for AWS Elemental Appliances and Software Purchases,Read,,,
+1,CompleteFileUpload [permission only],Grants permission to complete the process of uploading a Software file for AWS Elemental Appliances and Software Purchases,Read,,,
+2,DownloadSoftware [permission only],Grants permission to download the Software files for AWS Elemental Appliances and Software Purchases,Read,,,
+3,GenerateLicenses [permission only],Grants permission to generate Software Licenses for AWS Elemental Appliances and Software Purchases,Read,,,
+4,GetActivation [permission only],Grants permission to describe an activation,Read,activation*,,
+5,ListTagsForResource [permission only],Grants permission to list tags for an AWS Elemental Activations resource,Read,activation,,
+6,StartAccountRegistration [permission only],Grants permission to start the process of registering customer account for AWS Elemental Appliances and Software Purchases,Read,,,
+7,StartFileUpload [permission only],Grants permission to start the process of uploading a Software file for AWS Elemental Appliances and Software Purchases,Read,,,
+8,TagResource [permission only],Grants permission to add a tag for an AWS Elemental Activations resource,Tagging,activation,,
+9,TagResource [permission only],Grants permission to add a tag for an AWS Elemental Activations resource,Tagging,,aws:TagKeys  aws:RequestTag/${TagKey},
+10,UntagResource [permission only],Grants permission to remove a tag from an AWS Elemental Activations resource,Tagging,activation,,
+11,UntagResource [permission only],Grants permission to remove a tag from an AWS Elemental Activations resource,Tagging,,aws:TagKeys,

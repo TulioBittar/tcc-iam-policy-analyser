@@ -1,0 +1,3 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,Login [permission only],Grants permission to log into the Sumerian console,Write,,,
+1,ViewRelease [permission only],Grants permission to view a project release,Read,project*,,

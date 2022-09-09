@@ -1,0 +1,5 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,DescribeGroup,Grants permission to retrieves information about group from the directory that AWS Identity Store provides by default,Read,,,
+1,DescribeUser,Grants permission to retrieves information about user from the directory that AWS Identity Store provides by default,Read,,,
+2,ListGroups,Grants permission to search for groups within the associated directory,List,,,
+3,ListUsers,Grants permission to search for users within the associated directory,List,,,

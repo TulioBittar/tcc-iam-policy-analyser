@@ -1,0 +1,4 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,DescribeServices,Grants permission to retrieve service details for all (paginated) services (if serviceCode is not set) or service detail for a particular service (if given serviceCode),Read,,,
+1,GetAttributeValues,Grants permission to retrieve all (paginated) possible values for a given attribute,Read,,,
+2,GetProducts,Grants permission to retrieve all matching products with given search criteria,Read,,,

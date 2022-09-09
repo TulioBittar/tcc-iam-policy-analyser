@@ -1,0 +1,37 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CancelQuery,Grants permission to cancel queries in your account,Write,,,timestream:DescribeEndpoints
+1,CreateDatabase,Grants permission to create a database in your account,Write,database*,,timestream:DescribeEndpoints
+2,CreateDatabase,Grants permission to create a database in your account,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
+3,CreateScheduledQuery,Grants permission to create a scheduled query in your account,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,iam:PassRole  timestream:DescribeEndpoints
+4,CreateTable,Grants permission to create a table in your account,Write,table*,,timestream:DescribeEndpoints
+5,CreateTable,Grants permission to create a table in your account,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
+6,DeleteDatabase,Grants permission to delete a database in your account,Write,database*,,timestream:DescribeEndpoints
+7,DeleteScheduledQuery,Grants permission to delete a scheduled query in your account,Write,scheduled-query*,,timestream:DescribeEndpoints
+8,DeleteTable,Grants permission to delete a table in your account,Write,table*,,timestream:DescribeEndpoints
+9,DescribeDatabase,Grants permission to describe a database in your account,Read,database*,,timestream:DescribeEndpoints
+10,DescribeEndpoints,Grants permission to describe timestream endpoints,List,,,
+11,DescribeScheduledQuery,Grants permission to describe a scheduled query in your account,Read,scheduled-query*,,timestream:DescribeEndpoints
+12,DescribeTable,Grants permission to describe a table in your account,Read,table*,,timestream:DescribeEndpoints
+13,ExecuteScheduledQuery,Grants permission to execute a scheduled query in your account,Write,scheduled-query*,,timestream:DescribeEndpoints
+14,ListDatabases,Grants permission to list databases in your account,List,,,timestream:DescribeEndpoints
+15,ListMeasures,Grants permission to list measures of a table in your account,List,table*,,timestream:DescribeEndpoints
+16,ListScheduledQueries,Grants permission to list scheduled queries in your account,List,,,timestream:DescribeEndpoints
+17,ListTables,Grants permission to list tables in your account,List,database*,,timestream:DescribeEndpoints
+18,ListTagsForResource,Grants permission to list tags of a resource in your account,Read,database*,,timestream:DescribeEndpoints
+19,ListTagsForResource,Grants permission to list tags of a resource in your account,Read,scheduled-query*,,
+20,ListTagsForResource,Grants permission to list tags of a resource in your account,Read,table*,,
+21,PrepareQuery,Grants permission to issue prepare queries,Read,table*,,timestream:DescribeEndpoints  timestream:Select
+22,Select,Grants permission to issue 'select from table' queries,Read,table*,,timestream:DescribeEndpoints
+23,SelectValues,Grants permission to issue 'select 1' queries,Read,,,timestream:DescribeEndpoints
+24,TagResource,Grants permission to add tags to a resource,Tagging,database*,,timestream:DescribeEndpoints
+25,TagResource,Grants permission to add tags to a resource,Tagging,scheduled-query*,,
+26,TagResource,Grants permission to add tags to a resource,Tagging,table*,,
+27,TagResource,Grants permission to add tags to a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+28,UntagResource,Grants permission to remove a tag from a resource,Tagging,database*,,timestream:DescribeEndpoints
+29,UntagResource,Grants permission to remove a tag from a resource,Tagging,scheduled-query*,,
+30,UntagResource,Grants permission to remove a tag from a resource,Tagging,table*,,
+31,UntagResource,Grants permission to remove a tag from a resource,Tagging,,aws:TagKeys,
+32,UpdateDatabase,Grants permission to update a database in your account,Write,database*,,timestream:DescribeEndpoints
+33,UpdateScheduledQuery,Grants permission to update a scheduled query in your account,Write,scheduled-query*,,timestream:DescribeEndpoints
+34,UpdateTable,Grants permission to update a table in your account,Write,table*,,timestream:DescribeEndpoints
+35,WriteRecords,Grants permission to ingest data to a table in your account,Write,table*,,timestream:DescribeEndpoints

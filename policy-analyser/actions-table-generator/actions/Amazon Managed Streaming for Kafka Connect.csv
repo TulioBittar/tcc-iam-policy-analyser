@@ -1,0 +1,13 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CreateConnector,Grants permission to create an MSK Connect connector,Write,,,ec2:CreateNetworkInterface  ec2:DescribeSecurityGroups  ec2:DescribeSubnets  ec2:DescribeVpcs  firehose:TagDeliveryStream  iam:AttachRolePolicy  iam:CreateServiceLinkedRole  iam:PassRole  iam:PutRolePolicy  logs:CreateLogDelivery  logs:DescribeLogGroups  logs:DescribeResourcePolicies  logs:GetLogDelivery  logs:ListLogDeliveries  logs:PutResourcePolicy  s3:GetBucketPolicy  s3:PutBucketPolicy
+1,CreateCustomPlugin,Grants permission to create an MSK Connect custom plugin,Write,,,s3:GetObject
+2,CreateWorkerConfiguration,Grants permission to create an MSK Connect worker configuration,Write,,,
+3,DeleteConnector,Grants permission to delete an MSK Connect connector,Write,,,logs:DeleteLogDelivery  logs:ListLogDeliveries
+4,DeleteCustomPlugin,Grants permission to delete an MSK Connect custom plugin,Write,,,
+5,DescribeConnector,Grants permission to describe an MSK Connect connector,Read,connector*,,
+6,DescribeCustomPlugin,Grants permission to describe an MSK Connect custom plugin,Read,custom plugin*,,
+7,DescribeWorkerConfiguration,Grants permission to describe an MSK Connect worker configuration,Read,worker configuration*,,
+8,ListConnectors,Grants permission to list all MSK Connect connectors in this account,Read,,,
+9,ListCustomPlugins,Grants permission to list all MSK Connect custom plugins in this account,Read,,,
+10,ListWorkerConfigurations,Grants permission to list all MSK Connect worker configurations in this account,Read,,,
+11,UpdateConnector,Grants permission to update an MSK Connect connector,Write,,,

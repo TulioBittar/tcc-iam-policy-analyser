@@ -1,0 +1,2 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,ListBillingViews,Grants permission to get billing information for your proforma billing groups,Read,,,
