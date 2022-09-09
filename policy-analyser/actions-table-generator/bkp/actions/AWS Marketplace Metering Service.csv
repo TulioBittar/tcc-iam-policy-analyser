@@ -1,0 +1,5 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,BatchMeterUsage,Grants permission to post metering records for a set of customers for SaaS applications,Write,,,
+1,MeterUsage,Grants permission to emit metering records,Write,,,
+2,RegisterUsage,"Grants permission to to verify that the customer running your paid software is subscribed to your product on AWS Marketplace, enabling you to guard against unauthorized use. Meters software use per ECS task, per hour, with usage prorated to the second",Write,,,
+3,ResolveCustomer,Grants permission to resolve a registration token to obtain a CustomerIdentifier and product code,Write,,,

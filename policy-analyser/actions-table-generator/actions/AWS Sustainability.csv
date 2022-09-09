@@ -1,0 +1,2 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetCarbonFootprintSummary,Grants permission to view the carbon footprint tool,Read,,,

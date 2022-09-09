@@ -1,0 +1,7 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,DeleteReportDefinition,Grants permission to delete the configuration with specific Application Cost Profiler Report thereby effectively disabling report generation,Write,,,
+1,GetReportDefinition,Grants permission to fetch the configuration with specific Application Cost Profiler Report request,Read,,,
+2,ImportApplicationUsage,Grants permission to import the application usage from S3,Write,,,
+3,ListReportDefinitions,Grants permission to get a list of the different Application Cost Profiler Report configurations they have created,Read,,,
+4,PutReportDefinition,Grants permission to create Application Cost Profiler Report configurations,Write,,,
+5,UpdateReportDefinition,Grants permission to update an existing Application Cost Profiler Report configuration,Write,,,

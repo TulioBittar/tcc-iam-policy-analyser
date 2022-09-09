@@ -1,0 +1,2 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetCodeGuruFreeTrialSummary [permission only],Gets free trial summary for the CodeGuru service which includes expiration date.,Read,,,

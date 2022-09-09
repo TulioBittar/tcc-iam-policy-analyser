@@ -1,0 +1,38 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CancelBatchJobExecution,Grants permission to cancel the execution of a batch job,Write,Application*,,
+1,CreateApplication,Grants permission to create an application,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,s3:GetObject  s3:ListBucket
+2,CreateDataSetImportTask,Grants permission to create a data set import task,Write,Application*,,s3:GetObject
+3,CreateDeployment,Grants permission to create a deployment,Write,Application*,,elasticloadbalancing:CreateListener  elasticloadbalancing:CreateTargetGroup  elasticloadbalancing:RegisterTargets
+4,CreateDeployment,Grants permission to create a deployment,Write,Environment,,
+5,CreateEnvironment,Grants permission to Create an environment,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,ec2:CreateNetworkInterface  ec2:CreateNetworkInterfacePermission  ec2:DescribeNetworkInterfaces  ec2:DescribeSecurityGroups  ec2:DescribeSubnets  ec2:DescribeVpcAttribute  ec2:DescribeVpcs  ec2:ModifyNetworkInterfaceAttribute  elasticfilesystem:DescribeMountTargets  elasticloadbalancing:CreateLoadBalancer  fsx:DescribeFileSystems  iam:CreateServiceLinkedRole
+6,DeleteApplication,Grants permission to delete an application,Write,Application*,,elasticloadbalancing:DeleteListener  elasticloadbalancing:DeleteTargetGroup
+7,DeleteApplicationFromEnvironment,Grants permission to delete an application from a runtime environment,Write,Application*,,elasticloadbalancing:DeleteListener  elasticloadbalancing:DeleteTargetGroup
+8,DeleteEnvironment,Grants permission to delete a runtime environment,Write,Environment*,,elasticloadbalancing:DeleteLoadBalancer
+9,GetApplication,Grants permission to retrieve an application,Read,Application*,,
+10,GetApplicationVersion,Grants permission to retrieve an application version,Read,Application*,,
+11,GetBatchJobExecution,Grants permission to retrieve a batch job execution,Read,Application*,,
+12,GetDataSetDetails,Grants permission to retrieve data set details,Read,Application*,,
+13,GetDataSetImportTask,Grants permission to retrieve a data set import task,Read,Application*,,
+14,GetDeployment,Grants permission to retrieve a deployment,Read,Application*,,
+15,GetEnvironment,Grants permission to retrieve a runtime environment,Read,Environment*,,
+16,ListApplicationVersions,Grants permission to list the versions of an application,Read,Application*,,
+17,ListApplications,Grants permission to list applications,List,Environment,,
+18,ListBatchJobDefinitions,Grants permission to list batch job definitions,Read,Application*,,
+19,ListBatchJobExecutions,Grants permission to list executions for a batch job,Read,Application*,,
+20,ListDataSetImportHistory,Grants permission to list data set import history,Read,Application*,,
+21,ListDataSets,Grants permission to list data sets,Read,Application*,,
+22,ListDeployments,Grants permission to list deployments,Read,Application*,,
+23,ListEngineVersions,Grants permission to list engine versions,Read,,,
+24,ListEnvironments,Grants permission to list runtime environments,List,,,
+25,ListTagsForResource,Grants permission to list tags for a resource,Read,,,
+26,StartApplication,Grants permission to start an application,Write,Application*,,
+27,StartBatchJob,Grants permission to start a batch job,Write,Application*,,
+28,StopApplication,Grants permission to stop an application,Write,Application*,,
+29,TagResource,Grants permission to tag a resource,Tagging,Application,,
+30,TagResource,Grants permission to tag a resource,Tagging,Environment,,
+31,TagResource,Grants permission to tag a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+32,UntagResource,Grants permission to untag a resource,Tagging,Application,,
+33,UntagResource,Grants permission to untag a resource,Tagging,Environment,,
+34,UntagResource,Grants permission to untag a resource,Tagging,,aws:TagKeys,
+35,UpdateApplication,Grants permission to update an application,Write,Application*,,s3:GetObject  s3:ListBucket
+36,UpdateEnvironment,Grants permission to update a runtime environment,Write,Environment*,,

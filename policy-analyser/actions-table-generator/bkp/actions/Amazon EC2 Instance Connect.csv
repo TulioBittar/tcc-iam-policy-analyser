@@ -1,0 +1,4 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,SendSSHPublicKey,Grants access to push an SSH public key to the specified EC2 instance to be used for standard SSH,Write,instance*,,
+1,SendSSHPublicKey,Grants access to push an SSH public key to the specified EC2 instance to be used for standard SSH,Write,,ec2:osuser,
+2,SendSerialConsoleSSHPublicKey,Grants access to push an SSH public key to the specified EC2 instance to be used for serial console SSH,Write,instance*,,

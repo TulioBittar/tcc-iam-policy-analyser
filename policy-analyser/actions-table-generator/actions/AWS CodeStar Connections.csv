@@ -1,0 +1,27 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CreateConnection,Grants permission to create a Connection resource,Write,,aws:RequestTag/${TagKey}  aws:TagKeys  codestar-connections:ProviderType,
+1,CreateHost,Grants permission to create a host resource,Write,,aws:RequestTag/${TagKey}  aws:TagKeys  codestar-connections:ProviderType,
+2,DeleteConnection,Grants permission to delete a Connection resource,Write,Connection*,,
+3,DeleteHost,Grants permission to delete a host resource,Write,Host*,,
+4,GetConnection,Grants permission to get details about a Connection resource,Read,Connection*,,
+5,GetHost,Grants permission to get details about a host resource,Read,Host*,,
+6,GetIndividualAccessToken [permission only],"Grants permission to associate a third party, such as a Bitbucket App installation, with a Connection",Read,,codestar-connections:ProviderType,codestar-connections:StartOAuthHandshake
+7,GetInstallationUrl [permission only],"Grants permission to associate a third party, such as a Bitbucket App installation, with a Connection",Read,,codestar-connections:ProviderType,
+8,ListConnections,Grants permission to list Connection resources,List,,codestar-connections:ProviderTypeFilter,
+9,ListHosts,Grants permission to list host resources,List,,codestar-connections:ProviderTypeFilter,
+10,ListInstallationTargets [permission only],"Grants permission to associate a third party, such as a Bitbucket App installation, with a Connection",List,,,codestar-connections:GetIndividualAccessToken  codestar-connections:StartOAuthHandshake
+11,ListTagsForResource,Gets the set of key-value pairs that are used to manage the resource,List,Connection*,,
+12,PassConnection [permission only],"Grants permission to pass a Connection resource to an AWS service that accepts a Connection ARN as input, such as codepipeline:CreatePipeline",Read,Connection*,,
+13,PassConnection [permission only],"Grants permission to pass a Connection resource to an AWS service that accepts a Connection ARN as input, such as codepipeline:CreatePipeline",Read,,codestar-connections:PassedToService,
+14,RegisterAppCode [permission only],"Grants permission to associate a third party server, such as a GitHub Enterprise Server instance, with a Host",Read,,codestar-connections:HostArn,
+15,StartAppRegistrationHandshake [permission only],"Grants permission to associate a third party server, such as a GitHub Enterprise Server instance, with a Host",Read,,codestar-connections:HostArn,
+16,StartOAuthHandshake [permission only],"Grants permission to associate a third party, such as a Bitbucket App installation, with a Connection",Read,,codestar-connections:ProviderType,
+17,TagResource,Adds to or modifies the tags of the given resource,Tagging,Connection*,,
+18,TagResource,Adds to or modifies the tags of the given resource,Tagging,,aws:TagKeys  aws:RequestTag/${TagKey},
+19,UntagResource,Removes tags from an AWS resource,Tagging,Connection*,,
+20,UntagResource,Removes tags from an AWS resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+21,UpdateConnectionInstallation,Grants permission to update a Connection resource with an installation of the CodeStar Connections App,Write,Connection*,,codestar-connections:GetIndividualAccessToken  codestar-connections:GetInstallationUrl  codestar-connections:ListInstallationTargets  codestar-connections:StartOAuthHandshake
+22,UpdateConnectionInstallation,Grants permission to update a Connection resource with an installation of the CodeStar Connections App,Write,,codestar-connections:InstallationId,
+23,UpdateHost,Grants permission to update a host resource,Write,Host*,,
+24,UseConnection [permission only],Grants permission to use a Connection resource to call provider actions,Read,Connection*,,
+25,UseConnection [permission only],Grants permission to use a Connection resource to call provider actions,Read,,codestar-connections:FullRepositoryId  codestar-connections:ProviderAction  codestar-connections:ProviderPermissionsRequired,

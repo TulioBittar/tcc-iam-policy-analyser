@@ -1,0 +1,12 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CancelChangeSet,Grants permission to cancel a running change set,Write,ChangeSet*,,
+1,CompleteTask,Grants permission to complete an existing task and submit the content to the associated change,Write,,,
+2,DescribeChangeSet,Grants permission to return the details of an existing change set,Read,ChangeSet*,,
+3,DescribeEntity,Grants permission to return the details of an existing entity,Read,Entity*,,
+4,DescribeTask,Grants permission to return the details of an existing task,Read,,,
+5,ListChangeSets,Grants permission to list existing change sets,List,,,
+6,ListEntities,Grants permission to list existing entities,List,,,
+7,ListTasks,Grants permission to list existing tasks,List,,,
+8,StartChangeSet,Grants permission to request a new change set. (Note: resource-level permissions for this action and condition context keys for this action are only supported when used with Catalog API and are not supported when used with AWS Marketplace Management Portal),Write,Entity*,,
+9,StartChangeSet,Grants permission to request a new change set. (Note: resource-level permissions for this action and condition context keys for this action are only supported when used with Catalog API and are not supported when used with AWS Marketplace Management Portal),Write,,catalog:ChangeType,
+10,UpdateTask,Grants permission to update the contents of an existing task,Write,,,

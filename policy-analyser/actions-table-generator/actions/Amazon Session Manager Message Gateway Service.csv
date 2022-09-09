@@ -1,0 +1,5 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CreateControlChannel,Grants permission to register a control channel for an instance to send control messages to Systems Manager service,Write,,ssm:SourceInstanceARN,
+1,CreateDataChannel,Grants permission to register a data channel for an instance to send data messages to Systems Manager service,Write,,,
+2,OpenControlChannel,Grants permission to open a websocket connection for a registered control channel stream from an instance to Systems Manager service,Write,,,
+3,OpenDataChannel,Grants permission to open a websocket connection for a registered data channel stream from an instance to Systems Manager service,Write,,,

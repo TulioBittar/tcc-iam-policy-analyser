@@ -1,0 +1,5 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetDeploymentSpecification,Grants permission to get deployment specification,Read,,,
+1,PollHostCommand,Grants permission to request host agent commands,Read,,,
+2,PutHostCommandAcknowledgement,Grants permission to mark host agent commands acknowledged,Write,,,
+3,PutHostCommandComplete,Grants permission to mark host agent commands completed,Write,,,

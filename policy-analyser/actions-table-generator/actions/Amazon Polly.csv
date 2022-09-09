@@ -1,0 +1,10 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,DeleteLexicon,Grants permissions to delete the specified pronunciation lexicon stored in an AWS Region,Write,lexicon*,,
+1,DescribeVoices,Grants permissions to describe the list of voices that are available for use when requesting speech synthesis,List,,,
+2,GetLexicon,Grants permissions to retrieve the content of the specified pronunciation lexicon stored in an AWS Region,Read,lexicon*,,
+3,GetSpeechSynthesisTask,Grants permissions to get information about specific speech synthesis task,Read,,,
+4,ListLexicons,Grants permisions to list the pronunciation lexicons stored in an AWS Region,List,,,
+5,ListSpeechSynthesisTasks,Grants permissions to list requested speech synthesis tasks,List,,,
+6,PutLexicon,Grants permissions to store a pronunciation lexicon in an AWS Region,Write,lexicon*,,
+7,StartSpeechSynthesisTask,Grants permissions to synthesize long inputs to the provided S3 location,Write,lexicon,,s3:PutObject
+8,SynthesizeSpeech,Grants permissions to synthesize speech,Read,lexicon,,

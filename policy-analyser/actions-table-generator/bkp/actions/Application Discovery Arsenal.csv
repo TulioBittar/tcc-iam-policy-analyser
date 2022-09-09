@@ -1,0 +1,2 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,RegisterOnPremisesAgent [permission only],Grants permission to register AWS provided data collectors to the Application Discovery Service,Write,,,

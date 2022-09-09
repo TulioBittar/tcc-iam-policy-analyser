@@ -1,0 +1,4 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CancelConnection [permission only],Grants permission to terminate a GUI Connect session,Write,,,
+1,GetConnection [permission only],Grants permission to get the metadata for a GUI Connect session,Read,,,
+2,StartConnection [permission only],Grants permission to start a GUI Connect session,Write,,,

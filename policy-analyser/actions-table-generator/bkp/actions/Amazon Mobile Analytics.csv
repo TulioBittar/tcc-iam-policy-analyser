@@ -1,0 +1,4 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetFinancialReports,Grant access to financial metrics for an app,Read,,,
+1,GetReports,Grant access to standard metrics for an app,Read,,,
+2,PutEvents,The PutEvents operation records one or more events,Write,,,

@@ -1,0 +1,19 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,ActivateSecurityProfile,Grants permission to activate the security profile,Write,SecurityProfile*,,
+1,AssociateDataSource,Grants permission to associate security profile with a data source,Write,SecurityProfile*,,vendor-insights:GetDataSource
+2,CreateDataSource,Grants permission to create a new data source,Write,,,
+3,CreateSecurityProfile,Grants permission to create a new security profile,Write,,,
+4,DeactivateSecurityProfile,Grants permission to deactivate the security profile,Write,SecurityProfile*,,
+5,DeleteDataSource,Grants permission to delete a data source,Write,DataSource*,,
+6,DisassociateDataSource,Grants permission to disassociate security profile from a data source,Write,SecurityProfile*,,vendor-insights:GetDataSource
+7,GetDataSource,Grants permission to retrieve the details of an existing data source,Read,DataSource*,,
+8,GetEntitledSecurityProfileSnapshot,Grants permission to return the details of a security profile snapshot that requester is entitled to read,Read,SecurityProfile*,,
+9,GetProfileAccessTerms,Grants permission to get the access terms for a vendor insights profile,Read,,,
+10,GetSecurityProfile,Grants permission to return the details of an existing security profile,Read,SecurityProfile*,,
+11,GetSecurityProfileSnapshot,Grants permission to return the details of a security profile snapshot,Read,SecurityProfile*,,
+12,ListDataSources,Grants permission to list existing data sources,List,,,
+13,ListEntitledSecurityProfileSnapshots,Grants permission to return the snapshot summary list for an existing security profile that requester is entitled to list,List,SecurityProfile*,,
+14,ListEntitledSecurityProfiles,Grants permission to list entitled security profiles,List,,,
+15,ListSecurityProfileSnapshots,Grants permission to return the snapshot summary list for an existing security profile,List,SecurityProfile*,,
+16,ListSecurityProfiles,Grants permission to list existing security profiles,List,,,
+17,UpdateSecurityProfile,Grants permission to update the security profile,Write,SecurityProfile*,,

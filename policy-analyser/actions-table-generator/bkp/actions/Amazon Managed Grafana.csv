@@ -1,0 +1,19 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,AssociateLicense,Grants permission to upgrade a workspace with a license,Write,workspace*,,aws-marketplace:ViewSubscriptions
+1,CreateWorkspace,Grants permission to create a workspace,Write,,aws:TagKeys  aws:RequestTag/${TagKey},organizations:DescribeOrganization  sso:CreateManagedApplicationInstance  sso:DescribeRegisteredRegions  sso:GetSharedSsoConfiguration
+2,CreateWorkspaceApiKey,Grants permission to create API keys for a workspace,Write,workspace*,,
+3,DeleteWorkspace,Grants permission to delete a workspace,Write,workspace*,,sso:DeleteManagedApplicationInstance
+4,DeleteWorkspaceApiKey,Grants permission to delete API keys from a workspace,Write,workspace*,,
+5,DescribeWorkspace,Grants permission to describe a workspace,Read,workspace*,,
+6,DescribeWorkspaceAuthentication,Grants permission to describe authentication providers on a workspace,Read,workspace*,,
+7,DisassociateLicense,Grants permission to remove a license from a workspace,Write,workspace*,,
+8,ListPermissions,Grants permission to list the permissions on a wokspace,List,workspace*,,
+9,ListTagsForResource,Grants permission to list tags associated with a workspace,Read,workspace,,
+10,ListWorkspaces,Grants permission to list workspaces,Read,,,
+11,TagResource,"Grants permission to add tags to, or update tag values of, a workspace",Tagging,workspace,,
+12,TagResource,"Grants permission to add tags to, or update tag values of, a workspace",Tagging,,aws:TagKeys  aws:RequestTag/${TagKey},
+13,UntagResource,Grants permission to remove tags from a workspace,Tagging,workspace,,
+14,UntagResource,Grants permission to remove tags from a workspace,Tagging,,aws:TagKeys  aws:RequestTag/${TagKey},
+15,UpdatePermissions,Grants permission to modify the permissions on a workspace,Permissions management,workspace*,,
+16,UpdateWorkspace,Grants permission to modify a workspace,Write,workspace*,,
+17,UpdateWorkspaceAuthentication,Grants permission to modify authentication providers on a workspace,Write,workspace*,,
