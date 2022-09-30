@@ -9,14 +9,21 @@ from datetime import datetime
 import os
 
 
+file_name = input("Enter policy file name (with extension): ")
 # Open JSON file containing the IAM Policy to be analysed
-with open("./policy-examples/policy-dynamodb.json", "r") as read_file:
+with open('./analyse-policy/'+file_name, "r") as read_file:
    iam_policy = json.load(read_file)
-
 
 # Open files on read mode
 # actions_table = open("./actions-table-generator/iam-actions-table.csv", "r")
 actions_critical = open("./actions-table-generator/iam-actions-critical.txt", "r")
+
+# Open JSON file containing Service Alias
+with open("./actions-table-generator/service_alias.json", "r") as read_file_alias:
+   service_alias = json.load(read_file_alias)
+# Open JSON file containing Service URLs
+with open("./actions-table-generator/service_urls.json", "r") as read_file_url:
+   service_urls = json.load(read_file_url)
 
 # Remove NewLine character at the end of each line in the iam-actions-critical.txt file
 list_temp = actions_critical.readlines()
@@ -31,9 +38,9 @@ date = datetime.now()
 timestamp = str(date)
 # Remove Miliseconds
 timestamp = timestamp[:-7]
-# Replace : with -
+# Replace char : with -
 timestamp = timestamp.replace(":", "-")
-# Replace ''(space) with _
+# Replace char ' '(space) with _
 timestamp = timestamp.replace(" ", "_")
 # print(timestamp)
 
@@ -51,8 +58,8 @@ with open(jsonFilePath, 'w') as jsonFile:
 
 # Create CSV File to store the critical actions found in the IAM policy
 policy_analyser_result = open("./policy-history/"+timestamp+"/policy-analyser-result.csv", "w")
-policy_analyser_result.write("StatementNumber;Action;AccessLevel;Resource;Description"+'\n')
-print("StatementNumber;Action;AccessLevel;Resource;Description")
+policy_analyser_result.write("StatementNumber;Action;AccessLevel;Resource;Description;Documentation"+'\n')
+print("StatementNumber;Action;AccessLevel;Resource;Description;Documentation")
 
 
 print("Critical Actions found in the IAM Policy:")
@@ -123,7 +130,7 @@ else:
                     stmt_error = "Statement "+str(i)
                     break
 
-            # Prepare regex on action_permission
+            # Prepare regex for action_permission
             # se tiver * no início, add ^. no início
             if re.match("\*",action_permission):
                 action_permission = "^." + action_permission
@@ -151,7 +158,7 @@ else:
                     if regex:
                         # Found a Critical Action
                         # print('\t' + critical_action)
-                        # open actions-table in read mode
+                        # open actions-table in read mode to get details about the action
                         with open("./actions-table-generator/iam-actions-table.csv", "r") as read_obj:
                             # pass the file object to DictReader() to get the DictReader object
                             csv_dict_reader = DictReader(read_obj,delimiter=";")
@@ -163,8 +170,18 @@ else:
                                     resource = row['Resource']
                                     description = row['Description']
 
-                                    print(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description)
-                                    policy_analyser_result.write(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description + '\n')
+                        # Get Service Web Documentation URL
+                        for name in service_alias:
+                            if service_alias[name] == critical_action_service:
+                                # Get Service Full Name
+                                service_name = name
+                                # Get Service URL
+                                for s_name in service_urls:
+                                    if s_name == service_name:
+                                        service_url = service_urls[s_name]
+
+                        print(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description +';'+ service_url)
+                        policy_analyser_result.write(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description +';'+ service_url + '\n')
 
         # Check if there was an error while getting the Action
         if error:
