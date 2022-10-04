@@ -1,4 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,DescribeBuilds [permission only],Describes Image Builds identified by a build Id,Read,,,
-1,ListBuilds [permission only],Lists Image Builds.,Read,,,
-2,StartBuild [permission only],Starts an Image Build,Write,,,

@@ -1,9 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,DeleteApp [permission only],Delete an application,Write,,,
-1,DescribeProvisionedApp [permission only],Describe provisioning applications,Read,,,
-2,DescribeProvisioningEvents [permission only],Describe provisioning events,Read,,,
-3,GetInfrastructureSuggestion [permission only],Get infrastructure suggestion,Read,,,
-4,GetIpAddress [permission only],Get customer's ip address,Read,,,
-5,GetResourceCostEstimate [permission only],Get resource cost estimate,Read,,,
-6,ListProvisionedApps [permission only],List provisioning applications,List,,,
-7,StartProvisioning [permission only],Start a provisioning,Write,,,

@@ -1,3 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,GenerateDataSet,Request a data set to be published to your Amazon S3 bucket.,Write,,,
-1,StartSupportDataExport,Request a support data set to be published to your Amazon S3 bucket.,Write,,,

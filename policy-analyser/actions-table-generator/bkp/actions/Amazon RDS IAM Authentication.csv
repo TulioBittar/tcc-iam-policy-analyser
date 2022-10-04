@@ -1,2 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,connect,Allows IAM role or user to connect to RDS database,Permissions management,db-user*,,

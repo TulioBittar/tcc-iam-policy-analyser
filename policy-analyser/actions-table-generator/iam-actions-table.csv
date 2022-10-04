@@ -876,13 +876,6 @@ AWS Batch;batch;UntagResource;batch:UntagResource;Grants permission to untag an 
 AWS Batch;batch;UpdateComputeEnvironment;batch:UpdateComputeEnvironment;Grants permission to update an AWS Batch compute environment in your account;Write;True
 AWS Batch;batch;UpdateJobQueue;batch:UpdateJobQueue;Grants permission to update an AWS Batch job queue in your account;Write;True
 AWS Batch;batch;UpdateSchedulingPolicy;batch:UpdateSchedulingPolicy;Grants permission to update an AWS Batch scheduling policy in your account;Write;True
-AWS Billing and Cost Management;aws-portal;ModifyAccount;aws-portal:ModifyAccount;Allow or deny IAM users permission to modify Account Settings;Write;False
-AWS Billing and Cost Management;aws-portal;ModifyBilling;aws-portal:ModifyBilling;Allow or deny IAM users permission to modify billing settings;Write;False
-AWS Billing and Cost Management;aws-portal;ModifyPaymentMethods;aws-portal:ModifyPaymentMethods;Allow or deny IAM users permission to modify payment methods;Write;False
-AWS Billing and Cost Management;aws-portal;ViewAccount;aws-portal:ViewAccount;Allow or deny IAM users permission to view account settings;Read;False
-AWS Billing and Cost Management;aws-portal;ViewBilling;aws-portal:ViewBilling;Allow or deny IAM users permission to view billing pages in the console;Read;False
-AWS Billing and Cost Management;aws-portal;ViewPaymentMethods;aws-portal:ViewPaymentMethods;Allow or deny IAM users permission to view payment methods;Read;False
-AWS Billing and Cost Management;aws-portal;ViewUsage;aws-portal:ViewUsage;Allow or deny IAM users permission to view AWS usage reports;Read;False
 AWS Billing and Cost Management ;billing;ListBillingViews;billing:ListBillingViews;Grants permission to get billing information for your proforma billing groups;Read;False
 AWS Billing Conductor;billingconductor;AssociateAccounts;billingconductor:AssociateAccounts;Grants permission to associate between one and 30 accounts to a billing group;Write;True
 AWS Billing Conductor;billingconductor;AssociatePricingRules;billingconductor:AssociatePricingRules;Grants permission to associate pricing rules;Write;True
@@ -914,6 +907,13 @@ AWS Billing Conductor;billingconductor;UpdateBillingGroup;billingconductor:Updat
 AWS Billing Conductor;billingconductor;UpdateCustomLineItem;billingconductor:UpdateCustomLineItem;Grants permission to update a custom line item;Write;True
 AWS Billing Conductor;billingconductor;UpdatePricingPlan;billingconductor:UpdatePricingPlan;Grants permission to update a pricing plan;Write;True
 AWS Billing Conductor;billingconductor;UpdatePricingRule;billingconductor:UpdatePricingRule;Grants permission to update a pricing rule;Write;True
+AWS Billing and Cost Management Console;aws-portal;ModifyAccount;aws-portal:ModifyAccount;Allow or deny IAM users permission to modify Account Settings;Write;False
+AWS Billing and Cost Management Console;aws-portal;ModifyBilling;aws-portal:ModifyBilling;Allow or deny IAM users permission to modify billing settings;Write;False
+AWS Billing and Cost Management Console;aws-portal;ModifyPaymentMethods;aws-portal:ModifyPaymentMethods;Allow or deny IAM users permission to modify payment methods;Write;False
+AWS Billing and Cost Management Console;aws-portal;ViewAccount;aws-portal:ViewAccount;Allow or deny IAM users permission to view account settings;Read;False
+AWS Billing and Cost Management Console;aws-portal;ViewBilling;aws-portal:ViewBilling;Allow or deny IAM users permission to view billing pages in the console;Read;False
+AWS Billing and Cost Management Console;aws-portal;ViewPaymentMethods;aws-portal:ViewPaymentMethods;Allow or deny IAM users permission to view payment methods;Read;False
+AWS Billing and Cost Management Console;aws-portal;ViewUsage;aws-portal:ViewUsage;Allow or deny IAM users permission to view AWS usage reports;Read;False
 Amazon Braket;braket;CancelJob;braket:CancelJob;Grants permission to cancel a job;Write;True
 Amazon Braket;braket;CancelQuantumTask;braket:CancelQuantumTask;Grants permission to cancel a quantum task;Write;True
 Amazon Braket;braket;CreateJob;braket:CreateJob;Grants permission to create a job;Write;False
@@ -1045,6 +1045,8 @@ Amazon Chime;chime;CreateChannelFlow;chime:CreateChannelFlow;Grants permission t
 Amazon Chime;chime;CreateChannelMembership;chime:CreateChannelMembership;Grants permission to add a user to a channel;Write;True
 Amazon Chime;chime;CreateChannelModerator;chime:CreateChannelModerator;Grants permission to create a channel moderator;Write;True
 Amazon Chime;chime;CreateMediaCapturePipeline;chime:CreateMediaCapturePipeline;Grants permission to create a media capture pipeline;Write;False
+Amazon Chime;chime;CreateMediaConcatenationPipeline;chime:CreateMediaConcatenationPipeline;Grants permission to create a media concatenation pipeline;Write;False
+Amazon Chime;chime;CreateMediaLiveConnectorPipeline;chime:CreateMediaLiveConnectorPipeline;Grants permission to create a media live connector pipeline;Write;False
 Amazon Chime;chime;CreateMeeting;chime:CreateMeeting;Grants permission to create a new Amazon Chime SDK meeting in the specified media Region, with no initial attendees;Write;False
 Amazon Chime;chime;CreateMeetingDialOut;chime:CreateMeetingDialOut;Grants permission to call a phone number to join the specified Amazon Chime SDK meeting;Write;True
 Amazon Chime;chime;CreateMeetingWithAttendees;chime:CreateMeetingWithAttendees;Grants permission to create a new Amazon Chime SDK meeting in the specified media Region, with a set of attendees;Write;False
@@ -1078,6 +1080,7 @@ Amazon Chime;chime;DeleteDomain;chime:DeleteDomain;Grants permission to delete a
 Amazon Chime;chime;DeleteEventsConfiguration;chime:DeleteEventsConfiguration;Grants permission to delete an events configuration for a bot to receive outgoing events;Write;False
 Amazon Chime;chime;DeleteGroups;chime:DeleteGroups;Grants permission to delete Active Directory or Okta user groups from your Amazon Chime Enterprise account;Write;False
 Amazon Chime;chime;DeleteMediaCapturePipeline;chime:DeleteMediaCapturePipeline;Grants permission to delete a media capture pipeline;Write;True
+Amazon Chime;chime;DeleteMediaPipeline;chime:DeleteMediaPipeline;Grants permission to delete a media pipeline;Write;True
 Amazon Chime;chime;DeleteMeeting;chime:DeleteMeeting;Grants permission to delete the specified Amazon Chime SDK meeting;Write;True
 Amazon Chime;chime;DeletePhoneNumber;chime:DeletePhoneNumber;Grants permission to move a phone number to the deletion queue;Write;False
 Amazon Chime;chime;DeleteProxySession;chime:DeleteProxySession;Grants permission to delete a proxy session for the specified Amazon Chime Voice Connector;Write;False
@@ -1127,6 +1130,7 @@ Amazon Chime;chime;GetDomain;chime:GetDomain;Grants permission to get domain det
 Amazon Chime;chime;GetEventsConfiguration;chime:GetEventsConfiguration;Grants permission to retrieve details for an events configuration for a bot to receive outgoing events;Read;False
 Amazon Chime;chime;GetGlobalSettings;chime:GetGlobalSettings;Grants permission to get global settings related to Amazon Chime for the AWS account;Read;False
 Amazon Chime;chime;GetMediaCapturePipeline;chime:GetMediaCapturePipeline;Grants permission to get an existing media capture pipeline;Read;True
+Amazon Chime;chime;GetMediaPipeline;chime:GetMediaPipeline;Grants permission to get an existing media pipeline;Read;True
 Amazon Chime;chime;GetMeeting;chime:GetMeeting;Grants permission to get the meeting record for a specified meeting ID;Read;True
 Amazon Chime;chime;GetMeetingDetail;chime:GetMeetingDetail;Grants permission to get attendee, connection, and other details for a meeting;Read;False
 Amazon Chime;chime;GetMessagingSessionEndpoint;chime:GetMessagingSessionEndpoint;Grants permission to get the endpoint for the messaging session;Read;False
@@ -1175,13 +1179,14 @@ Amazon Chime;chime;ListChannelMembershipsForAppInstanceUser;chime:ListChannelMem
 Amazon Chime;chime;ListChannelMessages;chime:ListChannelMessages;Grants permission to list all the messages in a channel;Read;True
 Amazon Chime;chime;ListChannelModerators;chime:ListChannelModerators;Grants permission to list all the moderators for a channel;List;True
 Amazon Chime;chime;ListChannels;chime:ListChannels;Grants permission to list all the Channels created under a single Chime AppInstance;List;True
-Amazon Chime;chime;ListChannelsAssociatedWithChannelFlow;chime:ListChannelsAssociatedWithChannelFlow;Grants permission to list all the Channel Flows created under a single Chime AppInstance;List;True
+Amazon Chime;chime;ListChannelsAssociatedWithChannelFlow;chime:ListChannelsAssociatedWithChannelFlow;Grants permission to list all the Channels associated with a single Chime Channel Flow;List;True
 Amazon Chime;chime;ListChannelsModeratedByAppInstanceUser;chime:ListChannelsModeratedByAppInstanceUser;Grants permission to list all channels moderated by an app instance user;List;True
 Amazon Chime;chime;ListDelegates;chime:ListDelegates;Grants permission to list account delegate information associated with your Amazon Chime account;List;False
 Amazon Chime;chime;ListDirectories;chime:ListDirectories;Grants permission to list active Active Directories hosted in the Directory Service of your AWS account;List;False
 Amazon Chime;chime;ListDomains;chime:ListDomains;Grants permission to list domains associated with your Amazon Chime account;List;False
 Amazon Chime;chime;ListGroups;chime:ListGroups;Grants permission to list Active Directory or Okta user groups associated with your Amazon Chime Enterprise account;List;False
 Amazon Chime;chime;ListMediaCapturePipelines;chime:ListMediaCapturePipelines;Grants permission to list media capture pipelines;List;False
+Amazon Chime;chime;ListMediaPipelines;chime:ListMediaPipelines;Grants permission to list media pipelines;List;False
 Amazon Chime;chime;ListMeetingEvents;chime:ListMeetingEvents;Grants permission to list all events that occurred for a specified meeting;List;False
 Amazon Chime;chime;ListMeetingTags;chime:ListMeetingTags;Grants permission to list the tags applied to an Amazon Chime SDK meeting resource;List;True
 Amazon Chime;chime;ListMeetings;chime:ListMeetings;Grants permission to list up to 100 active Amazon Chime SDK meetings;List;False
@@ -1193,6 +1198,7 @@ Amazon Chime;chime;ListRoomMemberships;chime:ListRoomMemberships;Grants permissi
 Amazon Chime;chime;ListRooms;chime:ListRooms;Grants permission to list rooms;List;False
 Amazon Chime;chime;ListSipMediaApplications;chime:ListSipMediaApplications;Grants permission to list all Amazon Chime SIP media applications under the administrator's AWS account;List;False
 Amazon Chime;chime;ListSipRules;chime:ListSipRules;Grants permission to list all Amazon Chime SIP rules under the administrator's AWS account;List;False
+Amazon Chime;chime;ListSubChannels;chime:ListSubChannels;Grants permission to list all the SubChannels under a single Channel;List;True
 Amazon Chime;chime;ListSupportedPhoneNumberCountries;chime:ListSupportedPhoneNumberCountries;Grants permission to list the phone number countries supported by the AWS account;List;False
 Amazon Chime;chime;ListTagsForResource;chime:ListTagsForResource;Grants permission to list the tags applied to an Amazon Chime resource;Read;True
 Amazon Chime;chime;ListUsers;chime:ListUsers;Grants permission to list the users that belong to the specified Amazon Chime account;List;False
@@ -1636,8 +1642,10 @@ AWS CloudShell;cloudshell;StopEnvironment [permission only];cloudshell:StopEnvir
 AWS CloudTrail;cloudtrail;AddTags;cloudtrail:AddTags;Grants permission to add one or more tags to a trail, up to a limit of 10;Tagging;True
 AWS CloudTrail;cloudtrail;CancelQuery;cloudtrail:CancelQuery;Grants permission to cancel a running query;Write;False
 AWS CloudTrail;cloudtrail;CreateEventDataStore;cloudtrail:CreateEventDataStore;Grants permission to create an event data store;Write;True
+AWS CloudTrail;cloudtrail;CreateServiceLinkedChannel [permission only];cloudtrail:CreateServiceLinkedChannel [permission only];Grants permission to create a service-linked channel that specifies the settings for delivery of log data to an AWS service;Write;True
 AWS CloudTrail;cloudtrail;CreateTrail;cloudtrail:CreateTrail;Grants permission to create a trail that specifies the settings for delivery of log data to an Amazon S3 bucket;Write;True
 AWS CloudTrail;cloudtrail;DeleteEventDataStore;cloudtrail:DeleteEventDataStore;Grants permission to delete an event data store;Write;True
+AWS CloudTrail;cloudtrail;DeleteServiceLinkedChannel [permission only];cloudtrail:DeleteServiceLinkedChannel [permission only];Grants permission to delete a service-linked channel;Write;True
 AWS CloudTrail;cloudtrail;DeleteTrail;cloudtrail:DeleteTrail;Grants permission to delete a trail;Write;True
 AWS CloudTrail;cloudtrail;DescribeQuery;cloudtrail:DescribeQuery;Grants permission to list details for the query;Read;False
 AWS CloudTrail;cloudtrail;DescribeTrails;cloudtrail:DescribeTrails;Grants permission to list settings for the trails associated with the current region for your account;Read;False
@@ -1645,11 +1653,13 @@ AWS CloudTrail;cloudtrail;GetEventDataStore;cloudtrail:GetEventDataStore;Grants 
 AWS CloudTrail;cloudtrail;GetEventSelectors;cloudtrail:GetEventSelectors;Grants permission to list settings for event selectors configured for a trail;Read;True
 AWS CloudTrail;cloudtrail;GetInsightSelectors;cloudtrail:GetInsightSelectors;Grants permission to list CloudTrail Insights selectors that are configured for a trail;Read;True
 AWS CloudTrail;cloudtrail;GetQueryResults;cloudtrail:GetQueryResults;Grants permission to fetch results of a complete query;Read;False
+AWS CloudTrail;cloudtrail;GetServiceLinkedChannel [permission only];cloudtrail:GetServiceLinkedChannel [permission only];Grants permission to list settings for the service-linked channel;Read;True
 AWS CloudTrail;cloudtrail;GetTrail;cloudtrail:GetTrail;Grants permission to list settings for the trail;Read;False
 AWS CloudTrail;cloudtrail;GetTrailStatus;cloudtrail:GetTrailStatus;Grants permission to retrieve a JSON-formatted list of information about the specified trail;Read;True
 AWS CloudTrail;cloudtrail;ListEventDataStores;cloudtrail:ListEventDataStores;Grants permission to list event data stores associated with the current region for your account;List;False
 AWS CloudTrail;cloudtrail;ListPublicKeys;cloudtrail:ListPublicKeys;Grants permission to list the public keys whose private keys were used to sign trail digest files within a specified time range;Read;False
 AWS CloudTrail;cloudtrail;ListQueries;cloudtrail:ListQueries;Grants permission to list queries associated with an event data store;List;False
+AWS CloudTrail;cloudtrail;ListServiceLinkedChannels [permission only];cloudtrail:ListServiceLinkedChannels [permission only];Grants permission to list service-linked channels associated with the current region for a specified account;List;False
 AWS CloudTrail;cloudtrail;ListTags;cloudtrail:ListTags;Grants permission to list the tags for trails or event data stores in the current region;Read;True
 AWS CloudTrail;cloudtrail;ListTrails;cloudtrail:ListTrails;Grants permission to list trails associated with the current region for your account;List;False
 AWS CloudTrail;cloudtrail;LookupEvents;cloudtrail:LookupEvents;Grants permission to look up API activity events captured by CloudTrail that create, update, or delete resources in your account;Read;False
@@ -1661,6 +1671,7 @@ AWS CloudTrail;cloudtrail;StartLogging;cloudtrail:StartLogging;Grants permission
 AWS CloudTrail;cloudtrail;StartQuery;cloudtrail:StartQuery;Grants permission to start a new query on a specified event data store;Write;False
 AWS CloudTrail;cloudtrail;StopLogging;cloudtrail:StopLogging;Grants permission to stop the recording of AWS API calls and log file delivery for a trail;Write;True
 AWS CloudTrail;cloudtrail;UpdateEventDataStore;cloudtrail:UpdateEventDataStore;Grants permission to update an event data store;Write;True
+AWS CloudTrail;cloudtrail;UpdateServiceLinkedChannel [permission only];cloudtrail:UpdateServiceLinkedChannel [permission only];Grants permission to update the settings that specify delivery of log files;Write;True
 AWS CloudTrail;cloudtrail;UpdateTrail;cloudtrail:UpdateTrail;Grants permission to update the settings that specify delivery of log files;Write;True
 Amazon CloudWatch;cloudwatch;DeleteAlarms;cloudwatch:DeleteAlarms;Grants permission to delete a collection of alarms;Write;True
 Amazon CloudWatch;cloudwatch;DeleteAnomalyDetector;cloudwatch:DeleteAnomalyDetector;Grants permission to delete the specified anomaly detection model from your account;Write;False
@@ -1732,28 +1743,34 @@ Amazon CloudWatch Evidently;evidently;CreateExperiment;evidently:CreateExperimen
 Amazon CloudWatch Evidently;evidently;CreateFeature;evidently:CreateFeature;Grants permission to create a feature;Write;False
 Amazon CloudWatch Evidently;evidently;CreateLaunch;evidently:CreateLaunch;Grants permission to create a launch;Write;False
 Amazon CloudWatch Evidently;evidently;CreateProject;evidently:CreateProject;Grants permission to create a project;Write;False
+Amazon CloudWatch Evidently;evidently;CreateSegment;evidently:CreateSegment;Grants permission to create a segment;Write;False
 Amazon CloudWatch Evidently;evidently;DeleteExperiment;evidently:DeleteExperiment;Grants permission to delete an experiment;Write;True
 Amazon CloudWatch Evidently;evidently;DeleteFeature;evidently:DeleteFeature;Grants permission to delete a feature;Write;True
 Amazon CloudWatch Evidently;evidently;DeleteLaunch;evidently:DeleteLaunch;Grants permission to delete a launch;Write;True
 Amazon CloudWatch Evidently;evidently;DeleteProject;evidently:DeleteProject;Grants permission to delete a project;Write;True
+Amazon CloudWatch Evidently;evidently;DeleteSegment;evidently:DeleteSegment;Grants permission to delete a segment;Write;True
 Amazon CloudWatch Evidently;evidently;EvaluateFeature;evidently:EvaluateFeature;Grants permission to send an evaluate feature request;Write;True
 Amazon CloudWatch Evidently;evidently;GetExperiment;evidently:GetExperiment;Grants permission to get experiment details;Read;True
 Amazon CloudWatch Evidently;evidently;GetExperimentResults;evidently:GetExperimentResults;Grants permission to get experiment result;Read;True
 Amazon CloudWatch Evidently;evidently;GetFeature;evidently:GetFeature;Grants permission to get feature details;Read;True
 Amazon CloudWatch Evidently;evidently;GetLaunch;evidently:GetLaunch;Grants permission to get launch details;Read;True
 Amazon CloudWatch Evidently;evidently;GetProject;evidently:GetProject;Grants permission to get project details;Read;True
+Amazon CloudWatch Evidently;evidently;GetSegment;evidently:GetSegment;Grants permission to get segment details;Read;True
 Amazon CloudWatch Evidently;evidently;ListExperiments;evidently:ListExperiments;Grants permission to list experiments;Read;False
 Amazon CloudWatch Evidently;evidently;ListFeatures;evidently:ListFeatures;Grants permission to list features;Read;False
 Amazon CloudWatch Evidently;evidently;ListLaunches;evidently:ListLaunches;Grants permission to list launches;Read;False
 Amazon CloudWatch Evidently;evidently;ListProjects;evidently:ListProjects;Grants permission to list projects;Read;False
+Amazon CloudWatch Evidently;evidently;ListSegmentReferences;evidently:ListSegmentReferences;Grants permission to list resources referencing a segment;Read;False
+Amazon CloudWatch Evidently;evidently;ListSegments;evidently:ListSegments;Grants permission to list segments;Read;False
 Amazon CloudWatch Evidently;evidently;ListTagsForResource;evidently:ListTagsForResource;Grants permission to list tags for resources;Read;False
 Amazon CloudWatch Evidently;evidently;PutProjectEvents;evidently:PutProjectEvents;Grants permission to send performance events;Write;True
 Amazon CloudWatch Evidently;evidently;StartExperiment;evidently:StartExperiment;Grants permission to start an experiment;Write;True
 Amazon CloudWatch Evidently;evidently;StartLaunch;evidently:StartLaunch;Grants permission to start a launch;Write;True
 Amazon CloudWatch Evidently;evidently;StopExperiment;evidently:StopExperiment;Grants permission to stop an experiment;Write;True
 Amazon CloudWatch Evidently;evidently;StopLaunch;evidently:StopLaunch;Grants permission to stop a launch;Write;True
-Amazon CloudWatch Evidently;evidently;TagResource;evidently:TagResource;Grants permission to tag resources;Tagging;False
-Amazon CloudWatch Evidently;evidently;UntagResource;evidently:UntagResource;Grants permission to untag resources;Tagging;False
+Amazon CloudWatch Evidently;evidently;TagResource;evidently:TagResource;Grants permission to tag resources;Tagging;True
+Amazon CloudWatch Evidently;evidently;TestSegmentPattern;evidently:TestSegmentPattern;Grants permission to test a segment pattern;Read;False
+Amazon CloudWatch Evidently;evidently;UntagResource;evidently:UntagResource;Grants permission to untag resources;Tagging;True
 Amazon CloudWatch Evidently;evidently;UpdateExperiment;evidently:UpdateExperiment;Grants permission to update experiment;Write;True
 Amazon CloudWatch Evidently;evidently;UpdateFeature;evidently:UpdateFeature;Grants permission to update feature;Write;True
 Amazon CloudWatch Evidently;evidently;UpdateLaunch;evidently:UpdateLaunch;Grants permission to update a launch;Write;True
@@ -2358,6 +2375,7 @@ Amazon Comprehend;comprehend;BatchDetectEntities;comprehend:BatchDetectEntities;
 Amazon Comprehend;comprehend;BatchDetectKeyPhrases;comprehend:BatchDetectKeyPhrases;Grants permission to detect the phrases in the list of text documents that are most indicative of the content;Read;False
 Amazon Comprehend;comprehend;BatchDetectSentiment;comprehend:BatchDetectSentiment;Grants permission to detect the sentiment of a text in the list of documents (Positive, Negative, Neutral, or Mixed);Read;False
 Amazon Comprehend;comprehend;BatchDetectSyntax;comprehend:BatchDetectSyntax;Grants permission to detect syntactic information (like Part of Speech, Tokens) in a list of text documents;Read;False
+Amazon Comprehend;comprehend;BatchDetectTargetedSentiment;comprehend:BatchDetectTargetedSentiment;Grants permission to detect the sentiments associated with specific entities (such as brands or products) within the given list of text documents;Read;False
 Amazon Comprehend;comprehend;ClassifyDocument;comprehend:ClassifyDocument;Grants permission to create a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint;Read;True
 Amazon Comprehend;comprehend;ContainsPiiEntities;comprehend:ContainsPiiEntities;Grants permission to classify the personally identifiable information within given documents in real-time;Read;False
 Amazon Comprehend;comprehend;CreateDocumentClassifier;comprehend:CreateDocumentClassifier;Grants permission to create a new document classifier that you can use to categorize documents;Write;True
@@ -2386,6 +2404,7 @@ Amazon Comprehend;comprehend;DetectKeyPhrases;comprehend:DetectKeyPhrases;Grants
 Amazon Comprehend;comprehend;DetectPiiEntities;comprehend:DetectPiiEntities;Grants permission to detect the personally identifiable information entities ("Name", "SSN", "PIN", etc) within the given text document;Read;False
 Amazon Comprehend;comprehend;DetectSentiment;comprehend:DetectSentiment;Grants permission to detect the sentiment of a text in a document (Positive, Negative, Neutral, or Mixed);Read;False
 Amazon Comprehend;comprehend;DetectSyntax;comprehend:DetectSyntax;Grants permission to detect syntactic information (like Part of Speech, Tokens) in a text document;Read;False
+Amazon Comprehend;comprehend;DetectTargetedSentiment;comprehend:DetectTargetedSentiment;Grants permission to detect the sentiments associated with specific entities (such as brands or products) in a document;Read;False
 Amazon Comprehend;comprehend;ImportModel;comprehend:ImportModel;Grants permission to import a trained Comprehend model;Write;True
 Amazon Comprehend;comprehend;ListDocumentClassificationJobs;comprehend:ListDocumentClassificationJobs;Grants permission to get a list of the document classification jobs that you have submitted;Read;False
 Amazon Comprehend;comprehend;ListDocumentClassifierSummaries;comprehend:ListDocumentClassifierSummaries;Grants permission to get a list of summaries of the document classifiers that you have created;Read;False
@@ -2728,8 +2747,10 @@ Amazon Connect Cases;cases;GetDomain;cases:GetDomain;Grants permission to retrie
 Amazon Connect Cases;cases;GetLayout;cases:GetLayout;Grants permission to retrieve information about the layout in the case domain;Read;True
 Amazon Connect Cases;cases;GetTemplate;cases:GetTemplate;Grants permission to retrieve information about the template in the case domain;Read;True
 Amazon Connect Cases;cases;ListCasesForContact;cases:ListCasesForContact;Grants permission to list cases for a specific contact in the case domain;List;True
+Amazon Connect Cases;cases;ListDomains;cases:ListDomains;Grants permission to list all domains in the aws account;List;False
 Amazon Connect Cases;cases;ListFieldOptions;cases:ListFieldOptions;Grants permission to list field options for a single select field in the case domain;List;True
 Amazon Connect Cases;cases;ListFields;cases:ListFields;Grants permission to list fields in the case domain;List;True
+Amazon Connect Cases;cases;ListLayouts;cases:ListLayouts;Grants permission to list layouts in the case domain;List;True
 Amazon Connect Cases;cases;ListTagsForResource;cases:ListTagsForResource;Grants permission to list the tags for the specified resource;Read;False
 Amazon Connect Cases;cases;ListTemplates;cases:ListTemplates;Grants permission to list templates in the case domain;List;True
 Amazon Connect Cases;cases;PutCaseEventConfiguration;cases:PutCaseEventConfiguration;Grants permission to insert or update the case event configuration in the case domain;Write;True
@@ -2742,7 +2763,7 @@ Amazon Connect Cases;cases;UpdateField;cases:UpdateField;Grants permission to up
 Amazon Connect Cases;cases;UpdateLayout;cases:UpdateLayout;Grants permission to update the layout in the case domain;Write;True
 Amazon Connect Cases;cases;UpdateTemplate;cases:UpdateTemplate;Grants permission to update the template in the case domain;Write;True
 Amazon Connect Customer Profiles;profile;AddProfileKey;profile:AddProfileKey;Grants permission to add a profile key;Write;True
-Amazon Connect Customer Profiles;profile;CreateDomain;profile:CreateDomain;Grants permission to create a Domain;Write;False
+Amazon Connect Customer Profiles;profile;CreateDomain;profile:CreateDomain;Grants permission to create a Domain;Write;True
 Amazon Connect Customer Profiles;profile;CreateIntegrationWorkflow;profile:CreateIntegrationWorkflow;Grants permission to create an integration workflow in a domain;Write;True
 Amazon Connect Customer Profiles;profile;CreateProfile;profile:CreateProfile;Grants permission to create a profile in the domain;Write;True
 Amazon Connect Customer Profiles;profile;DeleteDomain;profile:DeleteDomain;Grants permission to delete a Domain;Write;True
@@ -3005,6 +3026,7 @@ AWS Database Migration Service;dms;DescribeEventCategories;dms:DescribeEventCate
 AWS Database Migration Service;dms;DescribeEventSubscriptions;dms:DescribeEventSubscriptions;Grants permission to list all the event subscriptions for a customer account;Read;False
 AWS Database Migration Service;dms;DescribeEvents;dms:DescribeEvents;Grants permission to list events for a given source identifier and source type;Read;False
 AWS Database Migration Service;dms;DescribeOrderableReplicationInstances;dms:DescribeOrderableReplicationInstances;Grants permission to return information about the replication instance types that can be created in the specified region;Read;False
+AWS Database Migration Service;dms;DescribePendingMaintenanceActions;dms:DescribePendingMaintenanceActions;Grants permission to return information about pending maintenance actions;Read;False
 AWS Database Migration Service;dms;DescribeRefreshSchemasStatus;dms:DescribeRefreshSchemasStatus;Grants permission to returns the status of the RefreshSchemas operation;Read;True
 AWS Database Migration Service;dms;DescribeReplicationInstanceTaskLogs;dms:DescribeReplicationInstanceTaskLogs;Grants permission to return information about the task logs for the specified task;Read;True
 AWS Database Migration Service;dms;DescribeReplicationInstances;dms:DescribeReplicationInstances;Grants permission to return information about replication instances for your account in the current region;Read;False
@@ -3762,14 +3784,14 @@ Amazon EC2;ec2;DescribeConversionTasks;ec2:DescribeConversionTasks;Grants permis
 Amazon EC2;ec2;DescribeCustomerGateways;ec2:DescribeCustomerGateways;Grants permission to describe one or more customer gateways;List;False
 Amazon EC2;ec2;DescribeDhcpOptions;ec2:DescribeDhcpOptions;Grants permission to describe one or more DHCP options sets;List;False
 Amazon EC2;ec2;DescribeEgressOnlyInternetGateways;ec2:DescribeEgressOnlyInternetGateways;Grants permission to describe one or more egress-only internet gateways;List;False
-Amazon EC2;ec2;DescribeElasticGpus;ec2:DescribeElasticGpus;Grants permission to describe an Elastic Graphics accelerator that is associated with an instance;Read;False
+Amazon EC2;ec2;DescribeElasticGpus;ec2:DescribeElasticGpus;Grants permission to describe an Elastic Graphics accelerator that is associated with an instance;List;False
 Amazon EC2;ec2;DescribeExportImageTasks;ec2:DescribeExportImageTasks;Grants permission to describe one or more export image tasks;List;False
 Amazon EC2;ec2;DescribeExportTasks;ec2:DescribeExportTasks;Grants permission to describe one or more export instance tasks;List;False
-Amazon EC2;ec2;DescribeFastLaunchImages;ec2:DescribeFastLaunchImages;Grants permission to describe fast-launch enabled Windows AMIs;Read;True
-Amazon EC2;ec2;DescribeFastSnapshotRestores;ec2:DescribeFastSnapshotRestores;Grants permission to describe the state of fast snapshot restores for snapshots;Read;False
+Amazon EC2;ec2;DescribeFastLaunchImages;ec2:DescribeFastLaunchImages;Grants permission to describe fast-launch enabled Windows AMIs;List;True
+Amazon EC2;ec2;DescribeFastSnapshotRestores;ec2:DescribeFastSnapshotRestores;Grants permission to describe the state of fast snapshot restores for snapshots;List;False
 Amazon EC2;ec2;DescribeFleetHistory;ec2:DescribeFleetHistory;Grants permission to describe the events for an EC2 Fleet during a specified time;List;True
 Amazon EC2;ec2;DescribeFleetInstances;ec2:DescribeFleetInstances;Grants permission to describe the running instances for an EC2 Fleet;List;True
-Amazon EC2;ec2;DescribeFleets;ec2:DescribeFleets;Grants permission to describe one or more EC2 Fleets;List;True
+Amazon EC2;ec2;DescribeFleets;ec2:DescribeFleets;Grants permission to describe one or more EC2 Fleets;List;False
 Amazon EC2;ec2;DescribeFlowLogs;ec2:DescribeFlowLogs;Grants permission to describe one or more flow logs;List;False
 Amazon EC2;ec2;DescribeFpgaImageAttribute;ec2:DescribeFpgaImageAttribute;Grants permission to describe the attributes of an Amazon FPGA Image (AFI);List;True
 Amazon EC2;ec2;DescribeFpgaImages;ec2:DescribeFpgaImages;Grants permission to describe one or more Amazon FPGA Images (AFIs);List;False
@@ -3828,8 +3850,8 @@ Amazon EC2;ec2;DescribeReservedInstancesListings;ec2:DescribeReservedInstancesLi
 Amazon EC2;ec2;DescribeReservedInstancesModifications;ec2:DescribeReservedInstancesModifications;Grants permission to describe the modifications made to one or more Reserved Instances;List;False
 Amazon EC2;ec2;DescribeReservedInstancesOfferings;ec2:DescribeReservedInstancesOfferings;Grants permission to describe the Reserved Instance offerings that are available for purchase;List;False
 Amazon EC2;ec2;DescribeRouteTables;ec2:DescribeRouteTables;Grants permission to describe one or more route tables;List;False
-Amazon EC2;ec2;DescribeScheduledInstanceAvailability;ec2:DescribeScheduledInstanceAvailability;Grants permission to find available schedules for Scheduled Instances;Read;False
-Amazon EC2;ec2;DescribeScheduledInstances;ec2:DescribeScheduledInstances;Grants permission to describe one or more Scheduled Instances in your account;Read;False
+Amazon EC2;ec2;DescribeScheduledInstanceAvailability;ec2:DescribeScheduledInstanceAvailability;Grants permission to find available schedules for Scheduled Instances;List;False
+Amazon EC2;ec2;DescribeScheduledInstances;ec2:DescribeScheduledInstances;Grants permission to describe one or more Scheduled Instances in your account;List;False
 Amazon EC2;ec2;DescribeSecurityGroupReferences;ec2:DescribeSecurityGroupReferences;Grants permission to describe the VPCs on the other side of a VPC peering connection that are referencing specified VPC security groups;List;False
 Amazon EC2;ec2;DescribeSecurityGroupRules;ec2:DescribeSecurityGroupRules;Grants permission to describe one or more of your security group rules;List;False
 Amazon EC2;ec2;DescribeSecurityGroups;ec2:DescribeSecurityGroups;Grants permission to describe one or more security groups;List;False
@@ -3845,7 +3867,7 @@ Amazon EC2;ec2;DescribeSpotPriceHistory;ec2:DescribeSpotPriceHistory;Grants perm
 Amazon EC2;ec2;DescribeStaleSecurityGroups;ec2:DescribeStaleSecurityGroups;Grants permission to describe the stale security group rules for security groups in a specified VPC;List;False
 Amazon EC2;ec2;DescribeStoreImageTasks;ec2:DescribeStoreImageTasks;Grants permission to describe the progress of the AMI store tasks;List;True
 Amazon EC2;ec2;DescribeSubnets;ec2:DescribeSubnets;Grants permission to describe one or more subnets;List;False
-Amazon EC2;ec2;DescribeTags;ec2:DescribeTags;Grants permission to describe one or more tags for an Amazon EC2 resource;Read;False
+Amazon EC2;ec2;DescribeTags;ec2:DescribeTags;Grants permission to describe one or more tags for an Amazon EC2 resource;List;False
 Amazon EC2;ec2;DescribeTrafficMirrorFilters;ec2:DescribeTrafficMirrorFilters;Grants permission to describe one or more traffic mirror filters;List;False
 Amazon EC2;ec2;DescribeTrafficMirrorSessions;ec2:DescribeTrafficMirrorSessions;Grants permission to describe one or more traffic mirror sessions;List;False
 Amazon EC2;ec2;DescribeTrafficMirrorTargets;ec2:DescribeTrafficMirrorTargets;Grants permission to describe one or more traffic mirror targets;List;False
@@ -3854,8 +3876,8 @@ Amazon EC2;ec2;DescribeTransitGatewayConnectPeers;ec2:DescribeTransitGatewayConn
 Amazon EC2;ec2;DescribeTransitGatewayConnects;ec2:DescribeTransitGatewayConnects;Grants permission to describe one or more transit gateway connect attachments;List;False
 Amazon EC2;ec2;DescribeTransitGatewayMulticastDomains;ec2:DescribeTransitGatewayMulticastDomains;Grants permission to describe one or more transit gateway multicast domains;List;False
 Amazon EC2;ec2;DescribeTransitGatewayPeeringAttachments;ec2:DescribeTransitGatewayPeeringAttachments;Grants permission to describe one or more transit gateway peering attachments;List;False
-Amazon EC2;ec2;DescribeTransitGatewayPolicyTables;ec2:DescribeTransitGatewayPolicyTables;Grants permission to describe a transit gateway policy table;Write;False
-Amazon EC2;ec2;DescribeTransitGatewayRouteTableAnnouncements;ec2:DescribeTransitGatewayRouteTableAnnouncements;Grants permission to describe a transit gateway route table announcement;Write;False
+Amazon EC2;ec2;DescribeTransitGatewayPolicyTables;ec2:DescribeTransitGatewayPolicyTables;Grants permission to describe a transit gateway policy table;List;False
+Amazon EC2;ec2;DescribeTransitGatewayRouteTableAnnouncements;ec2:DescribeTransitGatewayRouteTableAnnouncements;Grants permission to describe a transit gateway route table announcement;List;False
 Amazon EC2;ec2;DescribeTransitGatewayRouteTables;ec2:DescribeTransitGatewayRouteTables;Grants permission to describe one or more transit gateway route tables;List;False
 Amazon EC2;ec2;DescribeTransitGatewayVpcAttachments;ec2:DescribeTransitGatewayVpcAttachments;Grants permission to describe one or more VPC attachments on a transit gateway;List;False
 Amazon EC2;ec2;DescribeTransitGateways;ec2:DescribeTransitGateways;Grants permission to describe one or more transit gateways;List;False
@@ -3863,7 +3885,7 @@ Amazon EC2;ec2;DescribeTrunkInterfaceAssociations;ec2:DescribeTrunkInterfaceAsso
 Amazon EC2;ec2;DescribeVolumeAttribute;ec2:DescribeVolumeAttribute;Grants permission to describe an attribute of an EBS volume;List;True
 Amazon EC2;ec2;DescribeVolumeStatus;ec2:DescribeVolumeStatus;Grants permission to describe the status of one or more EBS volumes;List;False
 Amazon EC2;ec2;DescribeVolumes;ec2:DescribeVolumes;Grants permission to describe one or more EBS volumes;List;False
-Amazon EC2;ec2;DescribeVolumesModifications;ec2:DescribeVolumesModifications;Grants permission to describe the current modification status of one or more EBS volumes;Read;False
+Amazon EC2;ec2;DescribeVolumesModifications;ec2:DescribeVolumesModifications;Grants permission to describe the current modification status of one or more EBS volumes;List;False
 Amazon EC2;ec2;DescribeVpcAttribute;ec2:DescribeVpcAttribute;Grants permission to describe an attribute of a VPC;List;True
 Amazon EC2;ec2;DescribeVpcClassicLink;ec2:DescribeVpcClassicLink;Grants permission to describe the ClassicLink status of one or more VPCs;List;False
 Amazon EC2;ec2;DescribeVpcClassicLinkDnsSupport;ec2:DescribeVpcClassicLinkDnsSupport;Grants permission to describe the ClassicLink DNS support status of one or more VPCs;List;False
@@ -3875,7 +3897,7 @@ Amazon EC2;ec2;DescribeVpcEndpointServices;ec2:DescribeVpcEndpointServices;Grant
 Amazon EC2;ec2;DescribeVpcEndpoints;ec2:DescribeVpcEndpoints;Grants permission to describe one or more VPC endpoints;List;False
 Amazon EC2;ec2;DescribeVpcPeeringConnections;ec2:DescribeVpcPeeringConnections;Grants permission to describe one or more VPC peering connections;List;False
 Amazon EC2;ec2;DescribeVpcs;ec2:DescribeVpcs;Grants permission to describe one or more VPCs;List;False
-Amazon EC2;ec2;DescribeVpnConnections;ec2:DescribeVpnConnections;Grants permission to describe one or more VPN connections;Read;False
+Amazon EC2;ec2;DescribeVpnConnections;ec2:DescribeVpnConnections;Grants permission to describe one or more VPN connections;List;False
 Amazon EC2;ec2;DescribeVpnGateways;ec2:DescribeVpnGateways;Grants permission to describe one or more virtual private gateways;List;False
 Amazon EC2;ec2;DetachClassicLinkVpc;ec2:DetachClassicLinkVpc;Grants permission to unlink (detach) a linked EC2-Classic instance from a VPC;Write;True
 Amazon EC2;ec2;DetachInternetGateway;ec2:DetachInternetGateway;Grants permission to detach an internet gateway from a VPC;Write;True
@@ -3931,10 +3953,10 @@ Amazon EC2;ec2;GetEbsEncryptionByDefault;ec2:GetEbsEncryptionByDefault;Grants pe
 Amazon EC2;ec2;GetFlowLogsIntegrationTemplate;ec2:GetFlowLogsIntegrationTemplate;Grants permission to generate a CloudFormation template to streamline the integration of VPC flow logs with Amazon Athena;Read;True
 Amazon EC2;ec2;GetGroupsForCapacityReservation;ec2:GetGroupsForCapacityReservation;Grants permission to list the resource groups to which a Capacity Reservation has been added;List;True
 Amazon EC2;ec2;GetHostReservationPurchasePreview;ec2:GetHostReservationPurchasePreview;Grants permission to preview a reservation purchase with configurations that match those of a Dedicated Host;Read;False
-Amazon EC2;ec2;GetInstanceTypesFromInstanceRequirements;ec2:GetInstanceTypesFromInstanceRequirements;Grants permission to view a list of instance types with specified instance attributes;Read;False
+Amazon EC2;ec2;GetInstanceTypesFromInstanceRequirements;ec2:GetInstanceTypesFromInstanceRequirements;Grants permission to view a list of instance types with specified instance attributes;List;False
 Amazon EC2;ec2;GetInstanceUefiData;ec2:GetInstanceUefiData;Grants permission to retrieve the binary representation of the UEFI variable store;Read;True
 Amazon EC2;ec2;GetIpamAddressHistory;ec2:GetIpamAddressHistory;Grants permission to retrieve historical information about a CIDR within an Amazon VPC IP Address Manager (IPAM) scope;Read;True
-Amazon EC2;ec2;GetIpamPoolAllocations;ec2:GetIpamPoolAllocations;Grants permission to get a list of all the CIDR allocations in an Amazon VPC IP Address Manager (IPAM) pool;Read;True
+Amazon EC2;ec2;GetIpamPoolAllocations;ec2:GetIpamPoolAllocations;Grants permission to get a list of all the CIDR allocations in an Amazon VPC IP Address Manager (IPAM) pool;List;True
 Amazon EC2;ec2;GetIpamPoolCidrs;ec2:GetIpamPoolCidrs;Grants permission to get the CIDRs provisioned to an Amazon VPC IP Address Manager (IPAM) pool;Read;True
 Amazon EC2;ec2;GetIpamResourceCidrs;ec2:GetIpamResourceCidrs;Grants permission to get information about the resources in an Amazon VPC IP Address Manager (IPAM) scope;Read;True
 Amazon EC2;ec2;GetLaunchTemplateData;ec2:GetLaunchTemplateData;Grants permission to get the configuration data of the specified instance for use with a new launch template or launch template version;Read;True
@@ -3991,6 +4013,7 @@ Amazon EC2;ec2;ModifyIpamPool;ec2:ModifyIpamPool;Grants permission to modify the
 Amazon EC2;ec2;ModifyIpamResourceCidr;ec2:ModifyIpamResourceCidr;Grants permission to modify the configurations of an Amazon VPC IP Address Manager (IPAM) resource CIDR;Write;True
 Amazon EC2;ec2;ModifyIpamScope;ec2:ModifyIpamScope;Grants permission to modify the configurations of an Amazon VPC IP Address Manager (IPAM) scope;Write;True
 Amazon EC2;ec2;ModifyLaunchTemplate;ec2:ModifyLaunchTemplate;Grants permission to modify a launch template;Write;True
+Amazon EC2;ec2;ModifyLocalGatewayRoute;ec2:ModifyLocalGatewayRoute;Grants permission to modify a local gateway route;Write;True
 Amazon EC2;ec2;ModifyManagedPrefixList;ec2:ModifyManagedPrefixList;Grants permission to modify a managed prefix list;Write;True
 Amazon EC2;ec2;ModifyNetworkInterfaceAttribute;ec2:ModifyNetworkInterfaceAttribute;Grants permission to modify an attribute of a network interface;Write;True
 Amazon EC2;ec2;ModifyPrivateDnsNameOptions;ec2:ModifyPrivateDnsNameOptions;Grants permission to modify the options for instance hostnames for the specified instance;Write;True
@@ -5003,6 +5026,7 @@ Amazon EMR Serverless;emr-serverless;CancelJobRun;emr-serverless:CancelJobRun;Gr
 Amazon EMR Serverless;emr-serverless;CreateApplication;emr-serverless:CreateApplication;Grants permission to create an Application;Write;False
 Amazon EMR Serverless;emr-serverless;DeleteApplication;emr-serverless:DeleteApplication;Grants permission to delete an application;Write;True
 Amazon EMR Serverless;emr-serverless;GetApplication;emr-serverless:GetApplication;Grants permission to get application;Read;True
+Amazon EMR Serverless;emr-serverless;GetDashboardForJobRun;emr-serverless:GetDashboardForJobRun;Grants permission to get job run dashboard;Read;True
 Amazon EMR Serverless;emr-serverless;GetJobRun;emr-serverless:GetJobRun;Grants permission to get a job run;Read;True
 Amazon EMR Serverless;emr-serverless;ListApplications;emr-serverless:ListApplications;Grants permission to list applications;List;False
 Amazon EMR Serverless;emr-serverless;ListJobRuns;emr-serverless:ListJobRuns;Grants permission to list job runs associated with an application;List;True
@@ -5314,13 +5338,14 @@ Amazon FreeRTOS;freertos;ListHardwarePlatforms;freertos:ListHardwarePlatforms;Li
 Amazon FreeRTOS;freertos;ListHardwareVendors;freertos:ListHardwareVendors;Lists the hardware vendors;List;False
 Amazon FreeRTOS;freertos;ListSoftwareConfigurations;freertos:ListSoftwareConfigurations;Lists the software configurations;List;False
 Amazon FreeRTOS;freertos;UpdateSoftwareConfiguration;freertos:UpdateSoftwareConfiguration;Updates the software configuration;Write;True
-Amazon FSx;fsx;AssociateFileGateway;fsx:AssociateFileGateway;Grants permission to associate a File Gateway instance with an Amazon FSx for Windows File Server file system;Write;True
+Amazon FSx;fsx;AssociateFileGateway [permission only];fsx:AssociateFileGateway [permission only];Grants permission to associate a File Gateway instance with an Amazon FSx for Windows File Server file system;Write;True
 Amazon FSx;fsx;AssociateFileSystemAliases;fsx:AssociateFileSystemAliases;Grants permission to associate DNS aliases with an Amazon FSx for Windows File Server file system;Write;True
 Amazon FSx;fsx;CancelDataRepositoryTask;fsx:CancelDataRepositoryTask;Grants permission to cancel a data repository task;Write;True
 Amazon FSx;fsx;CopyBackup;fsx:CopyBackup;Grants permission to copy a backup;Write;True
 Amazon FSx;fsx;CreateBackup;fsx:CreateBackup;Grants permission to create a new backup of an Amazon FSx file system or an Amazon FSx volume;Write;True
 Amazon FSx;fsx;CreateDataRepositoryAssociation;fsx:CreateDataRepositoryAssociation;Grants permission to create a new data respository association for an Amazon FSx for Lustre file system;Write;True
 Amazon FSx;fsx;CreateDataRepositoryTask;fsx:CreateDataRepositoryTask;Grants permission to create a new data respository task for an Amazon FSx for Lustre file system;Write;True
+Amazon FSx;fsx;CreateFileCache;fsx:CreateFileCache;Grants permission to create a new, empty, Amazon file cache;Write;True
 Amazon FSx;fsx;CreateFileSystem;fsx:CreateFileSystem;Grants permission to create a new, empty, Amazon FSx file system;Write;True
 Amazon FSx;fsx;CreateFileSystemFromBackup;fsx:CreateFileSystemFromBackup;Grants permission to create a new Amazon FSx file system from an existing backup;Write;True
 Amazon FSx;fsx;CreateSnapshot;fsx:CreateSnapshot;Grants permission to create a new snapshot on a volume;Write;True
@@ -5329,20 +5354,22 @@ Amazon FSx;fsx;CreateVolume;fsx:CreateVolume;Grants permission to create a new v
 Amazon FSx;fsx;CreateVolumeFromBackup;fsx:CreateVolumeFromBackup;Grants permission to create a new volume from backup;Write;True
 Amazon FSx;fsx;DeleteBackup;fsx:DeleteBackup;Grants permission to delete a backup, deleting its contents. After deletion, the backup no longer exists, and its data is no longer available;Write;True
 Amazon FSx;fsx;DeleteDataRepositoryAssociation;fsx:DeleteDataRepositoryAssociation;Grants permission to delete a data repository association;Write;True
+Amazon FSx;fsx;DeleteFileCache;fsx:DeleteFileCache;Grants permission to delete a file cache, deleting its contents;Write;True
 Amazon FSx;fsx;DeleteFileSystem;fsx:DeleteFileSystem;Grants permission to delete a file system, deleting its contents and any existing automatic backups of the file system;Write;True
 Amazon FSx;fsx;DeleteSnapshot;fsx:DeleteSnapshot;Grants permission to delete a snapshot on a volume;Write;True
 Amazon FSx;fsx;DeleteStorageVirtualMachine;fsx:DeleteStorageVirtualMachine;Grants permission to delete a storage virtual machine, deleting its contents;Write;True
 Amazon FSx;fsx;DeleteVolume;fsx:DeleteVolume;Grants permission to delete a volume, deleting its contents and any existing automatic backups of the volume;Write;True
-Amazon FSx;fsx;DescribeAssociatedFileGateways;fsx:DescribeAssociatedFileGateways;Grants permission to describe the File Gateway instances associated with an Amazon FSx for Windows File Server file system;Read;True
+Amazon FSx;fsx;DescribeAssociatedFileGateways [permission only];fsx:DescribeAssociatedFileGateways [permission only];Grants permission to describe the File Gateway instances associated with an Amazon FSx for Windows File Server file system;Read;True
 Amazon FSx;fsx;DescribeBackups;fsx:DescribeBackups;Grants permission to return the descriptions of all backups owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
 Amazon FSx;fsx;DescribeDataRepositoryAssociations;fsx:DescribeDataRepositoryAssociations;Grants permission to return the descriptions of all data repository associations owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
 Amazon FSx;fsx;DescribeDataRepositoryTasks;fsx:DescribeDataRepositoryTasks;Grants permission to return the descriptions of all data repository tasks owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
+Amazon FSx;fsx;DescribeFileCaches;fsx:DescribeFileCaches;Grants permission to return the descriptions of all file caches owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
 Amazon FSx;fsx;DescribeFileSystemAliases;fsx:DescribeFileSystemAliases;Grants permission to return the description of all DNS aliases owned by your Amazon FSx for Windows File Server file system;Read;True
 Amazon FSx;fsx;DescribeFileSystems;fsx:DescribeFileSystems;Grants permission to return the descriptions of all file systems owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
 Amazon FSx;fsx;DescribeSnapshots;fsx:DescribeSnapshots;Grants permission to return the descriptions of all snapshots owned by your AWS account in the AWS Region of the endpoint you're calling;Read;False
 Amazon FSx;fsx;DescribeStorageVirtualMachines;fsx:DescribeStorageVirtualMachines;Grants permission to return the descriptions of all storage virtual machines owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
 Amazon FSx;fsx;DescribeVolumes;fsx:DescribeVolumes;Grants permission to return the descriptions of all volumes owned by your AWS account in the AWS Region of the endpoint that you're calling;Read;False
-Amazon FSx;fsx;DisassociateFileGateway;fsx:DisassociateFileGateway;Grants permission to disassociate a File Gateway instance from an Amazon FSx for Windows File Server file system;Write;True
+Amazon FSx;fsx;DisassociateFileGateway [permission only];fsx:DisassociateFileGateway [permission only];Grants permission to disassociate a File Gateway instance from an Amazon FSx for Windows File Server file system;Write;True
 Amazon FSx;fsx;DisassociateFileSystemAliases;fsx:DisassociateFileSystemAliases;Grants permission to disassociate file system aliases with an Amazon FSx for Windows File Server file system;Write;True
 Amazon FSx;fsx;ListTagsForResource;fsx:ListTagsForResource;Grants permission to list tags for an Amazon FSx resource;Read;True
 Amazon FSx;fsx;ManageBackupPrincipalAssociations;fsx:ManageBackupPrincipalAssociations;Grants permission to manage backup principal associations through AWS Backup;Permissions management;True
@@ -5351,6 +5378,7 @@ Amazon FSx;fsx;RestoreVolumeFromSnapshot;fsx:RestoreVolumeFromSnapshot;Grants pe
 Amazon FSx;fsx;TagResource;fsx:TagResource;Grants permission to tag an Amazon FSx resource;Tagging;True
 Amazon FSx;fsx;UntagResource;fsx:UntagResource;Grants permission to remove a tag from an Amazon FSx resource;Tagging;True
 Amazon FSx;fsx;UpdateDataRepositoryAssociation;fsx:UpdateDataRepositoryAssociation;Grants permission to update data repository association configuration;Write;True
+Amazon FSx;fsx;UpdateFileCache;fsx:UpdateFileCache;Grants permission to update file cache configuration;Write;True
 Amazon FSx;fsx;UpdateFileSystem;fsx:UpdateFileSystem;Grants permission to update file system configuration;Write;True
 Amazon FSx;fsx;UpdateSnapshot;fsx:UpdateSnapshot;Grants permission to update snapshot configuration;Write;True
 Amazon FSx;fsx;UpdateStorageVirtualMachine;fsx:UpdateStorageVirtualMachine;Grants permission to update storage virtual machine configuration;Write;True
@@ -6374,6 +6402,7 @@ Amazon Inspector2;inspector2;DisableDelegatedAdminAccount;inspector2:DisableDele
 Amazon Inspector2;inspector2;DisassociateMember;inspector2:DisassociateMember;Grants permission to an Amazon Inspector administrator account to disassociate from an Inspector member account;Write;False
 Amazon Inspector2;inspector2;Enable;inspector2:Enable;Grants permission to enable and specify the configuration settings for a new Amazon Inspector account;Write;False
 Amazon Inspector2;inspector2;EnableDelegatedAdminAccount;inspector2:EnableDelegatedAdminAccount;Grants permission to enable an account as the delegated Amazon Inspector administrator account for an AWS organization;Write;False
+Amazon Inspector2;inspector2;GetConfiguration;inspector2:GetConfiguration;Grants permission to retrieve information about the Amazon Inspector configuration settings for an AWS account;Read;False
 Amazon Inspector2;inspector2;GetDelegatedAdminAccount;inspector2:GetDelegatedAdminAccount;Grants permission to retrieve information about the Amazon Inspector administrator account for an account;Read;False
 Amazon Inspector2;inspector2;GetFindingsReportStatus;inspector2:GetFindingsReportStatus;Grants permission to retrieve status for a requested findings report;Read;False
 Amazon Inspector2;inspector2;GetMember;inspector2:GetMember;Grants permission to retrieve information about an account that's associated with an Amazon Inspector administrator account;Read;False
@@ -6389,6 +6418,7 @@ Amazon Inspector2;inspector2;ListTagsForResource;inspector2:ListTagsForResource;
 Amazon Inspector2;inspector2;ListUsageTotals;inspector2:ListUsageTotals;Grants permission to retrieve aggregated usage data for an account;List;False
 Amazon Inspector2;inspector2;TagResource;inspector2:TagResource;Grants permission to add or update the tags for an Amazon Inspector resource;Tagging;False
 Amazon Inspector2;inspector2;UntagResource;inspector2:UntagResource;Grants permission to remove tags from an Amazon Inspector resource;Tagging;False
+Amazon Inspector2;inspector2;UpdateConfiguration;inspector2:UpdateConfiguration;Grants permission to update information about the Amazon Inspector configuration settings for an AWS account;Write;False
 Amazon Inspector2;inspector2;UpdateFilter;inspector2:UpdateFilter;Grants permission to update the settings for a findings filter;Write;True
 Amazon Inspector2;inspector2;UpdateOrganizationConfiguration;inspector2:UpdateOrganizationConfiguration;Grants permission to update Amazon Inspector configuration settings for an AWS organization;Write;False
 Amazon Interactive Video Service;ivs;BatchGetChannel;ivs:BatchGetChannel;Grants permission to get multiple channels simultaneously by channel ARN;Read;True
@@ -6909,7 +6939,7 @@ AWS IoT Fleet Hub for Device Management;iotfleethub;ListTagsForResource;iotfleet
 AWS IoT Fleet Hub for Device Management;iotfleethub;TagResource;iotfleethub:TagResource;Grants permission to tag a resource;Tagging;True
 AWS IoT Fleet Hub for Device Management;iotfleethub;UntagResource;iotfleethub:UntagResource;Grants permission to untag a resource;Tagging;True
 AWS IoT Fleet Hub for Device Management;iotfleethub;UpdateApplication;iotfleethub:UpdateApplication;Grants permission to update an application;Write;True
-AWS IoT FleetWise;iotfleetwise;AssociateVehicle;iotfleetwise:AssociateVehicle;Grants permission to associate the given vehicle to a fleet;Write;True
+AWS IoT FleetWise;iotfleetwise;AssociateVehicleFleet;iotfleetwise:AssociateVehicleFleet;Grants permission to associate the given vehicle to a fleet;Write;True
 AWS IoT FleetWise;iotfleetwise;CreateCampaign;iotfleetwise:CreateCampaign;Grants permission to create a campaign;Write;True
 AWS IoT FleetWise;iotfleetwise;CreateDecoderManifest;iotfleetwise:CreateDecoderManifest;Grants permission to create a decoder manifest for an existing model;Write;True
 AWS IoT FleetWise;iotfleetwise;CreateFleet;iotfleetwise:CreateFleet;Grants permission to create a fleet;Write;True
@@ -6922,16 +6952,17 @@ AWS IoT FleetWise;iotfleetwise;DeleteFleet;iotfleetwise:DeleteFleet;Grants permi
 AWS IoT FleetWise;iotfleetwise;DeleteModelManifest;iotfleetwise:DeleteModelManifest;Grants permission to delete the given model manifest;Write;True
 AWS IoT FleetWise;iotfleetwise;DeleteSignalCatalog;iotfleetwise:DeleteSignalCatalog;Grants permission to delete a specific signal catalog;Write;True
 AWS IoT FleetWise;iotfleetwise;DeleteVehicle;iotfleetwise:DeleteVehicle;Grants permission to delete a vehicle;Write;True
-AWS IoT FleetWise;iotfleetwise;DisassociateVehicle;iotfleetwise:DisassociateVehicle;Grants permission to disassociate a vehicle from an existing fleet;Write;True
+AWS IoT FleetWise;iotfleetwise;DisassociateVehicleFleet;iotfleetwise:DisassociateVehicleFleet;Grants permission to disassociate a vehicle from an existing fleet;Write;True
 AWS IoT FleetWise;iotfleetwise;GetCampaign;iotfleetwise:GetCampaign;Grants permission to get summary information for a given campaign;Read;True
 AWS IoT FleetWise;iotfleetwise;GetDecoderManifest;iotfleetwise:GetDecoderManifest;Grants permission to get summary information for a given decoder manifest definition;Read;True
 AWS IoT FleetWise;iotfleetwise;GetFleet;iotfleetwise:GetFleet;Grants permission to get summary information for a fleet;Read;True
+AWS IoT FleetWise;iotfleetwise;GetLoggingOptions;iotfleetwise:GetLoggingOptions;Grants permission to get the logging options for the AWS account;Read;False
 AWS IoT FleetWise;iotfleetwise;GetModelManifest;iotfleetwise:GetModelManifest;Grants permission to get summary information for a given model manifest definition;Read;True
 AWS IoT FleetWise;iotfleetwise;GetRegisterAccountStatus;iotfleetwise:GetRegisterAccountStatus;Grants permission to get the account registration status with IoT FleetWise;Read;False
 AWS IoT FleetWise;iotfleetwise;GetSignalCatalog;iotfleetwise:GetSignalCatalog;Grants permission to get summary information for a specific signal catalog;Read;True
 AWS IoT FleetWise;iotfleetwise;GetVehicle;iotfleetwise:GetVehicle;Grants permission to get summary information for a vehicle;Read;True
 AWS IoT FleetWise;iotfleetwise;GetVehicleStatus;iotfleetwise:GetVehicleStatus;Grants permission to get the status of the campaigns running on a specific vehicle;Read;True
-AWS IoT FleetWise;iotfleetwise;ImportDecoderManifest;iotfleetwise:ImportDecoderManifest;Grants permission to import an existing decoder manifest;Write;False
+AWS IoT FleetWise;iotfleetwise;ImportDecoderManifest;iotfleetwise:ImportDecoderManifest;Grants permission to import an existing decoder manifest;Write;True
 AWS IoT FleetWise;iotfleetwise;ImportSignalCatalog;iotfleetwise:ImportSignalCatalog;Grants permission to create a signal catalog by importing existing definitions;Write;False
 AWS IoT FleetWise;iotfleetwise;ListCampaigns;iotfleetwise:ListCampaigns;Grants permission to list campaigns;Read;False
 AWS IoT FleetWise;iotfleetwise;ListDecoderManifestNetworkInterfaces;iotfleetwise:ListDecoderManifestNetworkInterfaces;Grants permission to list network interfaces associated to the existing decoder manifest;List;True
@@ -6943,9 +6974,13 @@ AWS IoT FleetWise;iotfleetwise;ListModelManifestNodes;iotfleetwise:ListModelMani
 AWS IoT FleetWise;iotfleetwise;ListModelManifests;iotfleetwise:ListModelManifests;Grants permission to list all model manifests, with an optional filter on signal catalog;Read;False
 AWS IoT FleetWise;iotfleetwise;ListSignalCatalogNodes;iotfleetwise:ListSignalCatalogNodes;Grants permission to list all nodes for a given signal catalog;Read;True
 AWS IoT FleetWise;iotfleetwise;ListSignalCatalogs;iotfleetwise:ListSignalCatalogs;Grants permission to list all signal catalogs;Read;False
+AWS IoT FleetWise;iotfleetwise;ListTagsForResource;iotfleetwise:ListTagsForResource;Grants permission to list tags for a resource;Read;True
 AWS IoT FleetWise;iotfleetwise;ListVehicles;iotfleetwise:ListVehicles;Grants permission to list all vehicles, with an optional filter on model manifest;Read;False
 AWS IoT FleetWise;iotfleetwise;ListVehiclesInFleet;iotfleetwise:ListVehiclesInFleet;Grants permission to list vehicles in the given fleet;Read;True
+AWS IoT FleetWise;iotfleetwise;PutLoggingOptions;iotfleetwise:PutLoggingOptions;Grants permission to put the logging options for the AWS account;Write;False
 AWS IoT FleetWise;iotfleetwise;RegisterAccount;iotfleetwise:RegisterAccount;Grants permission to register an AWS account to IoT FleetWise;Write;False
+AWS IoT FleetWise;iotfleetwise;TagResource;iotfleetwise:TagResource;Grants permission to add tags to a resource;Tagging;True
+AWS IoT FleetWise;iotfleetwise;UntagResource;iotfleetwise:UntagResource;Grants permission to remove tags from a resource;Tagging;True
 AWS IoT FleetWise;iotfleetwise;UpdateCampaign;iotfleetwise:UpdateCampaign;Grants permission to update the given campaign;Write;True
 AWS IoT FleetWise;iotfleetwise;UpdateDecoderManifest;iotfleetwise:UpdateDecoderManifest;Grants permission to update a decoder manifest defnition;Write;True
 AWS IoT FleetWise;iotfleetwise;UpdateFleet;iotfleetwise:UpdateFleet;Grants permission to update the fleet;Write;True
@@ -7913,6 +7948,7 @@ Amazon Lightsail;lightsail;UpdateContainerService;lightsail:UpdateContainerServi
 Amazon Lightsail;lightsail;UpdateDistribution;lightsail:UpdateDistribution;Grants permission to update an existing Amazon Lightsail content delivery network (CDN) distribution or its configuration;Write;True
 Amazon Lightsail;lightsail;UpdateDistributionBundle;lightsail:UpdateDistributionBundle;Grants permission to update the bundle of your Amazon Lightsail content delivery network (CDN) distribution;Write;True
 Amazon Lightsail;lightsail;UpdateDomainEntry;lightsail:UpdateDomainEntry;Grants permission to update a domain recordset after it is created;Write;True
+Amazon Lightsail;lightsail;UpdateInstanceMetadataOptions;lightsail:UpdateInstanceMetadataOptions;Grants permission to update metadata options for an instance;Write;True
 Amazon Lightsail;lightsail;UpdateLoadBalancerAttribute;lightsail:UpdateLoadBalancerAttribute;Grants permission to update a load balancer attribute, such as the health check path and session stickiness;Write;True
 Amazon Lightsail;lightsail;UpdateRelationalDatabase;lightsail:UpdateRelationalDatabase;Grants permission to update a relational database;Write;True
 Amazon Lightsail;lightsail;UpdateRelationalDatabaseParameters;lightsail:UpdateRelationalDatabaseParameters;Grants permission to update the parameters of a relational database;Write;True
@@ -7970,18 +8006,26 @@ Amazon Location;geo;UpdateRouteCalculator;geo:UpdateRouteCalculator;Grants permi
 Amazon Location;geo;UpdateTracker;geo:UpdateTracker;Grants permission to update a tracker resource;Write;True
 Amazon Lookout for Equipment;lookoutequipment;CreateDataset;lookoutequipment:CreateDataset;Grants permission to create a dataset;Write;True
 Amazon Lookout for Equipment;lookoutequipment;CreateInferenceScheduler;lookoutequipment:CreateInferenceScheduler;Grants permission to create an inference scheduler for a trained model;Write;True
+Amazon Lookout for Equipment;lookoutequipment;CreateLabel;lookoutequipment:CreateLabel;Grants permission to create a label;Write;True
+Amazon Lookout for Equipment;lookoutequipment;CreateLabelGroup;lookoutequipment:CreateLabelGroup;Grants permission to create a label group;Write;True
 Amazon Lookout for Equipment;lookoutequipment;CreateModel;lookoutequipment:CreateModel;Grants permission to create a model that is trained on a dataset;Write;True
 Amazon Lookout for Equipment;lookoutequipment;DeleteDataset;lookoutequipment:DeleteDataset;Grants permission to delete a dataset;Write;True
 Amazon Lookout for Equipment;lookoutequipment;DeleteInferenceScheduler;lookoutequipment:DeleteInferenceScheduler;Grants permission to delete an inference scheduler;Write;True
+Amazon Lookout for Equipment;lookoutequipment;DeleteLabel;lookoutequipment:DeleteLabel;Grants permission to delete a label;Write;True
+Amazon Lookout for Equipment;lookoutequipment;DeleteLabelGroup;lookoutequipment:DeleteLabelGroup;Grants permission to delete a label group;Write;True
 Amazon Lookout for Equipment;lookoutequipment;DeleteModel;lookoutequipment:DeleteModel;Grants permission to delete a model;Write;True
 Amazon Lookout for Equipment;lookoutequipment;DescribeDataIngestionJob;lookoutequipment:DescribeDataIngestionJob;Grants permission to describe a data ingestion job;Read;False
 Amazon Lookout for Equipment;lookoutequipment;DescribeDataset;lookoutequipment:DescribeDataset;Grants permission to describe a dataset;Read;True
 Amazon Lookout for Equipment;lookoutequipment;DescribeInferenceScheduler;lookoutequipment:DescribeInferenceScheduler;Grants permission to describe an inference scheduler;Read;True
+Amazon Lookout for Equipment;lookoutequipment;DescribeLabelGroup;lookoutequipment:DescribeLabelGroup;Grants permission to describe a label group;Read;True
 Amazon Lookout for Equipment;lookoutequipment;DescribeModel;lookoutequipment:DescribeModel;Grants permission to describe a model;Read;True
+Amazon Lookout for Equipment;lookoutequipment;Describelabel;lookoutequipment:Describelabel;Grants permission to describe a label;Read;True
 Amazon Lookout for Equipment;lookoutequipment;ListDataIngestionJobs;lookoutequipment:ListDataIngestionJobs;Grants permission to list the data ingestion jobs in your account or for a particular dataset;List;True
 Amazon Lookout for Equipment;lookoutequipment;ListDatasets;lookoutequipment:ListDatasets;Grants permission to list the datasets in your account;List;False
 Amazon Lookout for Equipment;lookoutequipment;ListInferenceExecutions;lookoutequipment:ListInferenceExecutions;Grants permission to list the inference executions for an inference scheduler;Read;True
 Amazon Lookout for Equipment;lookoutequipment;ListInferenceSchedulers;lookoutequipment:ListInferenceSchedulers;Grants permission to list the inference schedulers in your account;List;False
+Amazon Lookout for Equipment;lookoutequipment;ListLabelGroups;lookoutequipment:ListLabelGroups;Grants permission to list the label groups in your account;List;True
+Amazon Lookout for Equipment;lookoutequipment;ListLabels;lookoutequipment:ListLabels;Grants permission to list the labels in your account;List;True
 Amazon Lookout for Equipment;lookoutequipment;ListModels;lookoutequipment:ListModels;Grants permission to list the models in your account;List;False
 Amazon Lookout for Equipment;lookoutequipment;ListSensorStatistics;lookoutequipment:ListSensorStatistics;Grants permission to list the sensor statistics for a particular dataset or an ingestion job;List;True
 Amazon Lookout for Equipment;lookoutequipment;ListTagsForResource;lookoutequipment:ListTagsForResource;Grants permission to list the tags for a resource;Read;True
@@ -7991,6 +8035,7 @@ Amazon Lookout for Equipment;lookoutequipment;StopInferenceScheduler;lookoutequi
 Amazon Lookout for Equipment;lookoutequipment;TagResource;lookoutequipment:TagResource;Grants permission to tag a resource;Tagging;True
 Amazon Lookout for Equipment;lookoutequipment;UntagResource;lookoutequipment:UntagResource;Grants permission to untag a resource;Tagging;True
 Amazon Lookout for Equipment;lookoutequipment;UpdateInferenceScheduler;lookoutequipment:UpdateInferenceScheduler;Grants permission to update an inference scheduler;Write;True
+Amazon Lookout for Equipment;lookoutequipment;UpdateLabelGroup;lookoutequipment:UpdateLabelGroup;Grants permission to update a label group;Write;True
 Amazon Lookout for Metrics;lookoutmetrics;ActivateAnomalyDetector;lookoutmetrics:ActivateAnomalyDetector;Grants permission to activate an anomaly detector;Write;True
 Amazon Lookout for Metrics;lookoutmetrics;BackTestAnomalyDetector;lookoutmetrics:BackTestAnomalyDetector;Grants permission to run a backtest with an anomaly detector;Write;True
 Amazon Lookout for Metrics;lookoutmetrics;CreateAlert;lookoutmetrics:CreateAlert;Grants permission to create an alert for an anomaly detector;Write;True
@@ -8534,6 +8579,7 @@ AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetApplicationC
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetApplicationComponentStrategies;migrationhub-strategy:GetApplicationComponentStrategies;Grants permission to get a list of all recommended strategies and tools for an application running in a server;Read;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetAssessment;migrationhub-strategy:GetAssessment;Grants permission to retrieve status of an on-going assessment;Read;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetImportFileTask;migrationhub-strategy:GetImportFileTask;Grants permission to get details of a specific import task;Read;False
+AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetLatestAssessmentId;migrationhub-strategy:GetLatestAssessmentId;Grants permission to retrieve the latest assessment id;Read;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetMessage;migrationhub-strategy:GetMessage;Grants permission to the collector to receive information from the service;Read;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetPortfolioPreferences;migrationhub-strategy:GetPortfolioPreferences;Grants permission to retrieve customer migration/Modernization preferences;Read;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;GetPortfolioSummary;migrationhub-strategy:GetPortfolioSummary;Grants permission to retrieve overall summary (number-of servers to rehost etc as well as overall number of anti patterns);Read;False
@@ -8554,6 +8600,7 @@ AWS Migration Hub Strategy Recommendations;migrationhub-strategy;StartImportFile
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;StartRecommendationReportGeneration;migrationhub-strategy:StartRecommendationReportGeneration;Grants permission to start generating a recommendation report;Write;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;StopAssessment;migrationhub-strategy:StopAssessment;Grants permission to stop an on-going assessment;Write;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;UpdateApplicationComponentConfig;migrationhub-strategy:UpdateApplicationComponentConfig;Grants permission to update details for an application;Write;False
+AWS Migration Hub Strategy Recommendations;migrationhub-strategy;UpdateCollectorConfiguration;migrationhub-strategy:UpdateCollectorConfiguration;Grants permission to the collector to send configuration information to the service;Write;False
 AWS Migration Hub Strategy Recommendations;migrationhub-strategy;UpdateServerConfig;migrationhub-strategy:UpdateServerConfig;Grants permission to update info on a server along with the recommended strategy;Write;False
 Amazon Mobile Analytics;mobileanalytics;GetFinancialReports;mobileanalytics:GetFinancialReports;Grant access to financial metrics for an app;Read;False
 Amazon Mobile Analytics;mobileanalytics;GetReports;mobileanalytics:GetReports;Grant access to standard metrics for an app;Read;False
@@ -8646,6 +8693,7 @@ Amazon Neptune;neptune-db;StartMLDataProcessingJob;neptune-db:StartMLDataProcess
 Amazon Neptune;neptune-db;StartMLModelTrainingJob;neptune-db:StartMLModelTrainingJob;Grants permission to start an ML model training job;Write;True
 Amazon Neptune;neptune-db;StartMLModelTransformJob;neptune-db:StartMLModelTransformJob;Grants permission to start an ML model transform job;Write;True
 Amazon Neptune;neptune-db;WriteDataViaQuery;neptune-db:WriteDataViaQuery;Grants permission to run write data via query APIs on database;Write;True
+Amazon Neptune;neptune-db;connect;neptune-db:connect;Grants permission to all data-access actions in engine versions prior to 1.2.0.0;Write;True
 AWS Network Firewall;network-firewall;AssociateFirewallPolicy;network-firewall:AssociateFirewallPolicy;Grants permission to create an association between a firewall policy and a firewall;Write;True
 AWS Network Firewall;network-firewall;AssociateSubnets;network-firewall:AssociateSubnets;Grants permission to associate VPC subnets to a firewall;Write;True
 AWS Network Firewall;network-firewall;CreateFirewall;network-firewall:CreateFirewall;Grants permission to create an AWS Network Firewall firewall;Write;True
@@ -8802,7 +8850,7 @@ Amazon Nimble Studio;nimble;PutLaunchProfileMembers;nimble:PutLaunchProfileMembe
 Amazon Nimble Studio;nimble;PutStudioLogEvents [permission only];nimble:PutStudioLogEvents [permission only];Grants permission to report metrics and logs for the Nimble Studio portal to monitor application health;Write;True
 Amazon Nimble Studio;nimble;PutStudioMembers;nimble:PutStudioMembers;Grants permission to add/update studio members;Write;True
 Amazon Nimble Studio;nimble;StartStreamingSession;nimble:StartStreamingSession;Grants permission to start a streaming session;Write;True
-Amazon Nimble Studio;nimble;StartStudioSSOConfigurationRepair;nimble:StartStudioSSOConfigurationRepair;Grants permission to repair the studio's AWS SSO configuration;Write;True
+Amazon Nimble Studio;nimble;StartStudioSSOConfigurationRepair;nimble:StartStudioSSOConfigurationRepair;Grants permission to repair the studio's AWS IAM Identity Center configuration;Write;True
 Amazon Nimble Studio;nimble;StopStreamingSession;nimble:StopStreamingSession;Grants permission to stop a streaming session;Write;True
 Amazon Nimble Studio;nimble;TagResource;nimble:TagResource;Grants permission to add or overwrite one or more tags for the specified Nimble Studio resource;Tagging;True
 Amazon Nimble Studio;nimble;UntagResource;nimble:UntagResource;Grants permission to disassociate one or more tags from the specified Nimble Studio resource;Tagging;True
@@ -10709,6 +10757,8 @@ Amazon SageMaker;sagemaker;CreateContext;sagemaker:CreateContext;Grants permissi
 Amazon SageMaker;sagemaker;CreateDataQualityJobDefinition;sagemaker:CreateDataQualityJobDefinition;Grants permission to create a data quality job definition;Write;True
 Amazon SageMaker;sagemaker;CreateDeviceFleet;sagemaker:CreateDeviceFleet;Grants permission to create a device fleet;Write;True
 Amazon SageMaker;sagemaker;CreateDomain;sagemaker:CreateDomain;Grants permission to create a Domain for SageMaker Studio;Write;True
+Amazon SageMaker;sagemaker;CreateEdgeDeploymentPlan;sagemaker:CreateEdgeDeploymentPlan;Grants permission to create an edge deployment plan;Write;True
+Amazon SageMaker;sagemaker;CreateEdgeDeploymentStage;sagemaker:CreateEdgeDeploymentStage;Grants permission to create an edge deployment stage;Write;True
 Amazon SageMaker;sagemaker;CreateEdgePackagingJob;sagemaker:CreateEdgePackagingJob;Grants permission to create an edge packaging job;Write;True
 Amazon SageMaker;sagemaker;CreateEndpoint;sagemaker:CreateEndpoint;Grants permission to create an endpoint using the endpoint configuration specified in the request;Write;True
 Amazon SageMaker;sagemaker;CreateEndpointConfig;sagemaker:CreateEndpointConfig;Grants permission to create an endpoint configuration that can be deployed using Amazon SageMaker hosting services;Write;True
@@ -10755,6 +10805,8 @@ Amazon SageMaker;sagemaker;DeleteContext;sagemaker:DeleteContext;Grants permissi
 Amazon SageMaker;sagemaker;DeleteDataQualityJobDefinition;sagemaker:DeleteDataQualityJobDefinition;Grants permission to delete the data quality job definition created using the CreateDataQualityJobDefinition API;Write;True
 Amazon SageMaker;sagemaker;DeleteDeviceFleet;sagemaker:DeleteDeviceFleet;Grants permission to delete a device fleet;Write;True
 Amazon SageMaker;sagemaker;DeleteDomain;sagemaker:DeleteDomain;Grants permission to delete a Domain;Write;True
+Amazon SageMaker;sagemaker;DeleteEdgeDeploymentPlan;sagemaker:DeleteEdgeDeploymentPlan;Grants permission to delete an edge deployment plan;Write;True
+Amazon SageMaker;sagemaker;DeleteEdgeDeploymentStage;sagemaker:DeleteEdgeDeploymentStage;Grants permission to delete an edge deployment stage;Write;True
 Amazon SageMaker;sagemaker;DeleteEndpoint;sagemaker:DeleteEndpoint;Grants permission to delete an endpoint. Amazon SageMaker frees up all the resources that were deployed when the endpoint was created;Write;True
 Amazon SageMaker;sagemaker;DeleteEndpointConfig;sagemaker:DeleteEndpointConfig;Grants permission to delete the endpoint configuration created using the CreateEndpointConfig API. The DeleteEndpointConfig API deletes only the specified configuration. It does not delete any endpoints created using the configuration;Write;True
 Amazon SageMaker;sagemaker;DeleteExperiment;sagemaker:DeleteExperiment;Grants permission to delete an experiment;Write;True
@@ -10799,6 +10851,7 @@ Amazon SageMaker;sagemaker;DescribeDataQualityJobDefinition;sagemaker:DescribeDa
 Amazon SageMaker;sagemaker;DescribeDevice;sagemaker:DescribeDevice;Grants permission to access information about a device;Read;True
 Amazon SageMaker;sagemaker;DescribeDeviceFleet;sagemaker:DescribeDeviceFleet;Grants permission to access information about a device fleet;Read;True
 Amazon SageMaker;sagemaker;DescribeDomain;sagemaker:DescribeDomain;Grants permission to describe a Domain;Read;True
+Amazon SageMaker;sagemaker;DescribeEdgeDeploymentPlan;sagemaker:DescribeEdgeDeploymentPlan;Grants permission to access information about an edge deployment plan;Read;True
 Amazon SageMaker;sagemaker;DescribeEdgePackagingJob;sagemaker:DescribeEdgePackagingJob;Grants permission to access information about an edge packaging job;Read;True
 Amazon SageMaker;sagemaker;DescribeEndpoint;sagemaker:DescribeEndpoint;Grants permission to return the description of an endpoint;Read;True
 Amazon SageMaker;sagemaker;DescribeEndpointConfig;sagemaker:DescribeEndpointConfig;Grants permission to return the description of an endpoint configuration, which was created using the CreateEndpointConfig API;Read;True
@@ -10864,6 +10917,7 @@ Amazon SageMaker;sagemaker;ListDataQualityJobDefinitions;sagemaker:ListDataQuali
 Amazon SageMaker;sagemaker;ListDeviceFleets;sagemaker:ListDeviceFleets;Grants permission to list device fleets;List;False
 Amazon SageMaker;sagemaker;ListDevices;sagemaker:ListDevices;Grants permission to list devices;List;False
 Amazon SageMaker;sagemaker;ListDomains;sagemaker:ListDomains;Grants permission to list the Domains in your account;List;False
+Amazon SageMaker;sagemaker;ListEdgeDeploymentPlans;sagemaker:ListEdgeDeploymentPlans;Grants permission to list edge deployment plans;List;False
 Amazon SageMaker;sagemaker;ListEdgePackagingJobs;sagemaker:ListEdgePackagingJobs;Grants permission to list edge packaging jobs;List;False
 Amazon SageMaker;sagemaker;ListEndpointConfigs;sagemaker:ListEndpointConfigs;Grants permission to list endpoint configurations;List;False
 Amazon SageMaker;sagemaker;ListEndpoints;sagemaker:ListEndpoints;Grants permission to list endpoints;List;False
@@ -10896,6 +10950,7 @@ Amazon SageMaker;sagemaker;ListPipelineParametersForExecution;sagemaker:ListPipe
 Amazon SageMaker;sagemaker;ListPipelines;sagemaker:ListPipelines;Grants permission to list pipelines;List;False
 Amazon SageMaker;sagemaker;ListProcessingJobs;sagemaker:ListProcessingJobs;Grants permission to list processing jobs;List;False
 Amazon SageMaker;sagemaker;ListProjects;sagemaker:ListProjects;Grants permission to list Projects;List;False
+Amazon SageMaker;sagemaker;ListStageDevices;sagemaker:ListStageDevices;Grants permission to list stage devices;List;False
 Amazon SageMaker;sagemaker;ListStudioLifecycleConfigs;sagemaker:ListStudioLifecycleConfigs;Grants permission to list the Studio Lifecycle Configurations that can be deployed using Amazon SageMaker;List;False
 Amazon SageMaker;sagemaker;ListSubscribedWorkteams;sagemaker:ListSubscribedWorkteams;Grants permission to list subscribed workteams;List;False
 Amazon SageMaker;sagemaker;ListTags;sagemaker:ListTags;Grants permission to list the tag set associated with the specified resource;List;True
@@ -10918,12 +10973,14 @@ Amazon SageMaker;sagemaker;Search;sagemaker:Search;Grants permission to search f
 Amazon SageMaker;sagemaker;SendHeartbeat;sagemaker:SendHeartbeat;Grants permission to publish heartbeat data from devices. After you deploy a model onto edge devices this api is used to report device status;Write;True
 Amazon SageMaker;sagemaker;SendPipelineExecutionStepFailure;sagemaker:SendPipelineExecutionStepFailure;Grants permission to fail a pending callback step;Write;True
 Amazon SageMaker;sagemaker;SendPipelineExecutionStepSuccess;sagemaker:SendPipelineExecutionStepSuccess;Grants permission to succeed a pending callback step;Write;True
+Amazon SageMaker;sagemaker;StartEdgeDeploymentStage;sagemaker:StartEdgeDeploymentStage;Grants permission to start an edge deployment stage;Write;True
 Amazon SageMaker;sagemaker;StartHumanLoop;sagemaker:StartHumanLoop;Grants permission to start a human loop;Write;True
 Amazon SageMaker;sagemaker;StartMonitoringSchedule;sagemaker:StartMonitoringSchedule;Grants permission to start a monitoring schedule;Write;True
 Amazon SageMaker;sagemaker;StartNotebookInstance;sagemaker:StartNotebookInstance;Grants permission to start a notebook instance. This launches an EC2 instance with the latest version of the libraries and attaches your EBS volume;Write;True
 Amazon SageMaker;sagemaker;StartPipelineExecution;sagemaker:StartPipelineExecution;Grants permission to start a pipeline execution;Write;True
 Amazon SageMaker;sagemaker;StopAutoMLJob;sagemaker:StopAutoMLJob;Grants permission to stop a running AutoML job;Write;True
 Amazon SageMaker;sagemaker;StopCompilationJob;sagemaker:StopCompilationJob;Grants permission to stop a compilation job;Write;True
+Amazon SageMaker;sagemaker;StopEdgeDeploymentStage;sagemaker:StopEdgeDeploymentStage;Grants permission to stop an edge deployment stage;Write;True
 Amazon SageMaker;sagemaker;StopEdgePackagingJob;sagemaker:StopEdgePackagingJob;Grants permission to stop an edge packaging job;Write;True
 Amazon SageMaker;sagemaker;StopHumanLoop;sagemaker:StopHumanLoop;Grants permission to stop a specified human loop;Write;True
 Amazon SageMaker;sagemaker;StopHyperParameterTuningJob;sagemaker:StopHyperParameterTuningJob;Grants permission to stop a running hyper parameter tuning job create via the CreateHyperParameterTuningJob;Write;True
@@ -10951,7 +11008,7 @@ Amazon SageMaker;sagemaker;UpdateFeatureMetadata;sagemaker:UpdateFeatureMetadata
 Amazon SageMaker;sagemaker;UpdateImage;sagemaker:UpdateImage;Grants permission to update the properties of a SageMaker Image;Write;True
 Amazon SageMaker;sagemaker;UpdateModelPackage;sagemaker:UpdateModelPackage;Grants permission to update a ModelPackage;Write;True
 Amazon SageMaker;sagemaker;UpdateMonitoringSchedule;sagemaker:UpdateMonitoringSchedule;Grants permission to update a monitoring schedule;Write;True
-Amazon SageMaker;sagemaker;UpdateNotebookInstance;sagemaker:UpdateNotebookInstance;Grants permission to update a notebook instance. Notebook instance updates include upgrading or downgrading the EC2 instance used for your notebook instance to accommodate changes in your workload requirements. You can also update the VPC security groups;Write;True
+Amazon SageMaker;sagemaker;UpdateNotebookInstance;sagemaker:UpdateNotebookInstance;Grants permission to update a notebook instance. Notebook instance updates include upgrading or downgrading the EC2 instance used for your notebook instance to accommodate changes in your workload requirements;Write;True
 Amazon SageMaker;sagemaker;UpdateNotebookInstanceLifecycleConfig;sagemaker:UpdateNotebookInstanceLifecycleConfig;Grants permission to updates a notebook instance lifecycle configuration created with the CreateNotebookInstanceLifecycleConfig API;Write;True
 Amazon SageMaker;sagemaker;UpdatePipeline;sagemaker:UpdatePipeline;Grants permission to update a pipeline;Write;True
 Amazon SageMaker;sagemaker;UpdatePipelineExecution;sagemaker:UpdatePipelineExecution;Grants permission to update a pipeline execution;Write;True
@@ -11545,6 +11602,7 @@ Amazon SNS;sns;DeleteEndpoint;sns:DeleteEndpoint;Grants permission to delete the
 Amazon SNS;sns;DeletePlatformApplication;sns:DeletePlatformApplication;Grants permission to delete a platform application object for one of the supported push notification services, such as APNS and GCM;Write;False
 Amazon SNS;sns;DeleteSMSSandboxPhoneNumber;sns:DeleteSMSSandboxPhoneNumber;Grants permission to delete an AWS account's verified or pending phone number;Write;False
 Amazon SNS;sns;DeleteTopic;sns:DeleteTopic;Grants permission to delete a topic and all its subscriptions;Write;True
+Amazon SNS;sns;GetDataProtectionPolicy;sns:GetDataProtectionPolicy;Grants permission to return the data protection policy of the topic;Read;True
 Amazon SNS;sns;GetEndpointAttributes;sns:GetEndpointAttributes;Grants permission to retrieve the endpoint attributes for a device on one of the supported push notification services, such as GCM and APNS;Read;False
 Amazon SNS;sns;GetPlatformApplicationAttributes;sns:GetPlatformApplicationAttributes;Grants permission to retrieve the attributes of the platform application object for the supported push notification services, such as APNS and GCM;Read;False
 Amazon SNS;sns;GetSMSAttributes;sns:GetSMSAttributes;Grants permission to return the settings for sending SMS messages from your account;Read;False
@@ -11562,6 +11620,7 @@ Amazon SNS;sns;ListTagsForResource;sns:ListTagsForResource;Grants permission to 
 Amazon SNS;sns;ListTopics;sns:ListTopics;Grants permission to return a list of the requester's topics;List;False
 Amazon SNS;sns;OptInPhoneNumber;sns:OptInPhoneNumber;Grants permission to opt in a phone number that is currently opted out, which enables you to resume sending SMS messages to the number;Write;False
 Amazon SNS;sns;Publish;sns:Publish;Grants permission to send a message to all of a topic's subscribed endpoints;Write;True
+Amazon SNS;sns;PutDataProtectionPolicy;sns:PutDataProtectionPolicy;Grants permission to allow a topic owner to set the data protection policy;Write;True
 Amazon SNS;sns;RemovePermission;sns:RemovePermission;Grants permission to remove a statement from a topic's access control policy;Permissions management;True
 Amazon SNS;sns;SetEndpointAttributes;sns:SetEndpointAttributes;Grants permission to set the attributes for an endpoint for a device on one of the supported push notification services, such as GCM and APNS;Write;False
 Amazon SNS;sns;SetPlatformApplicationAttributes;sns:SetPlatformApplicationAttributes;Grants permission to set the attributes of the platform application object for the supported push notification services, such as APNS and GCM;Write;False
@@ -11792,6 +11851,9 @@ AWS Support;support;RateCaseCommunication;support:RateCaseCommunication;Rate an 
 AWS Support;support;RefreshTrustedAdvisorCheck;support:RefreshTrustedAdvisorCheck;Requests a refresh of the Trusted Advisor check that has the specified check identifier.;Write;False
 AWS Support;support;ResolveCase;support:ResolveCase;Resolves an AWS Support case.;Write;False
 AWS Support;support;SearchForCases;support:SearchForCases;Returns a list of AWS Support cases that matches the given inputs.;Read;False
+AWS Support Plans;supportplans;GetSupportPlan [permission only];supportplans:GetSupportPlan [permission only];Grants permission to view details about the current support plan for this AWS account;Read;False
+AWS Support Plans;supportplans;GetSupportPlanUpdateStatus [permission only];supportplans:GetSupportPlanUpdateStatus [permission only];Grants permission to view details about the status for a request to update a support plan;Read;False
+AWS Support Plans;supportplans;StartSupportPlanUpdate [permission only];supportplans:StartSupportPlanUpdate [permission only];Grants permission to update the support plan for this AWS account;Write;False
 AWS Sustainability;sustainability;GetCarbonFootprintSummary;sustainability:GetCarbonFootprintSummary;Grants permission to view the carbon footprint tool;Read;False
 AWS Systems Manager;ssm;AddTagsToResource;ssm:AddTagsToResource;Grants permission to add or overwrite one or more tags for a specified AWS resource;Tagging;True
 AWS Systems Manager;ssm;AssociateOpsItemRelatedItem;ssm:AssociateOpsItemRelatedItem;Grants permission to associate RelatedItem to an OpsItem;Write;True
@@ -12097,6 +12159,7 @@ AWS Transfer Family;transfer;DeleteAccess;transfer:DeleteAccess;Grants permissio
 AWS Transfer Family;transfer;DeleteAgreement;transfer:DeleteAgreement;Grants permission to delete agreement;Write;True
 AWS Transfer Family;transfer;DeleteCertificate;transfer:DeleteCertificate;Grants permission to delete certificate;Write;True
 AWS Transfer Family;transfer;DeleteConnector;transfer:DeleteConnector;Grants permission to delete connector;Write;True
+AWS Transfer Family;transfer;DeleteHostKey;transfer:DeleteHostKey;Grants permission to delete a host key associated with a server;Write;True
 AWS Transfer Family;transfer;DeleteProfile;transfer:DeleteProfile;Grants permission to delete profile;Write;True
 AWS Transfer Family;transfer;DeleteServer;transfer:DeleteServer;Grants permission to delete a server;Write;True
 AWS Transfer Family;transfer;DeleteSshPublicKey;transfer:DeleteSshPublicKey;Grants permission to delete an SSH public key from a user;Write;True
@@ -12107,18 +12170,21 @@ AWS Transfer Family;transfer;DescribeAgreement;transfer:DescribeAgreement;Grants
 AWS Transfer Family;transfer;DescribeCertificate;transfer:DescribeCertificate;Grants permission to describe a certificate;Read;True
 AWS Transfer Family;transfer;DescribeConnector;transfer:DescribeConnector;Grants permission to describe a connector;Read;True
 AWS Transfer Family;transfer;DescribeExecution;transfer:DescribeExecution;Grants permission to describe an execution associated with a workflow;Read;True
+AWS Transfer Family;transfer;DescribeHostKey;transfer:DescribeHostKey;Grants permission to describe a host key associated with a server;Read;True
 AWS Transfer Family;transfer;DescribeProfile;transfer:DescribeProfile;Grants permission to describe a profile;Read;True
 AWS Transfer Family;transfer;DescribeSecurityPolicy;transfer:DescribeSecurityPolicy;Grants permission to describe a security policy;Read;False
 AWS Transfer Family;transfer;DescribeServer;transfer:DescribeServer;Grants permission to describe a server;Read;True
 AWS Transfer Family;transfer;DescribeUser;transfer:DescribeUser;Grants permission to describe a user associated with a server;Read;True
 AWS Transfer Family;transfer;DescribeWorkflow;transfer:DescribeWorkflow;Grants permission to describe a workflow;Read;True
 AWS Transfer Family;transfer;ImportCertificate;transfer:ImportCertificate;Grants permission to add a certificate;Write;False
+AWS Transfer Family;transfer;ImportHostKey;transfer:ImportHostKey;Grants permission to add a host key to a server;Write;True
 AWS Transfer Family;transfer;ImportSshPublicKey;transfer:ImportSshPublicKey;Grants permission to add an SSH public key to a user;Write;True
 AWS Transfer Family;transfer;ListAccesses;transfer:ListAccesses;Grants permission to list accesses;Read;True
 AWS Transfer Family;transfer;ListAgreements;transfer:ListAgreements;Grants permission to list agreements;Read;True
 AWS Transfer Family;transfer;ListCertificates;transfer:ListCertificates;Grants permission to list certificates;Read;False
 AWS Transfer Family;transfer;ListConnectors;transfer:ListConnectors;Grants permission to list connectors;Read;False
 AWS Transfer Family;transfer;ListExecutions;transfer:ListExecutions;Grants permission to list executions associated with a workflow;Read;True
+AWS Transfer Family;transfer;ListHostKeys;transfer:ListHostKeys;Grants permission to list host keys associated with a server;Read;True
 AWS Transfer Family;transfer;ListProfiles;transfer:ListProfiles;Grants permission to list profiles;Read;False
 AWS Transfer Family;transfer;ListSecurityPolicies;transfer:ListSecurityPolicies;Grants permission to list security policies;List;False
 AWS Transfer Family;transfer;ListServers;transfer:ListServers;Grants permission to list servers;List;False
@@ -12126,6 +12192,7 @@ AWS Transfer Family;transfer;ListTagsForResource;transfer:ListTagsForResource;Gr
 AWS Transfer Family;transfer;ListUsers;transfer:ListUsers;Grants permission to list users associated with a server;List;True
 AWS Transfer Family;transfer;ListWorkflows;transfer:ListWorkflows;Grants permission to list workflows;List;False
 AWS Transfer Family;transfer;SendWorkflowStepState;transfer:SendWorkflowStepState;Grants permission to send a callback for asynchronous custom steps;Write;True
+AWS Transfer Family;transfer;StartFileTransfer;transfer:StartFileTransfer;Grants permission to initiate a connector file transfer;Write;True
 AWS Transfer Family;transfer;StartServer;transfer:StartServer;Grants permission to start a server;Write;True
 AWS Transfer Family;transfer;StopServer;transfer:StopServer;Grants permission to stop a server;Write;True
 AWS Transfer Family;transfer;TagResource;transfer:TagResource;Grants permission to tag an AWS Transfer Family resource;Tagging;True
@@ -12135,6 +12202,7 @@ AWS Transfer Family;transfer;UpdateAccess;transfer:UpdateAccess;Grants permissio
 AWS Transfer Family;transfer;UpdateAgreement;transfer:UpdateAgreement;Grants permission to update an agreement;Write;True
 AWS Transfer Family;transfer;UpdateCertificate;transfer:UpdateCertificate;Grants permission to update a certificate;Write;True
 AWS Transfer Family;transfer;UpdateConnector;transfer:UpdateConnector;Grants permission to update a connector;Write;True
+AWS Transfer Family;transfer;UpdateHostKey;transfer:UpdateHostKey;Grants permission to update a host key;Write;True
 AWS Transfer Family;transfer;UpdateProfile;transfer:UpdateProfile;Grants permission to update a profile;Write;True
 AWS Transfer Family;transfer;UpdateServer;transfer:UpdateServer;Grants permission to update the configuration of a server;Write;True
 AWS Transfer Family;transfer;UpdateUser;transfer:UpdateUser;Grants permission to update the configuration of a user;Write;True
@@ -12426,7 +12494,7 @@ AWS Well-Architected Tool;wellarchitected;UntagResource;wellarchitected:UntagRes
 AWS Well-Architected Tool;wellarchitected;UpdateAnswer;wellarchitected:UpdateAnswer;Grants permission to update properties of the specified answer;Write;True
 AWS Well-Architected Tool;wellarchitected;UpdateGlobalSettings;wellarchitected:UpdateGlobalSettings;Grants permission to update settings to enable aws-organization support;Write;False
 AWS Well-Architected Tool;wellarchitected;UpdateLensReview;wellarchitected:UpdateLensReview;Grants permission to update properties of the specified lens review;Write;True
-AWS Well-Architected Tool;wellarchitected;UpdateShareInvitation;wellarchitected:UpdateShareInvitation;Grants permission to update status of the specified workload share invitation;Write;True
+AWS Well-Architected Tool;wellarchitected;UpdateShareInvitation;wellarchitected:UpdateShareInvitation;Grants permission to update status of the specified workload share invitation;Write;False
 AWS Well-Architected Tool;wellarchitected;UpdateWorkload;wellarchitected:UpdateWorkload;Grants permission to update properties of the specified workload;Write;True
 AWS Well-Architected Tool;wellarchitected;UpdateWorkloadShare;wellarchitected:UpdateWorkloadShare;Grants permission to update properties of the specified workload;Write;True
 AWS Well-Architected Tool;wellarchitected;UpgradeLensReview;wellarchitected:UpgradeLensReview;Grants permission to upgrade the specified lens review to use the latest version of the associated lens;Write;True
@@ -12521,6 +12589,7 @@ Amazon WorkMail;workmail;AssociateDelegateToResource;workmail:AssociateDelegateT
 Amazon WorkMail;workmail;AssociateMemberToGroup;workmail:AssociateMemberToGroup;Grants permission to add a member (user or group) to the group's set;Write;True
 Amazon WorkMail;workmail;CancelMailboxExportJob;workmail:CancelMailboxExportJob;Grants permission to cancel a currently running mailbox export job;Write;True
 Amazon WorkMail;workmail;CreateAlias;workmail:CreateAlias;Grants permission to add an alias to the set of a given member (user or group) of WorkMail;Write;True
+Amazon WorkMail;workmail;CreateAvailabilityConfiguration;workmail:CreateAvailabilityConfiguration;Grants permission to create an AvailabilityConfiguration for the given Amazon WorkMail organization and domain;Write;True
 Amazon WorkMail;workmail;CreateGroup;workmail:CreateGroup;Grants permission to create a group that can be used in WorkMail by calling the RegisterToWorkMail operation;Write;True
 Amazon WorkMail;workmail;CreateInboundMailFlowRule [permission only];workmail:CreateInboundMailFlowRule [permission only];Grants permission to create an inbound email flow rule which will apply to all email sent to an organization;Write;True
 Amazon WorkMail;workmail;CreateMailDomain [permission only];workmail:CreateMailDomain [permission only];Grants permission to create a mail domain;Write;True
@@ -12533,6 +12602,7 @@ Amazon WorkMail;workmail;CreateSmtpGateway [permission only];workmail:CreateSmtp
 Amazon WorkMail;workmail;CreateUser;workmail:CreateUser;Grants permission to create a user, which can be enabled afterwards by calling the RegisterToWorkMail operation;Write;True
 Amazon WorkMail;workmail;DeleteAccessControlRule;workmail:DeleteAccessControlRule;Grants permission to delete an access control rule;Write;True
 Amazon WorkMail;workmail;DeleteAlias;workmail:DeleteAlias;Grants permission to remove one or more specified aliases from a set of aliases for a given user;Write;True
+Amazon WorkMail;workmail;DeleteAvailabilityConfiguration;workmail:DeleteAvailabilityConfiguration;Grants permission to delete the AvailabilityConfiguration for the given Amazon WorkMail organization and domain;Write;True
 Amazon WorkMail;workmail;DeleteEmailMonitoringConfiguration;workmail:DeleteEmailMonitoringConfiguration;Grants permission to delete the email monitoring configuration for an organization;Write;True
 Amazon WorkMail;workmail;DeleteGroup;workmail:DeleteGroup;Grants permission to delete a group from WorkMail;Write;True
 Amazon WorkMail;workmail;DeleteInboundMailFlowRule [permission only];workmail:DeleteInboundMailFlowRule [permission only];Grants permission to remove an inbound email flow rule to no longer apply to emails sent to an organization;Write;True
@@ -12587,6 +12657,7 @@ Amazon WorkMail;workmail;GetMobileDevicesForUser [permission only];workmail:GetM
 Amazon WorkMail;workmail;GetMobilePolicyDetails [permission only];workmail:GetMobilePolicyDetails [permission only];Grants permission to get the details of the mobile device policy associated with the organization;Read;True
 Amazon WorkMail;workmail;ListAccessControlRules;workmail:ListAccessControlRules;Grants permission to list the access control rules;Read;True
 Amazon WorkMail;workmail;ListAliases;workmail:ListAliases;Grants permission to list the aliases associated with a given entity;List;True
+Amazon WorkMail;workmail;ListAvailabilityConfigurations;workmail:ListAvailabilityConfigurations;Grants permission to list all the AvailabilityConfiguration's for the given Amazon WorkMail organization;Read;True
 Amazon WorkMail;workmail;ListGroupMembers;workmail:ListGroupMembers;Grants permission to read an overview of the members of a group. Users and groups can be members of a group;List;True
 Amazon WorkMail;workmail;ListGroups;workmail:ListGroups;Grants permission to list summaries of the organization's groups;List;True
 Amazon WorkMail;workmail;ListInboundMailFlowRules [permission only];workmail:ListInboundMailFlowRules [permission only];Grants permission to list inbound mail flow rules configured for an organization;List;True
@@ -12623,9 +12694,11 @@ Amazon WorkMail;workmail;SetMailUserDetails [permission only];workmail:SetMailUs
 Amazon WorkMail;workmail;SetMobilePolicyDetails [permission only];workmail:SetMobilePolicyDetails [permission only];Grants permission to set the details of a mobile policy associated with the organization;Write;True
 Amazon WorkMail;workmail;StartMailboxExportJob;workmail:StartMailboxExportJob;Grants permission to start a new mailbox export job;Write;True
 Amazon WorkMail;workmail;TagResource;workmail:TagResource;Grants permission to tag the specified Amazon WorkMail organization resource;Tagging;True
+Amazon WorkMail;workmail;TestAvailabilityConfiguration;workmail:TestAvailabilityConfiguration;Grants permission to performs a test on an availability provider to ensure that access is allowed;Read;True
 Amazon WorkMail;workmail;TestInboundMailFlowRules [permission only];workmail:TestInboundMailFlowRules [permission only];Grants permission to test what inbound rules will apply to an email with a given sender and recipient;Write;True
 Amazon WorkMail;workmail;TestOutboundMailFlowRules [permission only];workmail:TestOutboundMailFlowRules [permission only];Grants permission to test what outbound rules will apply to an email with a given sender and recipient;Write;True
 Amazon WorkMail;workmail;UntagResource;workmail:UntagResource;Grants permission to untag the specified Amazon WorkMail organization resource;Tagging;True
+Amazon WorkMail;workmail;UpdateAvailabilityConfiguration;workmail:UpdateAvailabilityConfiguration;Grants permission to update an existing AvailabilityConfiguration for the given Amazon WorkMail organization and domain;Write;True
 Amazon WorkMail;workmail;UpdateDefaultMailDomain;workmail:UpdateDefaultMailDomain;Grants permission to update which domain is the default domain for an organization;Write;True
 Amazon WorkMail;workmail;UpdateInboundMailFlowRule [permission only];workmail:UpdateInboundMailFlowRule [permission only];Grants permission to update the details of an inbound email flow rule which will apply to all email sent to an organization;Write;True
 Amazon WorkMail;workmail;UpdateMailboxQuota;workmail:UpdateMailboxQuota;Grants permission to update the maximum size (in MB) of the user's mailbox;Write;True

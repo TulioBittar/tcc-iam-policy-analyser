@@ -1,8 +1,8 @@
 ,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CreateDataIntegration,Grants permission to create a new DataIntegration,Write,data-integration*,,
+0,CreateDataIntegration,Grants permission to create a new DataIntegration,Write,data-integration*,,appflow:CreateFlow  iam:AttachRolePolicy  iam:CreateServiceLinkedRole  iam:PutRolePolicy
 1,CreateDataIntegration,Grants permission to create a new DataIntegration,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
 2,CreateDataIntegrationAssociation [permission only],Grants permission to create a DataIntegrationAssociation,Write,data-integration*,,
-3,CreateEventIntegration,Grants permission to create a new EventIntegration,Write,event-integration*,,
+3,CreateEventIntegration,Grants permission to create a new EventIntegration,Write,event-integration*,,iam:AttachRolePolicy  iam:CreateServiceLinkedRole  iam:PutRolePolicy
 4,CreateEventIntegration,Grants permission to create a new EventIntegration,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
 5,CreateEventIntegrationAssociation [permission only],Grants permission to create an EventIntegrationAssociation,Write,event-integration*,,events:PutRule  events:PutTargets
 6,DeleteDataIntegration,Grants permission to delete a DataIntegration,Write,data-integration*,,

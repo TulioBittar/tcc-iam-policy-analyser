@@ -1,2 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,GetRhelURL,Grants permission to access the Red Hat Knowledgebase portal,Read,,,

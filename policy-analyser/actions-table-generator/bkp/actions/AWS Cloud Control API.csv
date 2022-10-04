@@ -1,9 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CancelResourceRequest,Grants permission to cancel resource requests in your account,Write,,,
-1,CreateResource,Grants permission to create resources in your account,Write,,,
-2,DeleteResource,Grants permission to delete resources in your account,Write,,,
-3,GetResource,Grants permission to get resources in your account,Read,,,
-4,GetResourceRequestStatus,Grants permission to get resource requests in your account,Read,,,
-5,ListResourceRequests,Grants permission to list resource requests in your account,Read,,,
-6,ListResources,Grants permission to list resources in your account,Read,,,
-7,UpdateResource,Grants permission to update resources in your account,Write,,,

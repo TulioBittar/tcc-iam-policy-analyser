@@ -1,3 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,GetExemptions,Grants permission to view tax exemptions data,Read,,,
-1,UpdateExemptions,Grants permission to update tax exemptions data,Write,,,

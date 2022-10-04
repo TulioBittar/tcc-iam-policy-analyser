@@ -1,8 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,Connect,Grants permission to customer for connecting to Elastic Inference accelerator,Write,accelerator*,,
-1,DescribeAcceleratorOfferings,Grants permission to describe the locations in which a given accelerator type or set of types is present in a given region,List,,,
-2,DescribeAcceleratorTypes,"Grants permission to describe the accelerator types available in a given region, as well as their characteristics, such as memory and throughput",List,,,
-3,DescribeAccelerators,Grants permission to describe information over a provided set of accelerators belonging to an account,List,,,
-4,ListTagsForResource,Grants permission to list all tags on an Amazon RDS resource,Read,,,
-5,TagResource,Grants permission to assign one or more tags (key-value pairs) to the specified QuickSight resource,Tagging,,,
-6,UntagResource,Grants permission to remove a tag or tags from a resource,Tagging,,,

@@ -1,5 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,DeleteReportDefinition,Delete Cost and Usage Report Definition,Write,cur*,,
-1,DescribeReportDefinitions,Get Cost and Usage Report Definitions,Read,,,
-2,ModifyReportDefinition,Modify Cost and Usage Report Definition,Write,cur*,,
-3,PutReportDefinition,Write Cost and Usage Report Definition,Write,cur*,,

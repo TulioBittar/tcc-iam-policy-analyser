@@ -1,0 +1,4 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetSupportPlan [permission only],Grants permission to view details about the current support plan for this AWS account,Read,,,
+1,GetSupportPlanUpdateStatus [permission only],Grants permission to view details about the status for a request to update a support plan,Read,,,
+2,StartSupportPlanUpdate [permission only],Grants permission to update the support plan for this AWS account,Write,,,

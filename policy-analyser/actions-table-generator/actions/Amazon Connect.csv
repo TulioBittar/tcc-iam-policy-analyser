@@ -298,7 +298,7 @@
 296,UntagResource,Grants permission to untag an Amazon Connect resource,Tagging,user,,
 297,UntagResource,Grants permission to untag an Amazon Connect resource,Tagging,vocabulary,,
 298,UntagResource,Grants permission to untag an Amazon Connect resource,Tagging,wildcard-phone-number,,
-299,UntagResource,Grants permission to untag an Amazon Connect resource,Tagging,,aws:TagKeys  aws:RequestTag/${TagKey},
+299,UntagResource,Grants permission to untag an Amazon Connect resource,Tagging,,aws:TagKeys,
 300,UpdateAgentStatus,Grants permission to update agent status in an Amazon Connect instance,Write,agent-status*,,
 301,UpdateAgentStatus,Grants permission to update agent status in an Amazon Connect instance,Write,,aws:ResourceTag/${TagKey}  connect:InstanceId,
 302,UpdateContact,Grants permission to update a contact in an Amazon Connect instance,Write,contact*,,
