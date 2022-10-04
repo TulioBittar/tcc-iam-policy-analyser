@@ -35,3 +35,4 @@
 33,StartMLModelTransformJob,Grants permission to start an ML model transform job,Write,database*,,
 34,WriteDataViaQuery,Grants permission to run write data via query APIs on database,Write,database*,,
 35,WriteDataViaQuery,Grants permission to run write data via query APIs on database,Write,,neptune-db:QueryLanguage,
+36,connect,Grants permission to all data-access actions in engine versions prior to 1.2.0.0,Write,database*,,

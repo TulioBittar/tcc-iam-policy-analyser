@@ -45,19 +45,19 @@ timestamp = timestamp.replace(" ", "_")
 # print(timestamp)
 
 # Create directory to store results
-directory = "./policy-history/" + timestamp
+directory = "./history/" + timestamp
 if not os.path.exists(directory):
     os.makedirs(directory)
 
 # Save IAM Policy into a JSON file in the directory
-jsonFilePath = "./policy-history/"+timestamp+"/policy.json"
+jsonFilePath = "./history/"+timestamp+"/policy.json"
 
 with open(jsonFilePath, 'w') as jsonFile:
     jsonFile.write(json.dumps( iam_policy, indent=4, separators=(',', ':') ))
 
 
 # Create CSV File to store the critical actions found in the IAM policy
-policy_analyser_result = open("./policy-history/"+timestamp+"/policy-analyser-result.csv", "w")
+policy_analyser_result = open("./history/"+timestamp+"/policy-analyser-result.csv", "w")
 policy_analyser_result.write("StatementNumber;Action;AccessLevel;Resource;Description;Documentation"+'\n')
 print("StatementNumber;Action;AccessLevel;Resource;Description;Documentation")
 
@@ -77,7 +77,7 @@ else:
 
 if error:
     # Write error on the file result
-    policy_analyser_result = open("./policy-history/"+timestamp+"/policy-analyser-result.csv", "w")
+    policy_analyser_result = open("./history/"+timestamp+"/policy-analyser-result.csv", "w")
     policy_analyser_result.write("ERROR at "+ stmt_error +": IAM Policy is invalid.\nPlease, access the AWS Console and validate your IAM Policy at the link below:\n\n\thttps://us-east-1.console.aws.amazon.com/iam/home#/policies$new?step=edit\n")
     policy_analyser_result.close()
     # Print error and finish program
@@ -194,8 +194,8 @@ else:
     policy_analyser_result.close()
 
     # Transform Results from CSV file to JSON File, for better visualization
-    csvFilePath = "./policy-history/"+timestamp+"/policy-analyser-result.csv"
-    jsonFilePath = "./policy-history/"+timestamp+"/policy-analyser-result.json"
+    csvFilePath = "./history/"+timestamp+"/policy-analyser-result.csv"
+    jsonFilePath = "./history/"+timestamp+"/policy-analyser-result.json"
     # read csv file and add to csv_data
     csv_data = []
     with open(csvFilePath) as csvFile:

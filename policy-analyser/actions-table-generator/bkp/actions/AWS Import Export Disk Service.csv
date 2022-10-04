@@ -1,7 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CancelJob,This action cancels a specified job. Only the job owner can cancel it. The action fails if the job has already started or is complete.,Write,,,
-1,CreateJob,This action initiates the process of scheduling an upload or download of your data.,Write,,,
-2,GetShippingLabel,This action generates a pre-paid shipping label that you will use to ship your device to AWS for processing.,Read,,,
-3,GetStatus,"This action returns information about a job, including where the job is in the processing pipeline, the status of the results, and the signature value associated with the job.",Read,,,
-4,ListJobs,This action returns the jobs associated with the requester.,List,,,
-5,UpdateJob,You use this action to change the parameters specified in the original manifest file by supplying a new manifest file.,Write,,,

@@ -43,7 +43,7 @@
 41,UntagResource,Grants permission to remove one or more tags from a resource,Tagging,,aws:TagKeys  aws:RequestTag/${TagKey},
 42,UpdateBrowserSettings,Grants permission to update browser settings,Write,browserSettings*,,
 43,UpdateIdentityProvider,Grants permission to update identity provider,Write,,,
-44,UpdateNetworkSettings,Grants permission to update network settings,Write,networkSettings*,,
+44,UpdateNetworkSettings,Grants permission to update network settings,Write,networkSettings*,,ec2:CreateNetworkInterface  ec2:CreateNetworkInterfacePermission  ec2:CreateTags  ec2:DeleteNetworkInterface  ec2:DeleteNetworkInterfacePermission  ec2:ModifyNetworkInterfaceAttribute
 45,UpdatePortal,Grants permission to update web portals,Write,portal*,,
 46,UpdateTrustStore,Grants permission to update trust stores,Write,trustStore*,,
 47,UpdateUserSettings,Grants permission to update user settings,Write,userSettings*,,

@@ -43,7 +43,7 @@
 41,UpdateAnswer,Grants permission to update properties of the specified answer,Write,workload*,,
 42,UpdateGlobalSettings,Grants permission to update settings to enable aws-organization support,Write,,,
 43,UpdateLensReview,Grants permission to update properties of the specified lens review,Write,workload*,,
-44,UpdateShareInvitation,Grants permission to update status of the specified workload share invitation,Write,workload*,,
+44,UpdateShareInvitation,Grants permission to update status of the specified workload share invitation,Write,,,
 45,UpdateWorkload,Grants permission to update properties of the specified workload,Write,workload*,,
 46,UpdateWorkloadShare,Grants permission to update properties of the specified workload,Write,workload*,,
 47,UpgradeLensReview,Grants permission to upgrade the specified lens review to use the latest version of the associated lens,Write,workload*,,

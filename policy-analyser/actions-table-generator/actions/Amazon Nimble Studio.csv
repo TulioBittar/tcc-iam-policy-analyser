@@ -55,7 +55,7 @@
 53,PutStudioMembers,Grants permission to add/update studio members,Write,studio*,,sso-directory:DescribeUsers
 54,StartStreamingSession,Grants permission to start a streaming session,Write,streaming-session*,,nimble:GetLaunchProfile  nimble:GetLaunchProfileMember
 55,StartStreamingSession,Grants permission to start a streaming session,Write,,nimble:requesterPrincipalId,
-56,StartStudioSSOConfigurationRepair,Grants permission to repair the studio's AWS SSO configuration,Write,studio*,,sso:CreateManagedApplicationInstance  sso:GetManagedApplicationInstance
+56,StartStudioSSOConfigurationRepair,Grants permission to repair the studio's AWS IAM Identity Center configuration,Write,studio*,,sso:CreateManagedApplicationInstance  sso:GetManagedApplicationInstance
 57,StopStreamingSession,Grants permission to stop a streaming session,Write,streaming-session*,,nimble:GetLaunchProfile
 58,StopStreamingSession,Grants permission to stop a streaming session,Write,,nimble:requesterPrincipalId,
 59,TagResource,Grants permission to add or overwrite one or more tags for the specified Nimble Studio resource,Tagging,launch-profile,,

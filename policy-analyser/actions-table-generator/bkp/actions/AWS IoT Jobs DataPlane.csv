@@ -1,7 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,DescribeJobExecution,Grants permission to describe a job execution,Read,thing*,,
-1,DescribeJobExecution,Grants permission to describe a job execution,Read,,iot:JobId,
-2,GetPendingJobExecutions,Grants permission to get the list of all jobs for a thing that are not in a terminal state,Read,thing*,,
-3,StartNextPendingJobExecution,Grants permission to get and start the next pending job execution for a thing,Write,thing*,,
-4,UpdateJobExecution,Grants permission to update a job execution,Write,thing*,,
-5,UpdateJobExecution,Grants permission to update a job execution,Write,,iot:JobId,

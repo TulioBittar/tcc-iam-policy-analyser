@@ -1,2 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CreateDatabaseBinarySnapshot [permission only],Grants permission to create a database binary snapshot on the customer's aws account,Write,,,

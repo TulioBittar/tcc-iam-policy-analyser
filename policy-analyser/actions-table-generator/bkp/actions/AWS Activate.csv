@@ -1,9 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CreateForm,Grants permission to submit an Activate application form,Write,,,
-1,GetAccountContact,Grants permission to get the AWS account contact information,Read,,,
-2,GetContentInfo,Grants permission to get Activate tech posts and offer information,Read,,,
-3,GetCosts,Grants permission to get the AWS cost information,Read,,,
-4,GetCredits,Grants permission to get the AWS credit information,Read,,,
-5,GetMemberInfo,Grants permission to get the Activate member information,Read,,,
-6,GetProgram,Grants permission to get an Activate program,Read,,,
-7,PutMemberInfo,Grants permission to create or update the Activate member information,Write,,,

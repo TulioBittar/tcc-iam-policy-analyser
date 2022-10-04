@@ -1,2 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,ApproveAccessGrant [permission only],Grants permission to approve an access grant,Write,,,

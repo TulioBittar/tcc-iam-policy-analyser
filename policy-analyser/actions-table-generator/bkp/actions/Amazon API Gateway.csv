@@ -1,4 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,InvalidateCache,Used to invalidate API cache upon a client request,Write,execute-api-general*,,
-1,Invoke,Used to invoke an API upon a client request,Write,execute-api-general*,,
-2,ManageConnections,ManageConnections controls access to the @connections API,Write,execute-api-general*,,

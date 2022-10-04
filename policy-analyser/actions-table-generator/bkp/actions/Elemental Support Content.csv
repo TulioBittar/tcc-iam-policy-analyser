@@ -1,2 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,Query [permission only],Grant the permission to search support content,Read,,,

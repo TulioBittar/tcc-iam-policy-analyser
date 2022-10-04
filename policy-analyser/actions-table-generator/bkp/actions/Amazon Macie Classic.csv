@@ -1,8 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,AssociateMemberAccount,Enables the user to associate a specified AWS account with Amazon Macie as a member account.,Write,,,
-1,AssociateS3Resources,Enables the user to associate specified S3 resources with Amazon Macie for monitoring and data classification.,Write,,aws:SourceArn,
-2,DisassociateMemberAccount,Enables the user to remove the specified member account from Amazon Macie.,Write,,,
-3,DisassociateS3Resources,Enables the user to remove specified S3 resources from being monitored by Amazon Macie.,Write,,aws:SourceArn,
-4,ListMemberAccounts,Enables the user to list all Amazon Macie member accounts for the current Macie master account.,List,,,
-5,ListS3Resources,Enables the user to list all the S3 resources associated with Amazon Macie.,List,,,
-6,UpdateS3Resources,Enables the user to update the classification types for the specified S3 resources.,Write,,aws:SourceArn,

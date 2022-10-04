@@ -1,6 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,uploadFiles [permission only],Allows access to the File Upload page inside the AWS Marketplace Management Portal.,Write,,,
-1,viewMarketing [permission only],Allows access to the Marketing page inside the AWS Marketplace Management Portal.,List,,,
-2,viewReports [permission only],Allows access to the Reports page inside the AWS Marketplace Management Portal.,List,,,
-3,viewSettings [permission only],Allows access to the Settings page inside the AWS Marketplace Management Portal.,List,,,
-4,viewSupport [permission only],Allows access to the Customer Support Eligibility page inside the AWS Marketplace Management Portal.,List,,,

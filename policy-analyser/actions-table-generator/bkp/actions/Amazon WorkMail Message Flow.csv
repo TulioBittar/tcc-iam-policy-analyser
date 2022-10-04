@@ -1,3 +1,0 @@
-,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,GetRawMessageContent,Grants permission to read the content of email messages with the specified message ID,Read,RawMessage*,,
-1,PutRawMessageContent,Grants permission to update the content of email messages with the specified message ID,Write,RawMessage*,,
