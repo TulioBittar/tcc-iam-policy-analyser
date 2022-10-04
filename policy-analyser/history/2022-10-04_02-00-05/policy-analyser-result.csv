@@ -1,0 +1,8 @@
+StatementNumber;Action;AccessLevel;Resource;Description;Documentation
+1;s3:PutObjectAcl;Permissions management;True;Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+1;s3:ReplicateObject;Write;True;Grants permission to replicate objects and object tags to the destination bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+3;s3:DeleteObject;Write;True;Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+3;s3:GetObject;Read;True;Grants permission to retrieve objects from Amazon S3;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+3;s3:PutObject;Write;True;Grants permission to add an object to a bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+3;s3:ReplicateObject;Write;True;Grants permission to replicate objects and object tags to the destination bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+3;s3:RestoreObject;Write;True;Grants permission to restore an archived copy of an object back into Amazon S3;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
