@@ -1,4 +1,0 @@
-ERROR at Headers: Policy is invalid.
-Please, access the AWS Console and validate your IAM policy at the link below:
-
-	https://us-east-1.console.aws.amazon.com/iam/home#/policies$new?step=edit
