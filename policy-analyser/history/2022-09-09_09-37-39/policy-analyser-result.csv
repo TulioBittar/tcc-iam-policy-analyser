@@ -1,9 +1,0 @@
-StatementNumber;Action;AccessLevel;Resource;Description
-2;dynamodb:BatchGetItem;Read;True;Grants permission to return the attributes of one or more items from one or more tables
-2;dynamodb:GetItem;Read;True;Grants permission to the GetItem operation that returns a set of attributes for the item with the given primary key
-2;dynamodb:Query;Read;True;Grants permission to use the primary key of a table or a secondary index to directly access items from that table or index
-2;dynamodb:Scan;Read;True;Grants permission to return one or more items and item attributes by accessing every item in a table or a secondary index
-2;dynamodb:BatchWriteItem;Write;True;Grants permission to put or delete multiple items in one or more tables
-2;dynamodb:DeleteItem;Write;True;Grants permission to deletes a single item in a table by primary key
-2;dynamodb:UpdateItem;Write;True;Grants permission to edit an existing item's attributes, or adds a new item to the table if it does not already exist
-2;dynamodb:PutItem;Write;True;Grants permission to create a new item, or replace an old item with a new item
