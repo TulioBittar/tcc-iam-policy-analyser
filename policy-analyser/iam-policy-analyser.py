@@ -7,6 +7,7 @@ from csv import DictReader
 from bs4 import BeautifulSoup
 from datetime import datetime
 import os
+import shutil
 
 # --------------------------------------------------------------------------
 # EARLY SETUP - CREATE RESULTS FOLDER
@@ -26,16 +27,20 @@ directory = "./history/" + timestamp
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-# Save IAM Policy into a JSON file in the directory
-jsonFilePath = "./history/"+timestamp+"/policy.json"
-
 # --------------------------------------------------------------------------
 # Get policy file name
 file_name = input("Enter policy file name (with extension): ")
 # Open JSON file containing the IAM Policy to be analysed
 try:
+    # Try to open policy file as JSON
     with open('./analyse-policy/'+file_name, "r") as read_file:
        iam_policy = json.load(read_file)
+
+    # Copy input file to results history folder
+    source = "./analyse-policy/"+file_name
+    destination = "./history/"+timestamp+"/policy.json"
+    shutil.copyfile(source, destination)
+
 except:
     error = True
     msg_error = "JSON Format"
@@ -70,8 +75,6 @@ else:
         actions_critical_list.append(x.replace("\n", ""))
     # print(actions_critical_list)
 
-
-
     # Error Treatment. Verify if headers are valid
     try:
         stmt_stmt = iam_policy['Statement']
@@ -96,7 +99,7 @@ else:
         # Create CSV File to store the critical actions found in the IAM policy
         policy_analyser_result = open("./history/"+timestamp+"/policy-analyser-result.csv", "w")
         policy_analyser_result.write("StatementNumber;Action;AccessLevel;Resource;Description;Documentation"+'\n')
-        print("StatementNumber;Action;AccessLevel;Resource;Description;Documentation")
+        # print("StatementNumber;Action;AccessLevel;Resource;Description;Documentation")
 
         print("Critical Actions found in the IAM Policy:")
         # stmt_index = 0
@@ -115,7 +118,7 @@ else:
                 break
             else:
                 error = False
-                print("Statement "+str(i)+" is Valid!")
+                # print("Statement "+str(i)+" is Valid!")
             # print(str(statement['Action']))
             # Get Statement Actions
             # if the Action section has only one action, transform the string in a list
