@@ -1,0 +1,26 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"glue:GetSecurityConfigurations",
+        "AccessLevel":"Read",
+        "Resource":"False",
+        "Description":"Grants permission to retrieve one or more security configurations",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsglue.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"logs:GetLogEvents",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permissions to retrieve log events from the specified log stream",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatchlogs.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ssm:GetParameters",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to view information about multiple specified parameters",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanager.html"
+    }
+]
