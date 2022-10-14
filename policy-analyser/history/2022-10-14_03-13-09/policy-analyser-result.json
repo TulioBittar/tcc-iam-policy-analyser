@@ -1,0 +1,82 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"glacier:GetVaultAccessPolicy",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve the access-policy subresource set on the vault",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3glacier.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"glue:GetDatabases",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve all databases",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsglue.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"iam:GetServerCertificate",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve information about the specified server certificate stored in IAM",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"iam:GetSSHPublicKey",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve the specified SSH public key, including metadata about the key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKey",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data keys. You can use the data keys to encrypt data outside of AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKeyPair",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data key pairs",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKeyPairWithoutPlaintext",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data key pairs. Unlike the GenerateDataKeyPair operation, this operation returns an encrypted private key without a plaintext copy",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKeyWithoutPlaintext",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate a data key. Unlike the GenerateDataKey operation, this operation returns an encrypted data key without a plaintext version of the data key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateMac",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate message authentication codes",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateRandom",
+        "AccessLevel":"Write",
+        "Resource":"False",
+        "Description":"Controls permission to get a cryptographically secure random byte string from AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    }
+]
