@@ -1,0 +1,122 @@
+[
+    {
+        "StatementNumber":"3",
+        "Action":"s3:CreateAccessPointForObjectLambda",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to create an object lambda enabled accesspoint",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:DeleteObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:DeleteObjectVersion",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove a specific version of an object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:GetObject",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve objects from Amazon S3",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutAccessPointConfigurationForObjectLambda",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to set the configuration of the object lambda enabled access point",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutAccessPointPolicyForObjectLambda",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to associate an access policy with a specified object lambda enabled access point",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to add an object to a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObjectAcl",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObjectLegalHold",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to apply a Legal Hold configuration to the specified object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObjectRetention",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to place an Object Retention configuration on an object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObjectTagging",
+        "AccessLevel":"Tagging",
+        "Resource":"True",
+        "Description":"Grants permission to set the supplied tag-set to an object that already exists in a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObjectVersionAcl",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to use the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:PutObjectVersionTagging",
+        "AccessLevel":"Tagging",
+        "Resource":"True",
+        "Description":"Grants permission to set the supplied tag-set for a specific version of an object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:ReplicateObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to replicate objects and object tags to the destination bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"3",
+        "Action":"s3:RestoreObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to restore an archived copy of an object back into Amazon S3",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    }
+]
