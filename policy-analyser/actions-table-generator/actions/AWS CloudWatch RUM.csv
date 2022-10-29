@@ -1,12 +1,21 @@
 ,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CreateAppMonitor,Grants permission to create appMonitor metadata,Write,AppMonitorResource*,,iam:CreateServiceLinkedRole  iam:GetRole
-1,CreateAppMonitor,Grants permission to create appMonitor metadata,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
-2,DeleteAppMonitor,Grants permission to delete appMonitor metadata,Write,AppMonitorResource*,,
-3,GetAppMonitor,Grants permission to get appMonitor metadata,Read,AppMonitorResource*,,
-4,GetAppMonitorData,Grants permission to get appMonitor data,Read,AppMonitorResource*,,
-5,ListAppMonitors,Grants permission to list appMonitors metadata,List,,,
-6,ListTagsForResource,Grants permission to list tags for resources,Read,,,
-7,PutRumEvents,Grants permission to put RUM events for appmonitor,Write,AppMonitorResource*,,
-8,TagResource,Grants permission to tag resources,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
-9,UntagResource,Grants permission to untag resources,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
-10,UpdateAppMonitor,Grants permission to update appmonitor metadata,Write,AppMonitorResource*,,iam:CreateServiceLinkedRole  iam:GetRole
+0,BatchCreateRumMetricDefinitions,Grants permission to create rum metric definitions,Write,AppMonitorResource*,,
+1,BatchDeleteRumMetricDefinitions,Grants permission to remove rum metric definitions,Write,AppMonitorResource*,,
+2,BatchGetRumMetricDefinitions,Grants permission to get rum metric definitions,Read,AppMonitorResource*,,
+3,CreateAppMonitor,Grants permission to create appMonitor metadata,Write,AppMonitorResource*,,iam:CreateServiceLinkedRole  iam:GetRole
+4,CreateAppMonitor,Grants permission to create appMonitor metadata,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
+5,DeleteAppMonitor,Grants permission to delete appMonitor metadata,Write,AppMonitorResource*,,
+6,DeleteRumMetricsDestination,Grants permission to delete rum metrics destinations,Write,AppMonitorResource*,,
+7,GetAppMonitor,Grants permission to get appMonitor metadata,Read,AppMonitorResource*,,
+8,GetAppMonitorData,Grants permission to get appMonitor data,Read,AppMonitorResource*,,
+9,ListAppMonitors,Grants permission to list appMonitors metadata,List,,,
+10,ListRumMetricsDestinations,Grants permission to list rum metrics destinations,Read,AppMonitorResource*,,
+11,ListTagsForResource,Grants permission to list tags for resources,Read,,,
+12,PutRumEvents,Grants permission to put RUM events for appmonitor,Write,AppMonitorResource*,,
+13,PutRumMetricsDestination,Grants permission to put rum metrics destinations,Write,AppMonitorResource*,,
+14,TagResource,Grants permission to tag resources,Tagging,AppMonitorResource*,,
+15,TagResource,Grants permission to tag resources,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+16,UntagResource,Grants permission to untag resources,Tagging,AppMonitorResource*,,
+17,UntagResource,Grants permission to untag resources,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
+18,UpdateAppMonitor,Grants permission to update appmonitor metadata,Write,AppMonitorResource*,,iam:CreateServiceLinkedRole  iam:GetRole
+19,UpdateRumMetricDefinition,Grants permission to update rum metric definition,Write,AppMonitorResource*,,

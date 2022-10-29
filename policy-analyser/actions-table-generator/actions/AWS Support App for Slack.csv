@@ -1,0 +1,11 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CreateSlackChannelConfiguration,Grants permission to create a Slack channel configuration for your account,Write,,,
+1,DeleteAccountAlias,Grants permission to delete an alias from your account,Write,,,
+2,DeleteSlackChannelConfiguration,Grants permission to delete a Slack channel configuration from your account,Write,,,
+3,DeleteSlackWorkspaceConfiguration,Grants permission to delete a Slack workspace configuration from your account,Write,,,
+4,GetAccountAlias,Grants permission to get the alias for your account,Read,,,
+5,ListSlackChannelConfigurations,Grants permission to list all Slack channel configurations for your account,Read,,,
+6,ListSlackWorkspaceConfigurations,Grants permission to list all Slack workspace configurations for your account,Read,,,
+7,PutAccountAlias,Grants permission to create or update an alias for your account,Write,,,
+8,RegisterSlackWorkspaceForOrganization,Grants permission to register a Slack workspace for an AWS account that is part of an organization,Write,,,
+9,UpdateSlackChannelConfiguration,Grants permission to update a Slack channel configuration for your account,Write,,,

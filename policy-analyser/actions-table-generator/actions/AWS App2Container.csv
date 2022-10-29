@@ -1,0 +1,5 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,GetContainerizationJobDetails,Grants permission to get the details of all Containerization jobs,Read,,,
+1,GetDeploymentJobDetails,Grants permission to get the details of all Deployment jobs,Read,,,
+2,StartContainerizationJob,Grants permission to start a Containerization job,Write,,,
+3,StartDeploymentJob,Grants permission to start a Deploymnet job,Write,,,

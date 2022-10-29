@@ -3,3 +3,4 @@
 1,ExtendQuery [permission only],Grants permission to extend a VPC reachability query to include the calling principals account,Write,,,
 2,GetQueryAnswer [permission only],Grants permission to get VPC reachability query answers,Read,,,
 3,GetQueryExplanation [permission only],Grants permission to get VPC reachability query explanations,Read,,,
+4,GetQueryExtensionAccounts [permission only],Grants permission to list accounts that might be useful in a new query,Read,,,
