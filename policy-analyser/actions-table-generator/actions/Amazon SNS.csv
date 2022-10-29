@@ -35,7 +35,7 @@
 33,SetPlatformApplicationAttributes,"Grants permission to set the attributes of the platform application object for the supported push notification services, such as APNS and GCM",Write,,,iam:PassRole
 34,SetSMSAttributes,Grants permission to set the default settings for sending SMS messages and receiving daily SMS usage reports,Write,,,
 35,SetSubscriptionAttributes,Grants permission to allow a subscription owner to set an attribute of the topic to a new value,Write,,,
-36,SetTopicAttributes,Grants permission to allow a topic owner to set an attribute of the topic to a new value,Write,topic*,,iam:PassRole
+36,SetTopicAttributes,Grants permission to allow a topic owner to set an attribute of the topic to a new value,Permissions management,topic*,,iam:PassRole
 37,Subscribe,Grants permission to prepare to subscribe an endpoint by sending the endpoint a confirmation message,Write,topic*,,
 38,Subscribe,Grants permission to prepare to subscribe an endpoint by sending the endpoint a confirmation message,Write,,sns:Endpoint  sns:Protocol,
 39,TagResource,Grants permission to add tags to the specified Amazon SNS topic,Tagging,topic,,

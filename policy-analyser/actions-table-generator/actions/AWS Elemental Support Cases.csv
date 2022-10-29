@@ -1,0 +1,6 @@
+,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
+0,CheckCasePermission [permission only],Grants permission to verify whether the caller has the permissions to perform support case operations,Write,,,
+1,CreateCase [permission only],Grants permission to create a support case,Write,,,
+2,GetCase [permission only],Grants permission to describe a support case in your account,Read,,,
+3,GetCases [permission only],Grants permission to list the support cases in your account,Read,,,
+4,UpdateCase [permission only],Grants permission to update a support case,Write,,,

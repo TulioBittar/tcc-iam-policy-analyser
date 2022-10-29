@@ -5,7 +5,7 @@
 3,CreateAlias,Grants permission to create an alias for a Lambda function version,Write,function*,,
 4,CreateCodeSigningConfig,Grants permission to create an AWS Lambda code signing config,Write,,,
 5,CreateEventSourceMapping,Grants permission to create a mapping between an event source and an AWS Lambda function,Write,,lambda:FunctionArn,
-6,CreateFunction,Grants permission to create an AWS Lambda function,Write,function*,,
+6,CreateFunction,Grants permission to create an AWS Lambda function,Write,function*,,iam:PassRole
 7,CreateFunction,Grants permission to create an AWS Lambda function,Write,,lambda:Layer  lambda:VpcIds  lambda:SubnetIds  lambda:SecurityGroupIds  lambda:CodeSigningConfigArn  aws:RequestTag/${TagKey}  aws:TagKeys,
 8,CreateFunctionUrlConfig,Grants permission to create a function url configuration for a Lambda function,Write,function*,,
 9,CreateFunctionUrlConfig,Grants permission to create a function url configuration for a Lambda function,Write,,lambda:FunctionUrlAuthType  lambda:FunctionArn,

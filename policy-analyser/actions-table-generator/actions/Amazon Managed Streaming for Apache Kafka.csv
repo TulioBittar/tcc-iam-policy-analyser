@@ -21,11 +21,11 @@
 19,ListKafkaVersions,Grants permission to list all Apache Kafka versions supported by Amazon MSK,List,,,
 20,ListNodes,Grants permission to list brokers in an MSK cluster,List,,,
 21,ListScramSecrets,Grants permission to list the Scram Secrets associated with an Amazon MSK cluster,List,,,
-22,ListTagsForResource,Grants permission to list tags of an MSK resource,Read,cluster,,
+22,ListTagsForResource,Grants permission to list tags of an MSK resource,Read,cluster*,,
 23,RebootBroker,Grants permission to reboot broker,Write,,,
-24,TagResource,Grants permission to tag an MSK resource,Tagging,cluster,,
+24,TagResource,Grants permission to tag an MSK resource,Tagging,cluster*,,
 25,TagResource,Grants permission to tag an MSK resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
-26,UntagResource,Grants permission to remove tags from an MSK resource,Tagging,cluster,,
+26,UntagResource,Grants permission to remove tags from an MSK resource,Tagging,cluster*,,
 27,UntagResource,Grants permission to remove tags from an MSK resource,Tagging,,aws:TagKeys,
 28,UpdateBrokerCount,Grants permission to update the number of brokers of the MSK cluster,Write,,,
 29,UpdateBrokerStorage,Grants permission to update the storage size of the brokers of the MSK cluster,Write,,,
@@ -36,3 +36,4 @@
 34,UpdateConnectivity,Grants permission to update the connectivity settings for the MSK cluster,Write,,,ec2:DescribeRouteTables  ec2:DescribeSubnets
 35,UpdateMonitoring,Grants permission to update the monitoring settings for the MSK cluster,Write,,,
 36,UpdateSecurity,Grants permission to update the security settings for the MSK cluster,Write,,,kms:RetireGrant
+37,UpdateStorage,Grants permission to update the EBS storage (size or provisioned throughput) associated with MSK brokers or set cluster storage mode to TIERED,Write,,,

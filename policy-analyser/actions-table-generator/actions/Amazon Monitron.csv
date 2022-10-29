@@ -1,10 +1,10 @@
 ,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,AssociateProjectAdminUser [permission only],Grants permission to associate a user with the project as an administrator,Permissions management,project*,,sso-directory:DescribeUsers  sso:AssociateProfile  sso:GetManagedApplicationInstance  sso:GetProfile  sso:ListDirectoryAssociations  sso:ListProfiles
+0,AssociateProjectAdminUser [permission only],Grants permission to associate a user with the project as an administrator,Permissions management,project*,,sso-directory:DescribeUsers  sso:AssociateProfile  sso:GetManagedApplicationInstance  sso:GetProfile  sso:ListDirectoryAssociations  sso:ListProfileAssociations  sso:ListProfiles
 1,CreateProject [permission only],Grants permission to create a project,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,iam:CreateServiceLinkedRole  kms:CreateGrant  sso:CreateManagedApplicationInstance  sso:DeleteManagedApplicationInstance
 2,DeleteProject [permission only],Grants permission to delete a project,Write,project*,,sso:DeleteManagedApplicationInstance
 3,DisassociateProjectAdminUser [permission only],Grants permission to disassociate an administrator from the project,Permissions management,project*,,sso-directory:DescribeUsers  sso:DisassociateProfile  sso:GetManagedApplicationInstance  sso:GetProfile  sso:ListDirectoryAssociations  sso:ListProfiles
 4,GetProject [permission only],Grants permission to get information about a project,Read,project*,,
-5,GetProjectAdminUser [permission only],Grants permission to describe an administrator who is associated with the project,Read,project*,,sso-directory:DescribeUsers  sso:GetManagedApplicationInstance
+5,GetProjectAdminUser [permission only],Grants permission to describe an administrator who is associated with the project,Read,project*,,sso-directory:DescribeUsers  sso:GetManagedApplicationInstance  sso:ListProfileAssociations
 6,ListProjectAdminUsers [permission only],Grants permission to list all administrators associated with the project,Permissions management,project*,,sso-directory:DescribeUsers  sso:GetManagedApplicationInstance
 7,ListProjects [permission only],Grants permission to list all projects,List,,,
 8,ListTagsForResource [permission only],Grants permission to list all tags for a resource,Read,project,,
