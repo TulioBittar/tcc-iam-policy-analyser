@@ -1,0 +1,9 @@
+StatementNumber;Action;AccessLevel;Resource;Description;Documentation
+1;iam:UpdateAccountPasswordPolicy;Write;False;Grants permission to update the password policy settings for the AWS account;https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html
+1;s3:PutBucketAcl;Permissions management;True;Grants permission to set the permissions on an existing bucket using access control lists (ACLs);https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+1;ec2:RevokeSecurityGroupEgress;Write;True;Grants permission to remove one or more outbound rules from a VPC security group;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;ec2:RevokeSecurityGroupIngress;Write;True;Grants permission to remove one or more inbound rules from a security group;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;cloudtrail:UpdateTrail;Write;True;Grants permission to update the settings that specify delivery of log files;https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtrail.html
+1;kms:EnableKeyRotation;Write;True;Controls permission to enable automatic rotation of the cryptographic material in an AWS KMS key;https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html
+1;ec2:ModifySubnetAttribute;Write;True;Grants permission to modify an attribute of a subnet;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;s3:PutBucketPublicAccessBlock;Permissions management;True;Grants permission to create or modify the PublicAccessBlock configuration for a specific Amazon S3 bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html

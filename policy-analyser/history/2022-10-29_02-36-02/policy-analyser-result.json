@@ -1,0 +1,66 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"iam:UpdateAccountPasswordPolicy",
+        "AccessLevel":"Write",
+        "Resource":"False",
+        "Description":"Grants permission to update the password policy settings for the AWS account",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:PutBucketAcl",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the permissions on an existing bucket using access control lists (ACLs)",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:RevokeSecurityGroupEgress",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove one or more outbound rules from a VPC security group",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:RevokeSecurityGroupIngress",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove one or more inbound rules from a security group",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"cloudtrail:UpdateTrail",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to update the settings that specify delivery of log files",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtrail.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:EnableKeyRotation",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to enable automatic rotation of the cryptographic material in an AWS KMS key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:ModifySubnetAttribute",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to modify an attribute of a subnet",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:PutBucketPublicAccessBlock",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to create or modify the PublicAccessBlock configuration for a specific Amazon S3 bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    }
+]

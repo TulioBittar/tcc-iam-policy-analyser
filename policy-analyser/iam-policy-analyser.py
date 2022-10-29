@@ -84,7 +84,7 @@ else:
         stmt_error = "Headers"
     else:
         error = False
-        print("Headers are Valid!")
+        print("Headers are Valid!\n")
 
     if error:
         # Write error on the file result
@@ -101,7 +101,7 @@ else:
         policy_analyser_result.write("StatementNumber;Action;AccessLevel;Resource;Description;Documentation"+'\n')
         # print("StatementNumber;Action;AccessLevel;Resource;Description;Documentation")
 
-        print("Critical Actions found in the IAM Policy:")
+        print("Critical Actions found in the IAM Policy:\n")
         # stmt_index = 0
         # Open statements
         for i,statement in enumerate(iam_policy['Statement'], start=1):
@@ -197,7 +197,8 @@ else:
                                         if s_name == service_name:
                                             service_url = service_urls[s_name]
 
-                            print(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description +';'+ service_url)
+                            print("    " + critical_action)
+                            # print(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description +';'+ service_url)
                             policy_analyser_result.write(str(i) +';'+ critical_action +';'+ access_level +';'+ resource +';'+ description +';'+ service_url + '\n')
 
             # Check if there was an error while getting the Action
