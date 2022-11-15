@@ -1,5 +1,5 @@
 ,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,AcceptHandshake,Grants permission to send a response to the originator of a handshake agreeing to the action proposed by the handshake request,Write,handshake*,,
+0,AcceptHandshake,Grants permission to send a response to the originator of a handshake agreeing to the action proposed by the handshake request,Write,handshake*,,iam:CreateServiceLinkedRole
 1,AttachPolicy,"Grants permission to attach a policy to a root, an organizational unit, or an individual account",Write,policy*,,
 2,AttachPolicy,"Grants permission to attach a policy to a root, an organizational unit, or an individual account",Write,account,,
 3,AttachPolicy,"Grants permission to attach a policy to a root, an organizational unit, or an individual account",Write,organizationalunit,,
@@ -9,7 +9,7 @@
 7,CloseAccount,"Grants permission to close an AWS account that is now a part of an Organizations, either created within the organization, or invited to join the organization",Write,account*,,
 8,CreateAccount,Grants permission to create an AWS account that is automatically a member of the organization with the credentials that made the request,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
 9,CreateGovCloudAccount,Grants permission to create an AWS GovCloud (US) account,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
-10,CreateOrganization,Grants permission to create an organization. The account with the credentials that calls the CreateOrganization operation automatically becomes the management account of the new organization,Write,,,
+10,CreateOrganization,Grants permission to create an organization. The account with the credentials that calls the CreateOrganization operation automatically becomes the management account of the new organization,Write,,,iam:CreateServiceLinkedRole
 11,CreateOrganizationalUnit,Grants permission to create an organizational unit (OU) within a root or parent OU,Write,organizationalunit,,
 12,CreateOrganizationalUnit,Grants permission to create an organizational unit (OU) within a root or parent OU,Write,root,,
 13,CreateOrganizationalUnit,Grants permission to create an organizational unit (OU) within a root or parent OU,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
