@@ -1,5 +1,5 @@
 ,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,CreateProfile,Grants permission to create a profile,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
+0,CreateProfile,Grants permission to create a profile,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,iam:PassRole
 1,CreateTrustAnchor,Grants permission to create a trust anchor,Write,,aws:RequestTag/${TagKey}  aws:TagKeys,
 2,DeleteCrl,Grants permission to delete a certificate revocation list (crl),Write,,,
 3,DeleteProfile,Grants permission to delete a profile,Write,,,
@@ -8,7 +8,7 @@
 6,DisableProfile,Grants permission to disable a profile,Write,,,
 7,DisableTrustAnchor,Grants permission to disable a trust anchor,Write,,,
 8,EnableCrl,Grants permission to enable a certificate revocation list (crl),Write,,,
-9,EnableProfile,Grants permission to enable a profile,Write,,,
+9,EnableProfile,Grants permission to enable a profile,Write,,,iam:PassRole
 10,EnableTrustAnchor,Grants permission to enable a trust anchor,Write,,,
 11,GetCrl,Grants permission to get a certificate revocation list (crl),Read,,,
 12,GetProfile,Grants permission to get a profile,Read,,,
@@ -31,5 +31,5 @@
 29,UntagResource,Grants permission to untag a resource,Tagging,trust-anchor,,
 30,UntagResource,Grants permission to untag a resource,Tagging,,aws:RequestTag/${TagKey}  aws:TagKeys,
 31,UpdateCrl,Grants permission to update a certificate revocation list (crl),Write,,,
-32,UpdateProfile,Grants permission to update a profile,Write,,,
+32,UpdateProfile,Grants permission to update a profile,Write,,,iam:PassRole
 33,UpdateTrustAnchor,Grants permission to update a trust anchor,Write,,,

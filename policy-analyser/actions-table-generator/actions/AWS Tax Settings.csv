@@ -1,3 +1,7 @@
 ,Actions,Description,Access level,Resource types (*required),Condition keys,Dependent actions
-0,GetExemptions,Grants permission to view tax exemptions data,Read,,,
-1,UpdateExemptions,Grants permission to update tax exemptions data,Write,,,
+0,GetExemptions [permission only],Grants permission to view tax exemptions data,Read,,,
+1,GetTaxInterview [permission only],Grants permission to retrieve tax interview data,Read,,,
+2,GetTaxRegistration [permission only],Grants permission to view tax registrations data,Read,,,
+3,PutTaxInterview [permission only],Grants permission to update tax interview data,Write,,,
+4,PutTaxRegistration [permission only],Grants permission to update tax registrations data,Write,,,
+5,UpdateExemptions [permission only],Grants permission to update tax exemptions data,Write,,,
