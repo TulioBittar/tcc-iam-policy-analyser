@@ -1,0 +1,26 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"s3-outposts:GetObject",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve objects from Amazon S3",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3-outposts:PutObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to add an object to a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3-outposts:DeleteObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html"
+    }
+]

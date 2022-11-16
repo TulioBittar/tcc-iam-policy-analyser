@@ -1,0 +1,74 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"kms:ReEncryptFrom",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to decrypt data as part of the process that decrypts and reencrypts the data within AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:ReEncryptTo",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to encrypt data as part of the process that decrypts and reencrypts the data within AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKey",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data keys. You can use the data keys to encrypt data outside of AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKeyPair",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data key pairs",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKeyPairWithoutPlaintext",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data key pairs. Unlike the GenerateDataKeyPair operation, this operation returns an encrypted private key without a plaintext copy",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:GenerateDataKeyWithoutPlaintext",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate a data key. Unlike the GenerateDataKey operation, this operation returns an encrypted data key without a plaintext version of the data key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:CreateGrant",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:Encrypt",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the specified AWS KMS key to encrypt data and data keys",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"kms:Decrypt",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to decrypt ciphertext that was encrypted under an AWS KMS key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    }
+]
