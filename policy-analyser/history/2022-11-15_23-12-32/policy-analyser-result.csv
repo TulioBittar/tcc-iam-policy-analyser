@@ -1,0 +1,4 @@
+StatementNumber;Action;AccessLevel;Resource;Description;Documentation
+1;s3-outposts:GetObject;Read;True;Grants permission to retrieve objects from Amazon S3;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html
+1;s3-outposts:PutObject;Write;True;Grants permission to add an object to a bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html
+1;s3-outposts:DeleteObject;Write;True;Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html
