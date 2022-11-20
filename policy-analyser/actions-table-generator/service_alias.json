@@ -314,6 +314,7 @@
     "AWS Support Plans": "supportplans",
     "AWS Sustainability": "sustainability",
     "AWS Systems Manager": "ssm",
+    "AWS Systems Manager for SAP": "ssm-sap",
     "AWS Systems Manager GUI Connect": "ssm-guiconnect",
     "AWS Systems Manager Incident Manager": "ssm-incidents",
     "AWS Systems Manager Incident Manager Contacts": "ssm-contacts",

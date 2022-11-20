@@ -1792,53 +1792,56 @@ Amazon CloudWatch Evidently;evidently;UpdateFeature;evidently:UpdateFeature;Gran
 Amazon CloudWatch Evidently;evidently;UpdateLaunch;evidently:UpdateLaunch;Grants permission to update a launch;Write;True
 Amazon CloudWatch Evidently;evidently;UpdateProject;evidently:UpdateProject;Grants permission to update project;Write;True
 Amazon CloudWatch Evidently;evidently;UpdateProjectDataDelivery;evidently:UpdateProjectDataDelivery;Grants permission to update project data delivery;Write;True
-Amazon CloudWatch Logs;logs;AssociateKmsKey;logs:AssociateKmsKey;Grants permissions to associate the specified AWS Key Management Service (AWS KMS) customer master key (CMK) with the specified log group;Write;True
-Amazon CloudWatch Logs;logs;CancelExportTask;logs:CancelExportTask;Grants permissions to cancel an export task if it is in PENDING or RUNNING state;Write;False
-Amazon CloudWatch Logs;logs;CreateExportTask;logs:CreateExportTask;Grants permissions to create an ExportTask which allows you to efficiently export data from a Log Group to your Amazon S3 bucket;Write;True
-Amazon CloudWatch Logs;logs;CreateLogDelivery [permission only];logs:CreateLogDelivery [permission only];Grants permissions to create the log delivery;Write;False
-Amazon CloudWatch Logs;logs;CreateLogGroup;logs:CreateLogGroup;Grants permissions to create a new log group with the specified name;Write;True
-Amazon CloudWatch Logs;logs;CreateLogStream;logs:CreateLogStream;Grants permissions to create a new log stream with the specified name;Write;True
-Amazon CloudWatch Logs;logs;DeleteDestination;logs:DeleteDestination;Grants permissions to delete the destination with the specified name;Write;False
-Amazon CloudWatch Logs;logs;DeleteLogDelivery [permission only];logs:DeleteLogDelivery [permission only];Grants permissions to delete the log delivery information for specified log delivery;Write;False
-Amazon CloudWatch Logs;logs;DeleteLogGroup;logs:DeleteLogGroup;Grants permissions to delete the log group with the specified name;Write;True
-Amazon CloudWatch Logs;logs;DeleteLogStream;logs:DeleteLogStream;Grants permissions to delete a log stream;Write;True
-Amazon CloudWatch Logs;logs;DeleteMetricFilter;logs:DeleteMetricFilter;Grants permissions to delete a metric filter associated with the specified log group;Write;True
-Amazon CloudWatch Logs;logs;DeleteQueryDefinition;logs:DeleteQueryDefinition;Grants permissions to delete a saved CloudWatch Logs Insights query definition;Write;False
-Amazon CloudWatch Logs;logs;DeleteResourcePolicy;logs:DeleteResourcePolicy;Grants permissions to delete a resource policy from this account;Permissions management;False
-Amazon CloudWatch Logs;logs;DeleteRetentionPolicy;logs:DeleteRetentionPolicy;Grants permissions to delete the retention policy of the specified log group;Write;True
-Amazon CloudWatch Logs;logs;DeleteSubscriptionFilter;logs:DeleteSubscriptionFilter;Grants permissions to delete a subscription filter associated with the specified log group;Write;True
-Amazon CloudWatch Logs;logs;DescribeDestinations;logs:DescribeDestinations;Grants permissions to return all the destinations that are associated with the AWS account making the request;List;False
-Amazon CloudWatch Logs;logs;DescribeExportTasks;logs:DescribeExportTasks;Grants permissions to return all the export tasks that are associated with the AWS account making the request;List;False
-Amazon CloudWatch Logs;logs;DescribeLogGroups;logs:DescribeLogGroups;Grants permissions to return all the log groups that are associated with the AWS account making the request;List;True
-Amazon CloudWatch Logs;logs;DescribeLogStreams;logs:DescribeLogStreams;Grants permissions to return all the log streams that are associated with the specified log group;List;True
-Amazon CloudWatch Logs;logs;DescribeMetricFilters;logs:DescribeMetricFilters;Grants permissions to return all the metrics filters associated with the specified log group;List;True
-Amazon CloudWatch Logs;logs;DescribeQueries;logs:DescribeQueries;Grants permissions to return a list of CloudWatch Logs Insights queries that are scheduled, executing, or have been executed recently in this account;List;False
-Amazon CloudWatch Logs;logs;DescribeQueryDefinitions;logs:DescribeQueryDefinitions;Grants permissions to return a paginated list of your saved CloudWatch Logs Insights query definitions;List;False
-Amazon CloudWatch Logs;logs;DescribeResourcePolicies;logs:DescribeResourcePolicies;Grants permissions to return all the resource policies in this account;List;False
-Amazon CloudWatch Logs;logs;DescribeSubscriptionFilters;logs:DescribeSubscriptionFilters;Grants permissions to return all the subscription filters associated with the specified log group;List;True
-Amazon CloudWatch Logs;logs;DisassociateKmsKey;logs:DisassociateKmsKey;Grants permissions to disassociate the associated AWS Key Management Service (AWS KMS) customer master key (CMK) from the specified log group;Write;True
-Amazon CloudWatch Logs;logs;FilterLogEvents;logs:FilterLogEvents;Grants permissions to retrieve log events, optionally filtered by a filter pattern from the specified log group;Read;True
-Amazon CloudWatch Logs;logs;GetLogDelivery [permission only];logs:GetLogDelivery [permission only];Grants permissions to get the log delivery information for specified log delivery;Read;False
-Amazon CloudWatch Logs;logs;GetLogEvents;logs:GetLogEvents;Grants permissions to retrieve log events from the specified log stream;Read;True
-Amazon CloudWatch Logs;logs;GetLogGroupFields;logs:GetLogGroupFields;Grants permissions to return a list of the fields that are included in log events in the specified log group, along with the percentage of log events that contain each field;Read;True
-Amazon CloudWatch Logs;logs;GetLogRecord;logs:GetLogRecord;Grants permissions to retrieve all the fields and values of a single log event;Read;False
-Amazon CloudWatch Logs;logs;GetQueryResults;logs:GetQueryResults;Grants permissions to return the results from the specified query;Read;False
-Amazon CloudWatch Logs;logs;ListLogDeliveries [permission only];logs:ListLogDeliveries [permission only];Grants permissions to list all the log deliveries for specified account and/or log source;List;False
-Amazon CloudWatch Logs;logs;ListTagsLogGroup;logs:ListTagsLogGroup;Grants permissions to list the tags for the specified log group;List;True
-Amazon CloudWatch Logs;logs;PutDestination;logs:PutDestination;Grants permissions to create or update a Destination;Write;False
-Amazon CloudWatch Logs;logs;PutDestinationPolicy;logs:PutDestinationPolicy;Grants permissions to create or update an access policy associated with an existing Destination;Write;False
-Amazon CloudWatch Logs;logs;PutLogEvents;logs:PutLogEvents;Grants permissions to upload a batch of log events to the specified log stream;Write;True
-Amazon CloudWatch Logs;logs;PutMetricFilter;logs:PutMetricFilter;Grants permissions to create or update a metric filter and associates it with the specified log group;Write;True
-Amazon CloudWatch Logs;logs;PutQueryDefinition;logs:PutQueryDefinition;Grants permissions to create or update a query definition;Write;False
-Amazon CloudWatch Logs;logs;PutResourcePolicy;logs:PutResourcePolicy;Grants permissions to create or update a resource policy allowing other AWS services to put log events to this account;Permissions management;False
-Amazon CloudWatch Logs;logs;PutRetentionPolicy;logs:PutRetentionPolicy;Grants permissions to set the retention of the specified log group;Write;True
-Amazon CloudWatch Logs;logs;PutSubscriptionFilter;logs:PutSubscriptionFilter;Grants permissions to create or update a subscription filter and associates it with the specified log group;Write;True
-Amazon CloudWatch Logs;logs;StartQuery;logs:StartQuery;Grants permissions to schedules a query of a log group using CloudWatch Logs Insights;Read;True
-Amazon CloudWatch Logs;logs;StopQuery;logs:StopQuery;Grants permissions to stop a CloudWatch Logs Insights query that is in progress;Read;False
-Amazon CloudWatch Logs;logs;TagLogGroup;logs:TagLogGroup;Grants permissions to add or update the specified tags for the specified log group;Tagging;True
-Amazon CloudWatch Logs;logs;TestMetricFilter;logs:TestMetricFilter;Grants permissions to test the filter pattern of a metric filter against a sample of log event messages;Read;False
-Amazon CloudWatch Logs;logs;UntagLogGroup;logs:UntagLogGroup;Grants permissions to remove the specified tags from the specified log group;Tagging;True
-Amazon CloudWatch Logs;logs;UpdateLogDelivery [permission only];logs:UpdateLogDelivery [permission only];Grants permissions to update the log delivery information for specified log delivery;Write;False
+Amazon CloudWatch Logs;logs;AssociateKmsKey;logs:AssociateKmsKey;Grants permission to associate the specified AWS Key Management Service (AWS KMS) customer master key (CMK) with the specified log group;Write;True
+Amazon CloudWatch Logs;logs;CancelExportTask;logs:CancelExportTask;Grants permission to cancel an export task if it is in PENDING or RUNNING state;Write;False
+Amazon CloudWatch Logs;logs;CreateExportTask;logs:CreateExportTask;Grants permission to create an ExportTask which allows you to efficiently export data from a Log Group to your Amazon S3 bucket;Write;True
+Amazon CloudWatch Logs;logs;CreateLogDelivery [permission only];logs:CreateLogDelivery [permission only];Grants permission to create the log delivery;Write;False
+Amazon CloudWatch Logs;logs;CreateLogGroup;logs:CreateLogGroup;Grants permission to create a new log group with the specified name;Write;True
+Amazon CloudWatch Logs;logs;CreateLogStream;logs:CreateLogStream;Grants permission to create a new log stream with the specified name;Write;True
+Amazon CloudWatch Logs;logs;DeleteDestination;logs:DeleteDestination;Grants permission to delete the destination with the specified name;Write;True
+Amazon CloudWatch Logs;logs;DeleteLogDelivery [permission only];logs:DeleteLogDelivery [permission only];Grants permission to delete the log delivery information for specified log delivery;Write;False
+Amazon CloudWatch Logs;logs;DeleteLogGroup;logs:DeleteLogGroup;Grants permission to delete the log group with the specified name;Write;True
+Amazon CloudWatch Logs;logs;DeleteLogStream;logs:DeleteLogStream;Grants permission to delete a log stream;Write;True
+Amazon CloudWatch Logs;logs;DeleteMetricFilter;logs:DeleteMetricFilter;Grants permission to delete a metric filter associated with the specified log group;Write;True
+Amazon CloudWatch Logs;logs;DeleteQueryDefinition;logs:DeleteQueryDefinition;Grants permission to delete a saved CloudWatch Logs Insights query definition;Write;False
+Amazon CloudWatch Logs;logs;DeleteResourcePolicy;logs:DeleteResourcePolicy;Grants permission to delete a resource policy from this account;Permissions management;False
+Amazon CloudWatch Logs;logs;DeleteRetentionPolicy;logs:DeleteRetentionPolicy;Grants permission to delete the retention policy of the specified log group;Write;True
+Amazon CloudWatch Logs;logs;DeleteSubscriptionFilter;logs:DeleteSubscriptionFilter;Grants permission to delete a subscription filter associated with the specified log group;Write;True
+Amazon CloudWatch Logs;logs;DescribeDestinations;logs:DescribeDestinations;Grants permission to return all the destinations that are associated with the AWS account making the request;List;False
+Amazon CloudWatch Logs;logs;DescribeExportTasks;logs:DescribeExportTasks;Grants permission to return all the export tasks that are associated with the AWS account making the request;List;False
+Amazon CloudWatch Logs;logs;DescribeLogGroups;logs:DescribeLogGroups;Grants permission to return all the log groups that are associated with the AWS account making the request;List;True
+Amazon CloudWatch Logs;logs;DescribeLogStreams;logs:DescribeLogStreams;Grants permission to return all the log streams that are associated with the specified log group;List;True
+Amazon CloudWatch Logs;logs;DescribeMetricFilters;logs:DescribeMetricFilters;Grants permission to return all the metrics filters associated with the specified log group;List;True
+Amazon CloudWatch Logs;logs;DescribeQueries;logs:DescribeQueries;Grants permission to return a list of CloudWatch Logs Insights queries that are scheduled, executing, or have been executed recently in this account;List;False
+Amazon CloudWatch Logs;logs;DescribeQueryDefinitions;logs:DescribeQueryDefinitions;Grants permission to return a paginated list of your saved CloudWatch Logs Insights query definitions;List;False
+Amazon CloudWatch Logs;logs;DescribeResourcePolicies;logs:DescribeResourcePolicies;Grants permission to return all the resource policies in this account;List;False
+Amazon CloudWatch Logs;logs;DescribeSubscriptionFilters;logs:DescribeSubscriptionFilters;Grants permission to return all the subscription filters associated with the specified log group;List;True
+Amazon CloudWatch Logs;logs;DisassociateKmsKey;logs:DisassociateKmsKey;Grants permission to disassociate the associated AWS Key Management Service (AWS KMS) customer master key (CMK) from the specified log group;Write;True
+Amazon CloudWatch Logs;logs;FilterLogEvents;logs:FilterLogEvents;Grants permission to retrieve log events, optionally filtered by a filter pattern from the specified log group;Read;True
+Amazon CloudWatch Logs;logs;GetLogDelivery [permission only];logs:GetLogDelivery [permission only];Grants permission to get the log delivery information for specified log delivery;Read;False
+Amazon CloudWatch Logs;logs;GetLogEvents;logs:GetLogEvents;Grants permission to retrieve log events from the specified log stream;Read;True
+Amazon CloudWatch Logs;logs;GetLogGroupFields;logs:GetLogGroupFields;Grants permission to return a list of the fields that are included in log events in the specified log group, along with the percentage of log events that contain each field;Read;True
+Amazon CloudWatch Logs;logs;GetLogRecord;logs:GetLogRecord;Grants permission to retrieve all the fields and values of a single log event;Read;False
+Amazon CloudWatch Logs;logs;GetQueryResults;logs:GetQueryResults;Grants permission to return the results from the specified query;Read;False
+Amazon CloudWatch Logs;logs;ListLogDeliveries [permission only];logs:ListLogDeliveries [permission only];Grants permission to list all the log deliveries for specified account and/or log source;List;False
+Amazon CloudWatch Logs;logs;ListTagsForResource;logs:ListTagsForResource;Grants permission to list the tags for the specified resource;List;True
+Amazon CloudWatch Logs;logs;ListTagsLogGroup;logs:ListTagsLogGroup;Grants permission to list the tags for the specified log group;List;True
+Amazon CloudWatch Logs;logs;PutDestination;logs:PutDestination;Grants permission to create or update a Destination;Write;True
+Amazon CloudWatch Logs;logs;PutDestinationPolicy;logs:PutDestinationPolicy;Grants permission to create or update an access policy associated with an existing Destination;Write;True
+Amazon CloudWatch Logs;logs;PutLogEvents;logs:PutLogEvents;Grants permission to upload a batch of log events to the specified log stream;Write;True
+Amazon CloudWatch Logs;logs;PutMetricFilter;logs:PutMetricFilter;Grants permission to create or update a metric filter and associates it with the specified log group;Write;True
+Amazon CloudWatch Logs;logs;PutQueryDefinition;logs:PutQueryDefinition;Grants permission to create or update a query definition;Write;False
+Amazon CloudWatch Logs;logs;PutResourcePolicy;logs:PutResourcePolicy;Grants permission to create or update a resource policy allowing other AWS services to put log events to this account;Permissions management;False
+Amazon CloudWatch Logs;logs;PutRetentionPolicy;logs:PutRetentionPolicy;Grants permission to set the retention of the specified log group;Write;True
+Amazon CloudWatch Logs;logs;PutSubscriptionFilter;logs:PutSubscriptionFilter;Grants permission to create or update a subscription filter and associates it with the specified log group;Write;True
+Amazon CloudWatch Logs;logs;StartQuery;logs:StartQuery;Grants permission to schedule a query of a log group using CloudWatch Logs Insights;Read;True
+Amazon CloudWatch Logs;logs;StopQuery;logs:StopQuery;Grants permission to stop a CloudWatch Logs Insights query that is in progress;Read;False
+Amazon CloudWatch Logs;logs;TagLogGroup;logs:TagLogGroup;Grants permission to add or update the specified tags for the specified log group;Tagging;True
+Amazon CloudWatch Logs;logs;TagResource;logs:TagResource;Grants permission to add or update the specified tags for the specified resource;Tagging;True
+Amazon CloudWatch Logs;logs;TestMetricFilter;logs:TestMetricFilter;Grants permission to test the filter pattern of a metric filter against a sample of log event messages;Read;False
+Amazon CloudWatch Logs;logs;UntagLogGroup;logs:UntagLogGroup;Grants permission to remove the specified tags from the specified log group;Tagging;True
+Amazon CloudWatch Logs;logs;UntagResource;logs:UntagResource;Grants permission to remove the specified tags from the specified resource;Tagging;True
+Amazon CloudWatch Logs;logs;UpdateLogDelivery [permission only];logs:UpdateLogDelivery [permission only];Grants permission to update the log delivery information for specified log delivery;Write;False
 AWS CloudWatch RUM;rum;BatchCreateRumMetricDefinitions;rum:BatchCreateRumMetricDefinitions;Grants permission to create rum metric definitions;Write;True
 AWS CloudWatch RUM;rum;BatchDeleteRumMetricDefinitions;rum:BatchDeleteRumMetricDefinitions;Grants permission to remove rum metric definitions;Write;True
 AWS CloudWatch RUM;rum;BatchGetRumMetricDefinitions;rum:BatchGetRumMetricDefinitions;Grants permission to get rum metric definitions;Read;True
@@ -2645,6 +2648,7 @@ Amazon Connect;connect;DescribeAgentStatus;connect:DescribeAgentStatus;Grants pe
 Amazon Connect;connect;DescribeContact;connect:DescribeContact;Grants permission to describe a contact in an Amazon Connect instance;Read;True
 Amazon Connect;connect;DescribeContactFlow;connect:DescribeContactFlow;Grants permission to describe a contact flow in an Amazon Connect instance;Read;True
 Amazon Connect;connect;DescribeContactFlowModule;connect:DescribeContactFlowModule;Grants permission to describe a contact flow module in an Amazon Connect instance;Read;True
+Amazon Connect;connect;DescribeForecastingPlanningSchedulingIntegration [permission only];connect:DescribeForecastingPlanningSchedulingIntegration [permission only];Grants permission to describe the status of forecasting, planning, and scheduling integration on an Amazon Connect instance;Read;True
 Amazon Connect;connect;DescribeHoursOfOperation;connect:DescribeHoursOfOperation;Grants permission to describe hours of operation in an Amazon Connect instance;Read;True
 Amazon Connect;connect;DescribeInstance;connect:DescribeInstance;Grants permission to view details of an Amazon Connect instance and is also required to create an instance;Read;True
 Amazon Connect;connect;DescribeInstanceAttribute;connect:DescribeInstanceAttribute;Grants permission to view the attribute details of an existing Amazon Connect instance;Read;True
@@ -2669,6 +2673,7 @@ Amazon Connect;connect;DisassociatePhoneNumberContactFlow;connect:DisassociatePh
 Amazon Connect;connect;DisassociateQueueQuickConnects;connect:DisassociateQueueQuickConnects;Grants permission to disassociate quick connects from a queue in an Amazon Connect instance;Write;True
 Amazon Connect;connect;DisassociateRoutingProfileQueues;connect:DisassociateRoutingProfileQueues;Grants permission to disassociate queues from a routing profile in an Amazon Connect instance;Write;True
 Amazon Connect;connect;DisassociateSecurityKey;connect:DisassociateSecurityKey;Grants permission to disassociate the security key for an existing Amazon Connect instance;Write;True
+Amazon Connect;connect;DismissUserContact;connect:DismissUserContact;Grants permission to dismiss terminated Contact from Agent CCP;Write;True
 Amazon Connect;connect;GetContactAttributes;connect:GetContactAttributes;Grants permission to retrieve the contact attributes for the specified contact;Read;True
 Amazon Connect;connect;GetCurrentMetricData;connect:GetCurrentMetricData;Grants permission to retrieve current metric data for the queues in an Amazon Connect instance;Read;True
 Amazon Connect;connect;GetCurrentUserData;connect:GetCurrentUserData;Grants permission to retrieve current user data in an Amazon Connect instance;Read;True
@@ -2722,11 +2727,13 @@ Amazon Connect;connect;SearchVocabularies;connect:SearchVocabularies;Grants perm
 Amazon Connect;connect;StartChatContact;connect:StartChatContact;Grants permission to initiate a chat using the Amazon Connect API;Write;True
 Amazon Connect;connect;StartContactRecording;connect:StartContactRecording;Grants permission to start recording for the specified contact;Write;True
 Amazon Connect;connect;StartContactStreaming;connect:StartContactStreaming;Grants permission to start chat streaming using the Amazon Connect API;Write;True
+Amazon Connect;connect;StartForecastingPlanningSchedulingIntegration [permission only];connect:StartForecastingPlanningSchedulingIntegration [permission only];Grants permission to enable forecasting, planning, and scheduling integration on an Amazon Connect instance;Write;True
 Amazon Connect;connect;StartOutboundVoiceContact;connect:StartOutboundVoiceContact;Grants permission to initiate outbound calls using the Amazon Connect API;Write;True
 Amazon Connect;connect;StartTaskContact;connect:StartTaskContact;Grants permission to initiate a task using the Amazon Connect API;Write;True
 Amazon Connect;connect;StopContact;connect:StopContact;Grants permission to stop contacts that were initiated using the Amazon Connect API. If you use this operation on an active contact the contact ends, even if the agent is active on a call with a customer;Write;True
 Amazon Connect;connect;StopContactRecording;connect:StopContactRecording;Grants permission to stop recording for the specified contact;Write;True
 Amazon Connect;connect;StopContactStreaming;connect:StopContactStreaming;Grants permission to stop chat streaming using the Amazon Connect API;Write;True
+Amazon Connect;connect;StopForecastingPlanningSchedulingIntegration [permission only];connect:StopForecastingPlanningSchedulingIntegration [permission only];Grants permission to disable forecasting, planning, and scheduling integration on an Amazon Connect instance;Write;True
 Amazon Connect;connect;SuspendContactRecording;connect:SuspendContactRecording;Grants permission to suspend recording for the specified contact;Write;True
 Amazon Connect;connect;TagResource;connect:TagResource;Grants permission to tag an Amazon Connect resource;Tagging;True
 Amazon Connect;connect;TransferContact;connect:TransferContact;Grants permission to transfer the contact to another queue or agent;Write;True
@@ -4752,6 +4759,7 @@ Amazon ElastiCache;elasticache;AuthorizeCacheSecurityGroupIngress;elasticache:Au
 Amazon ElastiCache;elasticache;BatchApplyUpdateAction;elasticache:BatchApplyUpdateAction;Grants permission to apply ElastiCache service updates to sets of clusters and replication groups;Write;True
 Amazon ElastiCache;elasticache;BatchStopUpdateAction;elasticache:BatchStopUpdateAction;Grants permission to stop ElastiCache service updates from being executed on a set of clusters;Write;True
 Amazon ElastiCache;elasticache;CompleteMigration;elasticache:CompleteMigration;Grants permission to complete an online migration of data from hosted Redis on Amazon EC2 to ElastiCache;Write;True
+Amazon ElastiCache;elasticache;Connect;elasticache:Connect;Allows an IAM user or role to connect as a specified EliastCache user to a node in a replication group;Write;True
 Amazon ElastiCache;elasticache;CopySnapshot;elasticache:CopySnapshot;Grants permission to make a copy of an existing snapshot;Write;True
 Amazon ElastiCache;elasticache;CreateCacheCluster;elasticache:CreateCacheCluster;Grants permission to create a cache cluster;Write;True
 Amazon ElastiCache;elasticache;CreateCacheParameterGroup;elasticache:CreateCacheParameterGroup;Grants permission to create a parameter group;Write;True
@@ -4760,8 +4768,8 @@ Amazon ElastiCache;elasticache;CreateCacheSubnetGroup;elasticache:CreateCacheSub
 Amazon ElastiCache;elasticache;CreateGlobalReplicationGroup;elasticache:CreateGlobalReplicationGroup;Grants permission to create a global replication group;Write;True
 Amazon ElastiCache;elasticache;CreateReplicationGroup;elasticache:CreateReplicationGroup;Grants permission to create a replication group;Write;True
 Amazon ElastiCache;elasticache;CreateSnapshot;elasticache:CreateSnapshot;Grants permission to create a copy of an entire Redis cluster at a specific moment in time;Write;True
-Amazon ElastiCache;elasticache;CreateUser;elasticache:CreateUser;Grants permission to create a Redis user for Redis engine version 6.x and onwards;Write;True
-Amazon ElastiCache;elasticache;CreateUserGroup;elasticache:CreateUserGroup;Grants permission to create a Redis user group for Redis engine version 6.x and onwards;Write;True
+Amazon ElastiCache;elasticache;CreateUser;elasticache:CreateUser;Grants permission to create a user for Redis. Users are supported from Redis 6.0 onwards.;Write;True
+Amazon ElastiCache;elasticache;CreateUserGroup;elasticache:CreateUserGroup;Grants permission to create a user group for Redis. Groups are supported from Redis 6.0 onwards.;Write;True
 Amazon ElastiCache;elasticache;DecreaseNodeGroupsInGlobalReplicationGroup;elasticache:DecreaseNodeGroupsInGlobalReplicationGroup;Grants permission to decrease the number of node groups in global replication groups;Write;True
 Amazon ElastiCache;elasticache;DecreaseReplicaCount;elasticache:DecreaseReplicaCount;Grants permission to decrease the number of replicas in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group;Write;True
 Amazon ElastiCache;elasticache;DeleteCacheCluster;elasticache:DeleteCacheCluster;Grants permission to delete a previously provisioned cluster;Write;True
@@ -6532,16 +6540,21 @@ Amazon Interactive Video Service;ivs;TagResource;ivs:TagResource;Grants permissi
 Amazon Interactive Video Service;ivs;UntagResource;ivs:UntagResource;Grants permission to remove tags for a resource with a specified ARN;Tagging;True
 Amazon Interactive Video Service;ivs;UpdateChannel;ivs:UpdateChannel;Grants permission to update a channel's configuration;Write;True
 Amazon Interactive Video Service Chat;ivschat;CreateChatToken;ivschat:CreateChatToken;Grants permission to create an encrypted token that is used to establish an individual WebSocket connection to a room;Write;True
+Amazon Interactive Video Service Chat;ivschat;CreateLoggingConfiguration;ivschat:CreateLoggingConfiguration;Grants permission to create a logging configuration that allows clients to record room messages;Write;True
 Amazon Interactive Video Service Chat;ivschat;CreateRoom;ivschat:CreateRoom;Grants permission to create a room that allows clients to connect and pass messages;Write;True
+Amazon Interactive Video Service Chat;ivschat;DeleteLoggingConfiguration;ivschat:DeleteLoggingConfiguration;Grants permission to delete the logging configuration for a specified logging configuration ARN;Write;True
 Amazon Interactive Video Service Chat;ivschat;DeleteMessage;ivschat:DeleteMessage;Grants permission to send an event to a specific room which directs clients to delete a specific message;Write;True
 Amazon Interactive Video Service Chat;ivschat;DeleteRoom;ivschat:DeleteRoom;Grants permission to delete the room for a specified room ARN;Write;True
 Amazon Interactive Video Service Chat;ivschat;DisconnectUser;ivschat:DisconnectUser;Grants permission to disconnect all connections using a specified user ID from a room;Write;True
+Amazon Interactive Video Service Chat;ivschat;GetLoggingConfiguration;ivschat:GetLoggingConfiguration;Grants permission to get the logging configuration for a specified logging configuration ARN;Read;True
 Amazon Interactive Video Service Chat;ivschat;GetRoom;ivschat:GetRoom;Grants permission to get the room configuration for a specified room ARN;Read;True
+Amazon Interactive Video Service Chat;ivschat;ListLoggingConfigurations;ivschat:ListLoggingConfigurations;Grants permission to get summary information about logging configurations;List;True
 Amazon Interactive Video Service Chat;ivschat;ListRooms;ivschat:ListRooms;Grants permission to get summary information about rooms;List;True
 Amazon Interactive Video Service Chat;ivschat;ListTagsForResource;ivschat:ListTagsForResource;Grants permission to get information about the tags for a specified ARN;Read;True
 Amazon Interactive Video Service Chat;ivschat;SendEvent;ivschat:SendEvent;Grants permission to send an event to a room;Write;True
 Amazon Interactive Video Service Chat;ivschat;TagResource;ivschat:TagResource;Grants permission to add or update tags for a resource with a specified ARN;Tagging;True
 Amazon Interactive Video Service Chat;ivschat;UntagResource;ivschat:UntagResource;Grants permission to remove tags for a resource with a specified ARN;Tagging;True
+Amazon Interactive Video Service Chat;ivschat;UpdateLoggingConfiguration;ivschat:UpdateLoggingConfiguration;Grants permission to update the logging configuration for a specified logging configuration ARN;Write;True
 Amazon Interactive Video Service Chat;ivschat;UpdateRoom;ivschat:UpdateRoom;Grants permission to update the room configuration for a specified room ARN;Write;True
 AWS IoT;iot;AcceptCertificateTransfer;iot:AcceptCertificateTransfer;Grants permission to accept a pending certificate transfer;Write;True
 AWS IoT;iot;AddThingToBillingGroup;iot:AddThingToBillingGroup;Grants permission to add a thing to the specified billing group;Write;True
@@ -7315,8 +7328,10 @@ AWS IoT TwinMaker;iottwinmaker;DeleteComponentType;iottwinmaker:DeleteComponentT
 AWS IoT TwinMaker;iottwinmaker;DeleteEntity;iottwinmaker:DeleteEntity;Grants permission to delete an entity;Write;True
 AWS IoT TwinMaker;iottwinmaker;DeleteScene;iottwinmaker:DeleteScene;Grants permission to delete a scene;Write;True
 AWS IoT TwinMaker;iottwinmaker;DeleteWorkspace;iottwinmaker:DeleteWorkspace;Grants permission to delete a workspace;Write;True
+AWS IoT TwinMaker;iottwinmaker;ExecuteQuery;iottwinmaker:ExecuteQuery;Grants permission to execute query;Read;True
 AWS IoT TwinMaker;iottwinmaker;GetComponentType;iottwinmaker:GetComponentType;Grants permission to get a componentType;Read;True
 AWS IoT TwinMaker;iottwinmaker;GetEntity;iottwinmaker:GetEntity;Grants permission to get an entity;Read;True
+AWS IoT TwinMaker;iottwinmaker;GetPricingPlan;iottwinmaker:GetPricingPlan;Grants permission to get pricing plan;Read;False
 AWS IoT TwinMaker;iottwinmaker;GetPropertyValue;iottwinmaker:GetPropertyValue;Grants permission to retrieve the property values;Read;True
 AWS IoT TwinMaker;iottwinmaker;GetPropertyValueHistory;iottwinmaker:GetPropertyValueHistory;Grants permission to retrieve the time series value history;Read;True
 AWS IoT TwinMaker;iottwinmaker;GetScene;iottwinmaker:GetScene;Grants permission to get a scene;Read;True
@@ -7330,6 +7345,7 @@ AWS IoT TwinMaker;iottwinmaker;TagResource;iottwinmaker:TagResource;Grants permi
 AWS IoT TwinMaker;iottwinmaker;UntagResource;iottwinmaker:UntagResource;Grants permission to untag a resource;Tagging;True
 AWS IoT TwinMaker;iottwinmaker;UpdateComponentType;iottwinmaker:UpdateComponentType;Grants permission to update a componentType;Write;True
 AWS IoT TwinMaker;iottwinmaker;UpdateEntity;iottwinmaker:UpdateEntity;Grants permission to update an entity;Write;True
+AWS IoT TwinMaker;iottwinmaker;UpdatePricingPlan;iottwinmaker:UpdatePricingPlan;Grants permission to update pricing plan;Write;False
 AWS IoT TwinMaker;iottwinmaker;UpdateScene;iottwinmaker:UpdateScene;Grants permission to update a scene;Write;True
 AWS IoT TwinMaker;iottwinmaker;UpdateWorkspace;iottwinmaker:UpdateWorkspace;Grants permission to update a workspace;Write;True
 AWS IQ;iq;CreateProject [permission only];iq:CreateProject [permission only];Grants permission to submit new project requests;Write;False
@@ -9586,6 +9602,8 @@ AWS Proton;proton;GetEnvironmentTemplateMinorVersion;proton:GetEnvironmentTempla
 AWS Proton;proton;GetEnvironmentTemplateVersion;proton:GetEnvironmentTemplateVersion;Grants permission to describe an environment template version;Read;True
 AWS Proton;proton;GetRepository;proton:GetRepository;Grants permission to describe a repository;Read;True
 AWS Proton;proton;GetRepositorySyncStatus;proton:GetRepositorySyncStatus;Grants permission to get the latest sync status for a repository;Read;False
+AWS Proton;proton;GetResourceTemplateVersionStatusCounts;proton:GetResourceTemplateVersionStatusCounts;Grants permission to list resource template version status counts;Read;False
+AWS Proton;proton;GetResourcesSummary;proton:GetResourcesSummary;Grants permission to get resources summary;Read;False
 AWS Proton;proton;GetService;proton:GetService;Grants permission to describe a service;Read;True
 AWS Proton;proton;GetServiceInstance;proton:GetServiceInstance;Grants permission to describe a service instance;Read;True
 AWS Proton;proton;GetServiceTemplate;proton:GetServiceTemplate;Grants permission to describe a service template;Read;True
@@ -11355,6 +11373,7 @@ AWS Service Catalog;servicecatalog;GetAWSOrganizationsAccessStatus;servicecatalo
 AWS Service Catalog;servicecatalog;GetApplication;servicecatalog:GetApplication;Grants permission to get an application;Read;True
 AWS Service Catalog;servicecatalog;GetAssociatedResource;servicecatalog:GetAssociatedResource;Grants permission to get information about a resource associated to an application;Read;True
 AWS Service Catalog;servicecatalog;GetAttributeGroup;servicecatalog:GetAttributeGroup;Grants permission to get an attribute group;Read;True
+AWS Service Catalog;servicecatalog;GetConfiguration;servicecatalog:GetConfiguration;Grants permission to read AppRegistry configurations;Read;False
 AWS Service Catalog;servicecatalog;GetProvisionedProductOutputs;servicecatalog:GetProvisionedProductOutputs;Grants permission to get the provisioned product output with either provisioned product id or name;Read;False
 AWS Service Catalog;servicecatalog;ImportAsProvisionedProduct;servicecatalog:ImportAsProvisionedProduct;Grants permission to import a resource into a provisioned product;Write;True
 AWS Service Catalog;servicecatalog;ListAcceptedPortfolioShares;servicecatalog:ListAcceptedPortfolioShares;Grants permission to list the portfolios that have been shared with you and you have accepted;List;False
@@ -11382,6 +11401,7 @@ AWS Service Catalog;servicecatalog;ListStackInstancesForProvisionedProduct;servi
 AWS Service Catalog;servicecatalog;ListTagOptions;servicecatalog:ListTagOptions;Grants permission to list the specified TagOptions or all TagOptions;List;False
 AWS Service Catalog;servicecatalog;ListTagsForResource;servicecatalog:ListTagsForResource;Grants permission to list the tags for a service catalog appregistry resource;Read;True
 AWS Service Catalog;servicecatalog;ProvisionProduct;servicecatalog:ProvisionProduct;Grants permission to provision a product with a specified provisioning artifact and launch parameters;Write;True
+AWS Service Catalog;servicecatalog;PutConfiguration;servicecatalog:PutConfiguration;Grants permission to assign AppRegistry configurations;Write;False
 AWS Service Catalog;servicecatalog;RejectPortfolioShare;servicecatalog:RejectPortfolioShare;Grants permission to reject a portfolio that has been shared with you that you previously accepted;Write;True
 AWS Service Catalog;servicecatalog;ScanProvisionedProducts;servicecatalog:ScanProvisionedProducts;Grants permission to list all the provisioned products in your account;List;False
 AWS Service Catalog;servicecatalog;SearchProducts;servicecatalog:SearchProducts;Grants permission to list the products available to you as an end-user;List;False
@@ -12119,6 +12139,26 @@ AWS Systems Manager;ssm;UpdateOpsMetadata;ssm:UpdateOpsMetadata;Grants permissio
 AWS Systems Manager;ssm;UpdatePatchBaseline;ssm:UpdatePatchBaseline;Grants permission to update a specified patch baseline;Write;True
 AWS Systems Manager;ssm;UpdateResourceDataSync;ssm:UpdateResourceDataSync;Grants permission to update a resource data sync;Write;True
 AWS Systems Manager;ssm;UpdateServiceSetting;ssm:UpdateServiceSetting;Grants permission to update the service setting for an AWS account;Write;True
+AWS Systems Manager for SAP;ssm-sap;BackupDatabase;ssm-sap:BackupDatabase;Grants permission to perform backup operation on a specified database;Write;False
+AWS Systems Manager for SAP;ssm-sap;DeleteResourcePermission;ssm-sap:DeleteResourcePermission;Grants permission to delete the SSM for SAP level resource permissions associated with a SSM for SAP database resource;Write;False
+AWS Systems Manager for SAP;ssm-sap;DeregisterApplication;ssm-sap:DeregisterApplication;Grants permission to deregister an SAP application with SSM for SAP;Write;False
+AWS Systems Manager for SAP;ssm-sap;GetApplication;ssm-sap:GetApplication;Grants permission to access information about an application registered with SSM for SAP by providing the application ID or application ARN;Read;False
+AWS Systems Manager for SAP;ssm-sap;GetComponent;ssm-sap:GetComponent;Grants permission to access information about a component registered with SSM for SAP by providing the application ID and component ID;Read;False
+AWS Systems Manager for SAP;ssm-sap;GetDatabase;ssm-sap:GetDatabase;Grants permission to access information about a database registered with SSM for SAP by providing the application ID, component ID, and database ID;Read;False
+AWS Systems Manager for SAP;ssm-sap;GetOperation;ssm-sap:GetOperation;Grants permission to access information about an operation by providing its operation ID;Read;False
+AWS Systems Manager for SAP;ssm-sap;GetResourcePermission;ssm-sap:GetResourcePermission;Grants permission to get the SSM for SAP level resource permissions associated with a SSM for SAP database resource;Read;False
+AWS Systems Manager for SAP;ssm-sap;ListApplications;ssm-sap:ListApplications;Grants permission to retrieve a list of all applications registered with SSM for SAP under the customer AWS account;List;False
+AWS Systems Manager for SAP;ssm-sap;ListComponents;ssm-sap:ListComponents;Grants permission to retrieve a list of all components in the account of customer, or a specific application;List;False
+AWS Systems Manager for SAP;ssm-sap;ListDatabases;ssm-sap:ListDatabases;Grants permission to retrieve a list of all databases in the account of customer, or a specific application;List;False
+AWS Systems Manager for SAP;ssm-sap;ListOperations;ssm-sap:ListOperations;Grants permission to retrieve a list of all operations in the account of customer, additional filters can be applied;List;False
+AWS Systems Manager for SAP;ssm-sap;ListTagsForResource;ssm-sap:ListTagsForResource;Grants permission to list the tags on a specified resource ARN;Read;False
+AWS Systems Manager for SAP;ssm-sap;PutResourcePermission;ssm-sap:PutResourcePermission;Grants permission to add the SSM for SAP level resource permissions associated with a SSM for SAP database resource;Write;False
+AWS Systems Manager for SAP;ssm-sap;RegisterApplication;ssm-sap:RegisterApplication;Grants permission to registers an SAP application with SSM for SAP;Write;False
+AWS Systems Manager for SAP;ssm-sap;RestoreDatabase;ssm-sap:RestoreDatabase;Grants permission to restore a database from another database;Write;False
+AWS Systems Manager for SAP;ssm-sap;TagResource;ssm-sap:TagResource;Grants permission to tag a specified resource ARN;Tagging;True
+AWS Systems Manager for SAP;ssm-sap;UntagResource;ssm-sap:UntagResource;Grants permission to remove tags from a specified resource ARN;Tagging;True
+AWS Systems Manager for SAP;ssm-sap;UpdateApplicationSettings;ssm-sap:UpdateApplicationSettings;Grants permission to update settings of a registered SSM for SAP application;Write;False
+AWS Systems Manager for SAP;ssm-sap;UpdateHANABackupSettings;ssm-sap:UpdateHANABackupSettings;Grants permission to update the HANA backup settings of a specified database;Write;False
 AWS Systems Manager GUI Connect;ssm-guiconnect;CancelConnection [permission only];ssm-guiconnect:CancelConnection [permission only];Grants permission to terminate a GUI Connect session;Write;False
 AWS Systems Manager GUI Connect;ssm-guiconnect;GetConnection [permission only];ssm-guiconnect:GetConnection [permission only];Grants permission to get the metadata for a GUI Connect session;Read;False
 AWS Systems Manager GUI Connect;ssm-guiconnect;StartConnection [permission only];ssm-guiconnect:StartConnection [permission only];Grants permission to start a GUI Connect session;Write;False
@@ -12644,6 +12684,7 @@ Amazon WorkDocs;workdocs;DeactivateUser;workdocs:DeactivateUser;Grants permissio
 Amazon WorkDocs;workdocs;DeleteComment;workdocs:DeleteComment;Grants permission to delete the specified comment from the document version;Write;False
 Amazon WorkDocs;workdocs;DeleteCustomMetadata;workdocs:DeleteCustomMetadata;Grants permission to delete custom metadata from the specified resource;Write;False
 Amazon WorkDocs;workdocs;DeleteDocument;workdocs:DeleteDocument;Grants permission to permanently delete the specified document and its associated metadata;Write;False
+Amazon WorkDocs;workdocs;DeleteDocumentVersion;workdocs:DeleteDocumentVersion;Grants permission to delete versions of a specified document;Write;False
 Amazon WorkDocs;workdocs;DeleteFolder;workdocs:DeleteFolder;Grants permission to permanently delete the specified folder and its contents;Write;False
 Amazon WorkDocs;workdocs;DeleteFolderContents;workdocs:DeleteFolderContents;Grants permission to delete the contents of the specified folder;Write;False
 Amazon WorkDocs;workdocs;DeleteInstance [permission only];workdocs:DeleteInstance [permission only];Grants permission to delete an instance;Write;False
@@ -12677,6 +12718,7 @@ Amazon WorkDocs;workdocs;InitiateDocumentVersionUpload;workdocs:InitiateDocument
 Amazon WorkDocs;workdocs;RegisterDirectory [permission only];workdocs:RegisterDirectory [permission only];Grants permission to register a directory;Write;False
 Amazon WorkDocs;workdocs;RemoveAllResourcePermissions;workdocs:RemoveAllResourcePermissions;Grants permission to remove all the permissions from the specified resource;Write;False
 Amazon WorkDocs;workdocs;RemoveResourcePermission;workdocs:RemoveResourcePermission;Grants permission to remove the permission for the specified principal from the specified resource;Write;False
+Amazon WorkDocs;workdocs;RestoreDocumentVersions;workdocs:RestoreDocumentVersions;Grants permission to restore versions of a specified document;Write;False
 Amazon WorkDocs;workdocs;UpdateDocument;workdocs:UpdateDocument;Grants permission to update the specified attributes of the specified document;Write;False
 Amazon WorkDocs;workdocs;UpdateDocumentVersion;workdocs:UpdateDocumentVersion;Grants permission to change the status of the document version to ACTIVE;Write;False
 Amazon WorkDocs;workdocs;UpdateFolder;workdocs:UpdateFolder;Grants permission to update the specified attributes of the specified folder;Write;False
@@ -12970,6 +13012,7 @@ AWS X-Ray;xray;BatchGetTraces;xray:BatchGetTraces;Grants permission to retrieve 
 AWS X-Ray;xray;CreateGroup;xray:CreateGroup;Grants permission to create a group resource with a name and a filter expression;Write;True
 AWS X-Ray;xray;CreateSamplingRule;xray:CreateSamplingRule;Grants permission to create a rule to control sampling behavior for instrumented applications;Write;True
 AWS X-Ray;xray;DeleteGroup;xray:DeleteGroup;Grants permission to delete a group resource;Write;True
+AWS X-Ray;xray;DeleteResourcePolicy;xray:DeleteResourcePolicy;Grants permission to delete resource policies;Write;False
 AWS X-Ray;xray;DeleteSamplingRule;xray:DeleteSamplingRule;Grants permission to delete a sampling rule;Write;True
 AWS X-Ray;xray;GetDistinctTraceGraphs [permission only];xray:GetDistinctTraceGraphs [permission only];Grants permission to retrieve distinct service graphs for one or more specific trace IDs;Read;False
 AWS X-Ray;xray;GetEncryptionConfig;xray:GetEncryptionConfig;Grants permission to retrieve the current encryption configuration for X-Ray data;Read;False
@@ -12986,8 +13029,10 @@ AWS X-Ray;xray;GetServiceGraph;xray:GetServiceGraph;Grants permission to retriev
 AWS X-Ray;xray;GetTimeSeriesServiceStatistics;xray:GetTimeSeriesServiceStatistics;Grants permission to retrieve an aggregation of service statistics defined by a specific time range bucketed into time intervals;Read;False
 AWS X-Ray;xray;GetTraceGraph;xray:GetTraceGraph;Grants permission to retrieve a service graph for one or more specific trace IDs;Read;False
 AWS X-Ray;xray;GetTraceSummaries;xray:GetTraceSummaries;Grants permission to retrieve IDs and metadata for traces available for a specified time frame using an optional filter. To get the full traces, pass the trace IDs to BatchGetTraces;Read;False
+AWS X-Ray;xray;ListResourcePolicies;xray:ListResourcePolicies;Grants permission to list resource policies;List;False
 AWS X-Ray;xray;ListTagsForResource;xray:ListTagsForResource;Grants permission to list tags for an X-Ray resource;List;True
 AWS X-Ray;xray;PutEncryptionConfig;xray:PutEncryptionConfig;Grants permission to update the encryption configuration for X-Ray data;Permissions management;False
+AWS X-Ray;xray;PutResourcePolicy;xray:PutResourcePolicy;Grants permission to create or update resource policies;Write;False
 AWS X-Ray;xray;PutTelemetryRecords;xray:PutTelemetryRecords;Grants permission to send AWS X-Ray daemon telemetry to the service;Write;False
 AWS X-Ray;xray;PutTraceSegments;xray:PutTraceSegments;Grants permission to upload segment documents to AWS X-Ray. The X-Ray SDK generates segment documents and sends them to the X-Ray daemon, which uploads them in batches;Write;False
 AWS X-Ray;xray;TagResource;xray:TagResource;Grants permission to add tags to an X-Ray resource;Tagging;True

@@ -314,6 +314,7 @@
     "AWS Support Plans": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupportplans.html",
     "AWS Sustainability": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssustainability.html",
     "AWS Systems Manager": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanager.html",
+    "AWS Systems Manager for SAP": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerforsap.html",
     "AWS Systems Manager GUI Connect": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerguiconnect.html",
     "AWS Systems Manager Incident Manager": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerincidentmanager.html",
     "AWS Systems Manager Incident Manager Contacts": "https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanagerincidentmanagercontacts.html",
