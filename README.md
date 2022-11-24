@@ -1,7 +1,5 @@
 # IAM Policy Analyser
 
-[TOC]
-
 ## Description
 
 This is the tool developed as my final project in University. I study Computer Engineering in CEFET-MG, in Brazil.
