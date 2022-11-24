@@ -1,0 +1,10 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"s3:GetObject",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve objects from Amazon S3",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    }
+]

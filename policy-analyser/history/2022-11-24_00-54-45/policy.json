@@ -1,0 +1,42 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:RestoreDBClusterFromSnapshot",
+                "rds:DeleteDBClusterSnapshot",
+                "rds:CreateDBInstance",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeDBInstances",
+                "rds:DescribeDBClusters",
+                "rds:CreateDBClusterSnapshot",
+                "rds:ListTagsForResource",
+                "rds:AddTagsToResource",
+                "ec2:DescribeRegions",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeAccountAttributes",
+                "ec2:DescribeSubnets",
+                "iam:GetUser",
+                "iam:GetAccountAuthorizationDetails",
+                "kms:ReEncryptFrom",
+                "kms:ReEncryptTo",
+                "kms:GenerateDataKey",
+                "kms:GenerateDataKeyPair",
+                "kms:GenerateDataKeyWithoutPlaintext",
+                "kms:GenerateDataKeyPairWithoutPlaintext",
+                "kms:CreateGrant",
+                "kms:DescribeKey",
+                "kms:ListKeys",
+                "kms:ListAliases",
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ListResourceTags"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

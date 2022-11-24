@@ -1,0 +1,4 @@
+StatementNumber;Action;AccessLevel;Resource;Description;Documentation
+1;glue:GetSecurityConfigurations;Read;False;Grants permission to retrieve one or more security configurations;https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsglue.html
+1;logs:GetLogEvents;Read;True;Grants permission to retrieve log events from the specified log stream;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatchlogs.html
+1;ssm:GetParameters;Read;True;Grants permission to view information about multiple specified parameters;https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssystemsmanager.html

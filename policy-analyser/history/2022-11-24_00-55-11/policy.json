@@ -1,0 +1,64 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:RestoreDBClusterFromSnapshot",
+                "rds:DescribeDBSnapshots",
+                "rds:CopyDBSnapshot",
+                "rds:CopyDBClusterSnapshot",
+                "rds:DeleteDBSnapshot",
+                "rds:DeleteDBClusterSnapshot",
+                "rds:CreateDBSnapshot",
+                "rds:RestoreDBInstanceFromDBSnapshot",
+                "rds:CreateDBInstance",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeDBInstances",
+                "rds:DescribeDBClusters",
+                "rds:CreateDBClusterSnapshot",
+                "rds:ModifyDBSnapshotAttribute",
+                "rds:ModifyDBClusterSnapshotAttribute",
+                "rds:AddTagsToResource",
+                "rds:ListTagsForResource",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeRegions",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeAccountAttributes",
+                "ec2:DescribeSubnets",
+                "iam:GetUser",
+                "iam:GetAccountAuthorizationDetails",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+                "kms:CreateGrant",
+                "kms:DescribeKey*",
+                "kms:ListKeys",
+                "kms:ListAliases",
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ListKeys",
+                "kms:ListAliases",
+                "kms:ListResourceTags"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DeleteDBInstance",
+                "rds:DeleteDBCluster"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:TagKeys": [
+                        "_GX_BACKUP_"
+                    ]
+                }
+            }
+        }
+    ]
+}

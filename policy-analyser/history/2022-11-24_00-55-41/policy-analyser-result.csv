@@ -1,0 +1,2 @@
+StatementNumber;Action;AccessLevel;Resource;Description;Documentation
+1;s3:GetObject;Read;True;Grants permission to retrieve objects from Amazon S3;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html

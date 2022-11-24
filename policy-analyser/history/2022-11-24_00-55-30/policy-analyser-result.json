@@ -1,0 +1,210 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:DeleteSnapshot",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to delete a snapshot of an EBS volume",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"4",
+        "Action":"ec2:TerminateInstances",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to shut down one or more instances",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"5",
+        "Action":"ec2:TerminateInstances",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to shut down one or more instances",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"ec2:StopInstances",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to stop an Amazon EBS-backed instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"ec2:DisassociateIamInstanceProfile",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to disassociate an IAM instance profile from a running or stopped instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"ec2:GetConsoleOutput",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to get the console output for an instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"ec2:AssociateIamInstanceProfile",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to associate an IAM instance profile with a running or stopped instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"iam:PassRole",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to associate an IAM instance profile with a running or stopped instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:Decrypt",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to decrypt ciphertext that was encrypted under an AWS KMS key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:CreateKey",
+        "AccessLevel":"Write",
+        "Resource":"False",
+        "Description":"Controls permission to create an AWS KMS key that can be used to protect data keys and other sensitive information",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:CreateGrant",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:ReEncryptFrom",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to decrypt data as part of the process that decrypts and reencrypts the data within AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:ReEncryptTo",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to encrypt data as part of the process that decrypts and reencrypts the data within AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:GenerateDataKey",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data keys. You can use the data keys to encrypt data outside of AWS KMS",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:GenerateDataKeyWithoutPlaintext",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate a data key. Unlike the GenerateDataKey operation, this operation returns an encrypted data key without a plaintext version of the data key",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:GenerateDataKeyPairWithoutPlaintext",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data key pairs. Unlike the GenerateDataKeyPair operation, this operation returns an encrypted private key without a plaintext copy",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:GenerateDataKeyPair",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the AWS KMS key to generate data key pairs",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"kms:Encrypt",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Controls permission to use the specified AWS KMS key to encrypt data and data keys",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:PutBucketAcl",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the permissions on an existing bucket using access control lists (ACLs)",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:PutObjectTagging",
+        "AccessLevel":"Tagging",
+        "Resource":"True",
+        "Description":"Grants permission to set the supplied tag-set to an object that already exists in a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:DeleteObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:DeleteObjectVersion",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove a specific version of an object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:PutObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to add an object to a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:GetObject",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve objects from Amazon S3",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"7",
+        "Action":"s3:PutObjectAcl",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"8",
+        "Action":"iam:PassRole",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html"
+    }
+]

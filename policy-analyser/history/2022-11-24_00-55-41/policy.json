@@ -1,0 +1,44 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:GetBucketLocation"
+      ],
+      "Resource": [
+        "arn:aws:s3:::gx-restore-*",
+        "arn:aws:s3:::gx-restore-*/*",
+        "arn:aws:s3:::<bucket_name_1>",
+        "arn:aws:s3:::<bucket_name_1>/*",
+        "arn:aws:s3:::<bucket_name_2>",
+        "arn:aws:s3:::<bucket_name_2>/*",
+        "arn:aws:s3:::<bucket_name_3>",
+        "arn:aws:s3:::<bucket_name_3>/*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor2",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:CopySnapshot",
+        "ec2:DescribeConversionTasks",
+        "ec2:DescribeExportTasks",
+        "ec2:DescribeExportImageTasks",
+        "ec2:DescribeImages",
+        "ec2:DescribeInstanceStatus",
+        "ec2:DescribeInstances",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeTags",
+        "ec2:DescribeImportImageTasks",
+        "ec2:DescribeImportSnapshotTasks",
+        "ec2:ModifySnapshotAttribute",
+        "ec2:RegisterImage"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
