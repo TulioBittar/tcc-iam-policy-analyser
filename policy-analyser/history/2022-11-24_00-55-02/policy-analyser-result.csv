@@ -1,0 +1,11 @@
+StatementNumber;Action;AccessLevel;Resource;Description;Documentation
+1;ec2:DeleteSnapshot;Write;True;Grants permission to delete a snapshot of an EBS volume;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;ec2:GetConsoleOutput;Read;True;Grants permission to get the console output for an instance;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;ec2:TerminateInstances;Write;True;Grants permission to shut down one or more instances;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;ec2:StopInstances;Write;True;Grants permission to stop an Amazon EBS-backed instance;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html
+1;s3:GetObject;Read;True;Grants permission to retrieve objects from Amazon S3;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+1;s3:PutObject;Write;True;Grants permission to add an object to a bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+1;s3:PutObjectTagging;Tagging;True;Grants permission to set the supplied tag-set to an object that already exists in a bucket;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+1;s3:DeleteObject;Write;True;Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object;https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+1;s3:PutBucketAcl;Permissions management;True;Grants permission to set the permissions on an existing bucket using access control lists (ACLs);https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html
+2;iam:PassRole;Permissions management;True;Grants permission to set the permissions on an existing bucket using access control lists (ACLs);https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html

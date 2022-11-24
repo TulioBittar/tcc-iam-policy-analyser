@@ -397,7 +397,7 @@ Amazon AppFlow;appflow;DescribeConnectorEntity;appflow:DescribeConnectorEntity;G
 Amazon AppFlow;appflow;DescribeConnectorFields [permission only];appflow:DescribeConnectorFields [permission only];Grants permission to describe all fields for an object in a login profile configured in Amazon AppFlow (Console Only);Read;True
 Amazon AppFlow;appflow;DescribeConnectorProfiles;appflow:DescribeConnectorProfiles;Grants permission to describe all login profiles configured in Amazon AppFlow;Read;False
 Amazon AppFlow;appflow;DescribeConnectors;appflow:DescribeConnectors;Grants permission to describe all connectors supported by Amazon AppFlow;Read;False
-Amazon AppFlow;appflow;DescribeFlow;appflow:DescribeFlow;Grants permission to describe a specific flow configured in Amazon AppFlow;Read;False
+Amazon AppFlow;appflow;DescribeFlow;appflow:DescribeFlow;Grants permission to describe a specific flow configured in Amazon AppFlow;Read;True
 Amazon AppFlow;appflow;DescribeFlowExecution [permission only];appflow:DescribeFlowExecution [permission only];Grants permission to describe all flow executions for a flow configured in Amazon AppFlow (Console Only);Read;True
 Amazon AppFlow;appflow;DescribeFlowExecutionRecords;appflow:DescribeFlowExecutionRecords;Grants permission to describe all flow executions for a flow configured in Amazon AppFlow;Read;True
 Amazon AppFlow;appflow;DescribeFlows [permission only];appflow:DescribeFlows [permission only];Grants permission to describe all flows configured in Amazon AppFlow (Console Only);Read;False
@@ -414,6 +414,7 @@ Amazon AppFlow;appflow;TagResource;appflow:TagResource;Grants permission to tag 
 Amazon AppFlow;appflow;UnRegisterConnector;appflow:UnRegisterConnector;Grants permission to un-register a connector in Amazon AppFlow;Write;True
 Amazon AppFlow;appflow;UntagResource;appflow:UntagResource;Grants permission to untag a flow;Tagging;True
 Amazon AppFlow;appflow;UpdateConnectorProfile;appflow:UpdateConnectorProfile;Grants permission to update a login profile configured in Amazon AppFlow;Write;True
+Amazon AppFlow;appflow;UpdateConnectorRegistration;appflow:UpdateConnectorRegistration;Grants permission to update a registered connector configured in Amazon AppFlow;Write;True
 Amazon AppFlow;appflow;UpdateFlow;appflow:UpdateFlow;Grants permission to update a flow configured in Amazon AppFlow;Write;True
 Amazon AppFlow;appflow;UseConnectorProfile [permission only];appflow:UseConnectorProfile [permission only];Grants permission to use a connector profile while creating a flow in Amazon AppFlow;Write;True
 Amazon AppIntegrations;app-integrations;CreateDataIntegration;app-integrations:CreateDataIntegration;Grants permission to create a new DataIntegration;Write;True
@@ -2714,6 +2715,7 @@ Amazon Connect;connect;ListTrafficDistributionGroups;connect:ListTrafficDistribu
 Amazon Connect;connect;ListUseCases;connect:ListUseCases;Grants permission to list the use cases of an integration association;List;True
 Amazon Connect;connect;ListUserHierarchyGroups;connect:ListUserHierarchyGroups;Grants permission to list the hierarchy group resources in an Amazon Connect instance;List;True
 Amazon Connect;connect;ListUsers;connect:ListUsers;Grants permission to list user resources in an Amazon Connect instance;List;True
+Amazon Connect;connect;MonitorContact;connect:MonitorContact;Grants permission to monitor an ongoing contact;Write;True
 Amazon Connect;connect;PutUserStatus;connect:PutUserStatus;Grants permission to switch User Status in an Amazon Connect instance;Write;True
 Amazon Connect;connect;ReleasePhoneNumber;connect:ReleasePhoneNumber;Grants permission to release phone number resources in an Amazon Connect instance;Write;True
 Amazon Connect;connect;ReplicateInstance;connect:ReplicateInstance;Grants permission to create a replica of an Amazon Connect instance;Write;False
@@ -9720,6 +9722,7 @@ Amazon QuickSight;quicksight;CreateThemeAlias;quicksight:CreateThemeAlias;Grants
 Amazon QuickSight;quicksight;CreateUser [permission only];quicksight:CreateUser [permission only];Grants permission to provision Amazon QuickSight authors and readers;Write;True
 Amazon QuickSight;quicksight;CreateVPCConnection [permission only];quicksight:CreateVPCConnection [permission only];Grants permission to create a VPC connection;Write;False
 Amazon QuickSight;quicksight;DeleteAccountCustomization;quicksight:DeleteAccountCustomization;Grants permission to delete an account customization for QuickSight account or namespace;Write;True
+Amazon QuickSight;quicksight;DeleteAccountSubscription;quicksight:DeleteAccountSubscription;Grants permission to delete a QuickSight account;Write;True
 Amazon QuickSight;quicksight;DeleteAnalysis;quicksight:DeleteAnalysis;Grants permission to delete an analysis;Write;True
 Amazon QuickSight;quicksight;DeleteCustomPermissions [permission only];quicksight:DeleteCustomPermissions [permission only];Grants permission to delete a custom permissions resource;Permissions management;False
 Amazon QuickSight;quicksight;DeleteDashboard;quicksight:DeleteDashboard;Grants permission to delete a QuickSight Dashboard;Write;True
@@ -9768,7 +9771,7 @@ Amazon QuickSight;quicksight;DescribeTheme;quicksight:DescribeTheme;Grants permi
 Amazon QuickSight;quicksight;DescribeThemeAlias;quicksight:DescribeThemeAlias;Grants permission to describe a theme alias;Read;True
 Amazon QuickSight;quicksight;DescribeThemePermissions;quicksight:DescribeThemePermissions;Grants permission to describe permissions for a theme;Read;True
 Amazon QuickSight;quicksight;DescribeUser;quicksight:DescribeUser;Grants permission to describe a QuickSight user given the user name;Read;True
-Amazon QuickSight;quicksight;GenerateEmbedUrlForAnonymousUser;quicksight:GenerateEmbedUrlForAnonymousUser;Grants permission to generate a URL used to embed a QuickSight Dashboard for a user not registered with QuickSight;Write;True
+Amazon QuickSight;quicksight;GenerateEmbedUrlForAnonymousUser;quicksight:GenerateEmbedUrlForAnonymousUser;Grants permission to generate a URL used to embed a QuickSight Dashboard or Q Topic for a user not registered with QuickSight;Write;True
 Amazon QuickSight;quicksight;GenerateEmbedUrlForRegisteredUser;quicksight:GenerateEmbedUrlForRegisteredUser;Grants permission to generate a URL used to embed a QuickSight Dashboard for a user registered with QuickSight;Write;True
 Amazon QuickSight;quicksight;GetAnonymousUserEmbedUrl [permission only];quicksight:GetAnonymousUserEmbedUrl [permission only];Grants permission to get a URL used to embed a QuickSight Dashboard for a user not registered with QuickSight;Read;False
 Amazon QuickSight;quicksight;GetAuthCode [permission only];quicksight:GetAuthCode [permission only];Grants permission to get an auth code representing a QuickSight user;Read;True
@@ -9805,6 +9808,8 @@ Amazon QuickSight;quicksight;RestoreAnalysis;quicksight:RestoreAnalysis;Grants p
 Amazon QuickSight;quicksight;ScopeDownPolicy [permission only];quicksight:ScopeDownPolicy [permission only];Grants permission to manage scoping policies for permissions to AWS resources;Write;False
 Amazon QuickSight;quicksight;SearchAnalyses;quicksight:SearchAnalyses;Grants permission to search for a sub-set of analyses;List;True
 Amazon QuickSight;quicksight;SearchDashboards;quicksight:SearchDashboards;Grants permission to search for a sub-set of QuickSight Dashboards;List;True
+Amazon QuickSight;quicksight;SearchDataSets;quicksight:SearchDataSets;Grants permission to search for a sub-set of QuickSight DatSets;List;True
+Amazon QuickSight;quicksight;SearchDataSources;quicksight:SearchDataSources;Grants permission to search for a sub-set of QuickSight Data Sources;List;True
 Amazon QuickSight;quicksight;SearchDirectoryGroups [permission only];quicksight:SearchDirectoryGroups [permission only];Grants permission to use Amazon QuickSight, in Enterprise edition, to display your Microsoft Active Directory directory groups so that you can choose which ones to map to roles in Amazon QuickSight;List;False
 Amazon QuickSight;quicksight;SearchFolders;quicksight:SearchFolders;Grants permission to search for a sub-set of QuickSight Folders;Read;True
 Amazon QuickSight;quicksight;SearchGroups;quicksight:SearchGroups;Grants permission to search for a sub-set of QuickSight groups;List;True

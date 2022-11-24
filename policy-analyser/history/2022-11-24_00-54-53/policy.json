@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1490385696805",
+            "Action": [
+                "s3-outposts:GetObject",
+                "s3-outposts:PutObject",
+                "s3-outposts:PutObjectTagging",
+                "s3-outposts:ListBucket",
+                "s3-outposts:ListRegionalBuckets",
+                "s3-outposts:DeleteObject",
+                "s3-outposts:DeleteObjectVersion",
+                "s3-outposts:GetAccessPoint",
+                "s3-outposts:ListRegionalBuckets",
+                "s3-outposts:ListAccessPoints"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}

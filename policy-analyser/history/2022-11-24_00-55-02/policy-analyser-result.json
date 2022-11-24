@@ -1,0 +1,82 @@
+[
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:DeleteSnapshot",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to delete a snapshot of an EBS volume",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:GetConsoleOutput",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to get the console output for an instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:TerminateInstances",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to shut down one or more instances",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"ec2:StopInstances",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to stop an Amazon EBS-backed instance",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:GetObject",
+        "AccessLevel":"Read",
+        "Resource":"True",
+        "Description":"Grants permission to retrieve objects from Amazon S3",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:PutObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to add an object to a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:PutObjectTagging",
+        "AccessLevel":"Tagging",
+        "Resource":"True",
+        "Description":"Grants permission to set the supplied tag-set to an object that already exists in a bucket",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:DeleteObject",
+        "AccessLevel":"Write",
+        "Resource":"True",
+        "Description":"Grants permission to remove the null version of an object and insert a delete marker, which becomes the current version of the object",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"1",
+        "Action":"s3:PutBucketAcl",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the permissions on an existing bucket using access control lists (ACLs)",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html"
+    },
+    {
+        "StatementNumber":"2",
+        "Action":"iam:PassRole",
+        "AccessLevel":"Permissions management",
+        "Resource":"True",
+        "Description":"Grants permission to set the permissions on an existing bucket using access control lists (ACLs)",
+        "Documentation":"https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html"
+    }
+]
