@@ -70,7 +70,7 @@ Thank you.
 - [Linkedin](https://www.linkedin.com/in/tulio-bittar/)
 - [Github](https://github.com/TulioBittar)
 
-### Grade and Work details:
+### Career details
 - Graduated in Computer Engineering at [CEFET-MG](https://www.cefetmg.br/)
 - Cloud Security Analyst at [Inter](https://www.bancointer.com.br/)
 - AWS Certified Solutions Architect Associate
