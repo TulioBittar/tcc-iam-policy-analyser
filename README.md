@@ -9,7 +9,7 @@ This tool analyses and classifies AWS IAM Policies, according to the severity of
 
 ## Pre-Requisites
 - Terminal with Bash;
-- Python version 3.10.6 or above;
+- Python version 3.10 or above;
 - Python Libraries (shown in the next section);
 
 
